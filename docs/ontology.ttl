@@ -1,0 +1,1170 @@
+@prefix : <http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#> .
+
+<http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#> rdf:type owl:Ontology ;
+                                                                     rdfs:comment "It is intended to formalize and categorize knowledge about the European catalog of high-risk medical devices and in vitro diagnostic devices according to their MDR (EU 2017/745) and IVDR (EU 2017/746) regulatory frameworks. The objective of this ontology is to structure and relate the information coming from the EUDAMED public repository covering the entire regulated part of the life cycle of the devices (Manufacturing, risk classification according to regulations and monitoring of their service (incidents and corrective actions)." ;
+                                                                     rdfs:label "European Medical Device Ontology (MDR-IVDR)." .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#sameAs
+owl:sameAs rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#affectsDeviceType
+:affectsDeviceType rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Risk ;
+                   rdfs:range :DeviceType ;
+                   rdfs:comment "Relates a risk to the type of device it affects. Used to infer associations between risks and devices." ;
+                   rdfs:label "affects device type" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#causesRisk
+:causesRisk rdf:type owl:ObjectProperty ,
+                     owl:TransitiveProperty ;
+            rdfs:domain :Risk ;
+            rdfs:range :Risk ;
+            rdfs:comment "Relates a risk to another risk that it causes. This property is transitive." ;
+            rdfs:label "causes risk" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#hasAssociatedRisk
+:hasAssociatedRisk rdf:type owl:ObjectProperty ,
+                            owl:AsymmetricProperty ;
+                   rdfs:domain :Device ;
+                   rdfs:range :Risk ;
+                   rdfs:comment "Relates a device to risks associated with it. This relationship is derived from the correspondence between device types and affected device types." ;
+                   rdfs:label "has associated risk" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#hasCorrectiveActionStatus
+:hasCorrectiveActionStatus rdf:type owl:ObjectProperty ,
+                                    owl:FunctionalProperty ;
+                           rdfs:domain :CorrectiveActions ;
+                           rdfs:range :CorrectiveActionStatus ;
+                           rdfs:comment "Relates a corrective action to its status, represented as a controlled vocabulary." ;
+                           rdfs:label "has corrective action status" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#hasDeviceRiskClass
+:hasDeviceRiskClass rdf:type owl:ObjectProperty ,
+                             owl:FunctionalProperty ;
+                    rdfs:domain :Device ;
+                    rdfs:range :DeviceRiskClass ;
+                    rdfs:comment "Relates a device to its regulatory risk classification." ;
+                    rdfs:label "has device risk class" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#hasDeviceType
+:hasDeviceType rdf:type owl:ObjectProperty ,
+                        owl:FunctionalProperty ;
+               rdfs:domain :Device ;
+               rdfs:range :DeviceType ;
+               rdfs:comment "Relates a device to its device type. This classification enables linking devices with risks." ;
+               rdfs:label "has device type" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#hasIncidentPatientSex
+:hasIncidentPatientSex rdf:type owl:ObjectProperty ,
+                                owl:FunctionalProperty ;
+                       rdfs:domain :Incident ;
+                       rdfs:range :IncidentPatientSex ;
+                       rdfs:comment "Relates an incident to the patient's sex category, represented as a controlled vocabulary." ;
+                       rdfs:label "has incident patient sex" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#hasIncidentType
+:hasIncidentType rdf:type owl:ObjectProperty ,
+                          owl:FunctionalProperty ;
+                 rdfs:domain :Incident ;
+                 rdfs:range :IncidentType ;
+                 rdfs:comment "Relates an incident to its type, modelled as a controlled classification." ;
+                 rdfs:label "has incident type" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#hasManufacturedBy
+:hasManufacturedBy rdf:type owl:ObjectProperty ,
+                            owl:FunctionalProperty ;
+                   rdfs:domain :Device ;
+                   rdfs:range :Manufacturer ;
+                   rdfs:comment "Relates a device to its manufacturer. Each device is associated with exactly one manufacturer." ;
+                   rdfs:label "has manufactured by" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#hasRiskCategory
+:hasRiskCategory rdf:type owl:ObjectProperty ,
+                          owl:FunctionalProperty ;
+                 rdfs:domain :Risk ;
+                 rdfs:range :RiskCategory ;
+                 rdfs:comment "Relates a risk to its category. This classification is aligned with controlled vocabularies similar to skos:Concept." ;
+                 rdfs:label "has risk category" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#isAboutDevice
+:isAboutDevice rdf:type owl:ObjectProperty ,
+                        owl:FunctionalProperty ;
+               rdfs:domain :Incident ;
+               rdfs:range :Device ;
+               rdfs:comment "Relates an incident to the device involved. Each incident refers to exactly one device." ;
+               rdfs:label "is about device" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#isAboutRisk
+:isAboutRisk rdf:type owl:ObjectProperty ,
+                      owl:FunctionalProperty ;
+             rdfs:domain :Incident ;
+             rdfs:range :Risk ;
+             rdfs:comment "Relates an incident to the associated risk. Each incident is linked to exactly one risk." ;
+             rdfs:label "is about risk" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#isBasedIn
+:isBasedIn rdf:type owl:ObjectProperty ,
+                    owl:FunctionalProperty ;
+           rdfs:domain :Manufacturer ;
+           rdfs:range :Country ;
+           rdfs:comment "Relates a manufacturer to the country where it is based." ;
+           rdfs:label "is based in" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#isReportedBy
+:isReportedBy rdf:type owl:ObjectProperty ,
+                       owl:FunctionalProperty ;
+              rdfs:domain :Incident ;
+              rdfs:range :Manufacturer ;
+              rdfs:comment "Relates an incident to the reporting entity, modelled as a manufacturer in this ontology." ;
+              rdfs:label "is reported by" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#isReportedIn
+:isReportedIn rdf:type owl:ObjectProperty ,
+                       owl:FunctionalProperty ;
+              rdfs:domain :Incident ;
+              rdfs:range :Country ;
+              rdfs:comment "Relates an incident to the country where it is reported. Each incident is associated with exactly one country." ;
+              rdfs:label "is reported in" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#isResponseTo
+:isResponseTo rdf:type owl:ObjectProperty ,
+                       owl:FunctionalProperty ;
+              rdfs:domain :CorrectiveActions ;
+              rdfs:range :Incident ;
+              rdfs:comment "Relates a corrective action to the incident it addresses. Each corrective action corresponds to exactly one incident." ;
+              rdfs:label "is response to" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#hasActionCountriesAffected
+:hasActionCountriesAffected rdf:type owl:DatatypeProperty ;
+                            rdfs:domain :CorrectiveActions ;
+                            rdfs:range xsd:string ;
+                            rdfs:comment "Group of countries affected by the corrective action, represented as a group value." ;
+                            rdfs:label "has action countries affected" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#hasActionDate
+:hasActionDate rdf:type owl:DatatypeProperty ;
+               rdfs:domain :CorrectiveActions ;
+               rdfs:range xsd:dateTime ;
+               rdfs:comment "Date when the corrective action was initiated. Aligned with dcterms:date." ;
+               rdfs:label "has action date" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#hasActionDescription
+:hasActionDescription rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :CorrectiveActions ;
+                      rdfs:range xsd:string ;
+                      rdfs:comment "Textual description of a corrective action. Aligned with dcterms:description." ;
+                      rdfs:label "has action description" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#hasActionDevicesAffected
+:hasActionDevicesAffected rdf:type owl:DatatypeProperty ;
+                          rdfs:domain :CorrectiveActions ;
+                          rdfs:range xsd:int ;
+                          rdfs:comment "Number of devices affected by the corrective action." ;
+                          rdfs:label "has action devices affected" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#hasActionEudamedFscaRef
+:hasActionEudamedFscaRef rdf:type owl:DatatypeProperty ;
+                         rdfs:domain :CorrectiveActions ;
+                         rdfs:range xsd:string ;
+                         rdfs:comment "Stores the Eudamed Fsca Refence number." ;
+                         rdfs:label "has action Eudamed Fsca Ref" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#hasActionFscaId
+:hasActionFscaId rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :CorrectiveActions ;
+                 rdfs:range xsd:string ;
+                 rdfs:comment "Identifier of a corrective action. Aligned with dcterms:identifier." ;
+                 rdfs:label "has action FscaId" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#hasActionType
+:hasActionType rdf:type owl:DatatypeProperty ;
+               rdfs:domain :CorrectiveActions ;
+               rdfs:range xsd:string ;
+               rdfs:comment "Stores the type of corrective action type" ;
+               rdfs:label "has action type" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#hasClousureDate
+:hasClousureDate rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :CorrectiveActions ;
+                 rdfs:range xsd:dateTime ;
+                 rdfs:comment "Date when the corrective action was closed. Aligned with dcterms:date." ;
+                 rdfs:label "has clousure date" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#hasCorrectiveActionTaken
+:hasCorrectiveActionTaken rdf:type owl:DatatypeProperty ;
+                          rdfs:domain :Incident ;
+                          rdfs:range xsd:boolean ;
+                          rdfs:comment "Indicates whether a corrective action was taken for the incident." ;
+                          rdfs:label "is corrective action taken" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#hasDeviceId
+:hasDeviceId rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Device ;
+             rdfs:range xsd:string ;
+             rdfs:comment "Identifier of a device. Aligned with dcterms:identifier." ;
+             rdfs:label "has device id" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#hasDeviceName
+:hasDeviceName rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Device ;
+               rdfs:range xsd:string ;
+               rdfs:comment "Name of the device. Similar to rdfs:label." ;
+               rdfs:label "device name" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#hasIncidentDescription
+:hasIncidentDescription rdf:type owl:DatatypeProperty ;
+                        rdfs:domain :Incident ;
+                        rdfs:range xsd:string ;
+                        rdfs:comment "Textual description of an incident. Aligned with dcterms:description." ;
+                        rdfs:label "has incident description" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#hasIncidentDetectionDate
+:hasIncidentDetectionDate rdf:type owl:DatatypeProperty ;
+                          rdfs:domain :Incident ;
+                          rdfs:range xsd:dateTime ;
+                          rdfs:comment "Date when the incident was detected. Aligned with dcterms:date." ;
+                          rdfs:label "has incicent detection date" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#hasIncidentEudamedNum
+:hasIncidentEudamedNum rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :Incident ;
+                       rdfs:range xsd:string ;
+                       rdfs:comment "Stores the Eudamed incident num." ;
+                       rdfs:label "has incident Eudamed num" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#hasIncidentId
+:hasIncidentId rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Incident ;
+               rdfs:range xsd:string ;
+               rdfs:comment "Identifier of an incident. Aligned with dcterms:identifier." ;
+               rdfs:label "has incident id" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#hasIncidentOutcome
+:hasIncidentOutcome rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :Incident ;
+                    rdfs:range xsd:string ;
+                    rdfs:comment "Outcome of the incident as a descriptive value." ;
+                    rdfs:label "incident outcome" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#hasIncidentPatientAge
+:hasIncidentPatientAge rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :Incident ;
+                       rdfs:range xsd:int ;
+                       rdfs:comment "Store the age of the patient affected." ;
+                       rdfs:label "has incident patient age" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#hasIncidentReportDate
+:hasIncidentReportDate rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :Incident ;
+                       rdfs:range xsd:dateTime ;
+                       rdfs:comment "Date when the incident was reported. Aligned with dcterms:date." ;
+                       rdfs:label "has incident report date" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#hasIntendedPurpose
+:hasIntendedPurpose rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :Device ;
+                    rdfs:range xsd:string ;
+                    rdfs:comment "Stores the purpose" ;
+                    rdfs:label "has intended purpose" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#hasManufacturerAuthNumber
+:hasManufacturerAuthNumber rdf:type owl:DatatypeProperty ;
+                           rdfs:domain :Manufacturer ;
+                           rdfs:range xsd:string ;
+                           rdfs:comment "Stores the manufacturer's authorization number." ;
+                           rdfs:label "has manufacturer auth number." .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#hasManufacturerCompetentAutority
+:hasManufacturerCompetentAutority rdf:type owl:DatatypeProperty ;
+                                  rdfs:domain :Manufacturer ;
+                                  rdfs:range xsd:string ;
+                                  rdfs:comment "Stores the manufacturer competent autority." ;
+                                  rdfs:label "has manufacturer competent autority" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#hasManufacturerEmail
+:hasManufacturerEmail rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :Manufacturer ;
+                      rdfs:range xsd:string ;
+                      rdfs:comment "Email address of the manufacturer. Conceptually aligned with foaf:mbox." ;
+                      rdfs:label "has manufacturer email" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#hasManufacturerEudamedSn
+:hasManufacturerEudamedSn rdf:type owl:DatatypeProperty ;
+                          rdfs:domain :Manufacturer ;
+                          rdfs:range xsd:string ;
+                          rdfs:comment "Stores the Eudamed sn" ;
+                          rdfs:label "has manufacturer Eudamed sn" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#hasManufacturerId
+:hasManufacturerId rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Manufacturer ;
+                   rdfs:range xsd:string ;
+                   rdfs:comment "Identifier of a manufacturer. Aligned with dcterms:identifier." ;
+                   rdfs:label "has manufacturer id" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#hasManufacturerName
+:hasManufacturerName rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :Manufacturer ;
+                     rdfs:range xsd:string ;
+                     rdfs:comment "Name of the manufacturer. Conceptually aligned with foaf:name." ;
+                     rdfs:label "has manufacturer name" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#hasRiskDescription
+:hasRiskDescription rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :Risk ;
+                    rdfs:range xsd:string ;
+                    rdfs:comment "Textual description of a risk. Aligned with dcterms:description." ;
+                    rdfs:label "has risk description" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#hasRiskId
+:hasRiskId rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Risk ;
+           rdfs:range xsd:string ;
+           rdfs:comment "Identifier of a risk. Aligned with dcterms:identifier." ;
+           rdfs:label "has risk id" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#hasRiskImdrfCode
+:hasRiskImdrfCode rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Risk ;
+                  rdfs:range xsd:string ;
+                  rdfs:comment "Stores the imdrf code." ;
+                  rdfs:label "has risk imdrf code" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#hasRiskName
+:hasRiskName rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Risk ;
+             rdfs:range xsd:string ;
+             rdfs:comment "Stores the risk name." ;
+             rdfs:label "has risk name" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#hasRiskType
+:hasRiskType rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Risk ;
+             rdfs:range xsd:string ;
+             rdfs:comment "Type of risk represented as a literal value. Not modelled as a separate ontology concept." ;
+             rdfs:label "has risk type" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#hasUdi_di
+:hasUdi_di rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Device ;
+           rdfs:range xsd:string ;
+           rdfs:comment "Stores the udi_di reference" ;
+           rdfs:label "has udi_di" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#isDeviceActive
+:isDeviceActive rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Device ;
+                rdfs:range xsd:boolean ;
+                rdfs:comment "store the device status" ;
+                rdfs:label "is device active" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#isDeviceIRegulatory
+:isDeviceIRegulatory rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :Device ;
+                     rdfs:range xsd:string ;
+                     rdfs:comment "The regulatory framework of the device (MDR or IVDR)" ;
+                     rdfs:label "is device regulatory" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#isDeviceImplantable
+:isDeviceImplantable rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :Device ;
+                     rdfs:range xsd:boolean ;
+                     rdfs:comment "store if the device is implantable or not." ;
+                     rdfs:label "is device implantable" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#isDeviceIvd
+:isDeviceIvd rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Device ;
+             rdfs:range xsd:boolean ;
+             rdfs:comment "Stores if the device is Invitro Device or not" ;
+             rdfs:label "is device idv" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#isDeviceReusable
+:isDeviceReusable rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Device ;
+                  rdfs:range xsd:boolean ;
+                  rdfs:comment "Stores if the device is reusable or not" ;
+                  rdfs:label "is device reusable" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#CorrectiveActionStatus
+:CorrectiveActionStatus rdf:type owl:Class ;
+                        rdfs:comment "Class representing the status of a corrective action. Modelled as a controlled vocabulary." ;
+                        rdfs:label "Corrective status" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#CorrectiveActions
+:CorrectiveActions rdf:type owl:Class ;
+                   rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                     owl:onProperty :hasCorrectiveActionStatus ;
+                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                     owl:onClass :CorrectiveActionStatus
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :isResponseTo ;
+                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                     owl:onClass :Incident
+                                   ] ;
+                   rdfs:comment "Class representing corrective actions taken in response to incidents. Descriptions and dates are aligned with Dublin Core terms." ;
+                   rdfs:label "Corrective Actions" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#Country
+:Country rdf:type owl:Class ;
+         rdfs:comment "Class representing a country associated with reporting or manufacturer location. Conceptually aligned with EU controlled vocabularies for countries." ;
+         rdfs:label "Country" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#Device
+:Device rdf:type owl:Class ;
+        rdfs:subClassOf [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasDeviceRiskClass ;
+                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onClass :DeviceRiskClass
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasDeviceType ;
+                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onClass :DeviceType
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasManufacturedBy ;
+                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onClass :Manufacturer
+                        ] ;
+        rdfs:comment "Class representing a medical device within the surveillance domain. Device identifiers are aligned with dcterms:identifier." ;
+        rdfs:label "Device" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#DeviceRiskClass
+:DeviceRiskClass rdf:type owl:Class ;
+                 rdfs:comment "Class representing the regulatory risk classification of a device. Modelled as a controlled classification." ;
+                 rdfs:label "Device risk class" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#DeviceType
+:DeviceType rdf:type owl:Class ;
+            rdfs:comment "Device type about interaction with patient (Active,Implantable,invitro,single use, etc.)" ;
+            rdfs:label "Device type" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#Incident
+:Incident rdf:type owl:Class ;
+          rdfs:subClassOf [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasIncidentPatientSex ;
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass :IncidentPatientSex
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasIncidentType ;
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass :IncidentType
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :isAboutDevice ;
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass :Device
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :isAboutRisk ;
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass :Risk
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :isReportedBy ;
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass :Manufacturer
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :isReportedIn ;
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass :Country
+                          ] ;
+          rdfs:comment "Class representing an incident involving a medical device. Temporal properties are aligned with dcterms:date." ;
+          rdfs:label "Incident" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#IncidentPatientSex
+:IncidentPatientSex rdf:type owl:Class ;
+                    rdfs:comment "Class representing the sex category of a patient involved in an incident. Modelled as a controlled vocabulary." ;
+                    rdfs:label "Incident patient sex" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#IncidentType
+:IncidentType rdf:type owl:Class ;
+              rdfs:comment "Class representing the type of incident. Modelled as a controlled classification similar to skos:Concept." ;
+              rdfs:label "Incident type" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#Manufacturer
+:Manufacturer rdf:type owl:Class ;
+              rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                owl:onProperty :isBasedIn ;
+                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onClass :Country
+                              ] ;
+              rdfs:comment "Class representing the manufacturer of a medical device. Conceptually aligned with foaf:Organization." ;
+              rdfs:label "Manufacturer" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#Risk
+:Risk rdf:type owl:Class ;
+      rdfs:subClassOf [ rdf:type owl:Restriction ;
+                        owl:onProperty :hasRiskCategory ;
+                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                        owl:onClass :RiskCategory
+                      ] ;
+      rdfs:comment "Class representing a risk associated with a device or incident. Risk descriptions are aligned with dcterms:description." ;
+      rdfs:label "Risk" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#RiskCategory
+:RiskCategory rdf:type owl:Class ;
+              rdfs:comment "Class representing the category assigned to a risk. Conceptually aligned with skos:Concept for classification purposes." ;
+              rdfs:label "Risk Category" .
+
+
+###  http://www.w3.org/2003/11/swrl#AtomList
+<http://www.w3.org/2003/11/swrl#AtomList> rdf:type owl:Class ;
+                                          rdfs:comment "Represents a SWRL rule." ;
+                                          rdfs:label "SWRL Rule" .
+
+
+###  http://www.w3.org/2003/11/swrl#ClassAtom
+<http://www.w3.org/2003/11/swrl#ClassAtom> rdf:type owl:Class ;
+                                           rdfs:comment "Represents a SWRL rule." ;
+                                           rdfs:label "SWRL Rule" .
+
+
+###  http://www.w3.org/2003/11/swrl#Imp
+<http://www.w3.org/2003/11/swrl#Imp> rdf:type owl:Class ;
+                                     rdfs:comment "Represents a SWRL rule." ;
+                                     rdfs:label "SWRL Rule" .
+
+
+###  http://www.w3.org/2003/11/swrl#IndividualPropertyAtom
+<http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> rdf:type owl:Class ;
+                                                        rdfs:comment "Represents a SWRL rule." ;
+                                                        rdfs:label "SWRL Rule" .
+
+
+###  http://www.w3.org/2003/11/swrl#Variable
+<http://www.w3.org/2003/11/swrl#Variable> rdf:type owl:Class ;
+                                          rdfs:comment "Represents a SWRL rule." ;
+                                          rdfs:label "SWRL Rule" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#ActiveDevice
+:ActiveDevice rdf:type owl:NamedIndividual ,
+                       :DeviceType .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#ActiveImplant
+:ActiveImplant rdf:type owl:NamedIndividual ,
+                        :DeviceType .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#ClassA
+:ClassA rdf:type owl:NamedIndividual ,
+                 :DeviceRiskClass ;
+        rdfs:comment "Class by the IVDR (EU 2017/746)" ;
+        rdfs:label "Class A" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#ClassB
+:ClassB rdf:type owl:NamedIndividual ,
+                 :DeviceRiskClass ;
+        rdfs:comment "Class by the IVDR (EU 2017/746)" ;
+        rdfs:label "Class B" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#ClassC
+:ClassC rdf:type owl:NamedIndividual ,
+                 :DeviceRiskClass ;
+        rdfs:comment "Class by the IVDR (EU 2017/746)" ;
+        rdfs:label "Class C" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#ClassD
+:ClassD rdf:type owl:NamedIndividual ,
+                 :DeviceRiskClass ;
+        rdfs:comment "Class by the IVDR (EU 2017/746)" ;
+        rdfs:label "Class D" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#ClassIII
+:ClassIII rdf:type owl:NamedIndividual ,
+                   :DeviceRiskClass ;
+          rdfs:comment "Class by the MDR (EU 2017/745)" ;
+          rdfs:label "Class III" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#ClassIIa
+:ClassIIa rdf:type owl:NamedIndividual ,
+                   :DeviceRiskClass ;
+          rdfs:comment "Class by the MDR (EU 2017/745)" ;
+          rdfs:label "Class IIa" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#ClassIIb
+:ClassIIb rdf:type owl:NamedIndividual ,
+                   :DeviceRiskClass ;
+          rdfs:comment "Class by the MDR (EU 2017/745)" ;
+          rdfs:label "Class IIb" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#Closed
+:Closed rdf:type owl:NamedIndividual ,
+                 :CorrectiveActionStatus ;
+        rdfs:comment "Corrective action closed" ;
+        rdfs:label "Closed" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#DEV_001
+:DEV_001 rdf:type owl:NamedIndividual ,
+                  :Device ,
+                  [ rdf:type owl:Restriction ;
+                    owl:onProperty :hasDeviceRiskClass ;
+                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                    owl:onClass :DeviceRiskClass
+                  ] ,
+                  [ rdf:type owl:Restriction ;
+                    owl:onProperty :hasDeviceType ;
+                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                    owl:onClass :DeviceType
+                  ] ,
+                  [ rdf:type owl:Restriction ;
+                    owl:onProperty :hasManufacturedBy ;
+                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                    owl:onClass :Manufacturer
+                  ] ;
+         owl:sameAs <https://dbpedia.org/resource/Medtronic> ;
+         :hasDeviceRiskClass :ClassIII ;
+         :hasDeviceType :ImplantableActiveDevice ;
+         :hasManufacturedBy :MAN_001 ;
+         :hasDeviceId "DEV-001" ;
+         :hasDeviceName "HeartMate 3 LVAD" ;
+         :hasIntendedPurpose "Ventricular assist device for end-stage heart failure" ;
+         :hasUdi_di "(01)00380740009095" ;
+         :isDeviceActive "true"^^xsd:boolean ;
+         :isDeviceIRegulatory "MDR" ;
+         :isDeviceImplantable "true"^^xsd:boolean ;
+         :isDeviceIvd "false"^^xsd:boolean ;
+         :isDeviceReusable "false"^^xsd:boolean .
+
+
+###  https://dbpedia.org/resource/Medtronic
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#DeviceFailure
+:DeviceFailure rdf:type owl:NamedIndividual ,
+                        :RiskCategory ;
+               rdfs:comment "Risk category referring to failures of the device." ;
+               rdfs:label "Device Failure" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#DevicePerformance
+:DevicePerformance rdf:type owl:NamedIndividual ,
+                            :RiskCategory ;
+                   rdfs:comment "Risk category to performance of the device" ;
+                   rdfs:label "Device Performance" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#DeviceSafety
+:DeviceSafety rdf:type owl:NamedIndividual ,
+                       :RiskCategory ;
+              rdfs:comment "Risk category referring to safety situation of the device" ;
+              rdfs:label "Device Safety" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#DiagnosticError
+:DiagnosticError rdf:type owl:NamedIndividual ,
+                          :RiskCategory ;
+                 rdfs:comment "Risk category referring to errors in diagnostics by the device" ;
+                 rdfs:label "Diagnostic Error" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#FSCA_001
+:FSCA_001 rdf:type owl:NamedIndividual ,
+                   :CorrectiveActions ,
+                   [ rdf:type owl:Restriction ;
+                     owl:onProperty :hasCorrectiveActionStatus ;
+                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                     owl:onClass :CorrectiveActionStatus
+                   ] ,
+                   [ rdf:type owl:Restriction ;
+                     owl:onProperty :isResponseTo ;
+                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                     owl:onClass :Incident
+                   ] ;
+          :hasCorrectiveActionStatus :Open ;
+          :isResponseTo :INC_001 ;
+          :hasActionCountriesAffected "EU-wide" ;
+          :hasActionDate "2024-02-01T00:00:00"^^xsd:dateTime ;
+          :hasActionDescription "Safety alert issued to all implanting centres regarding anticoagulation protocol update for HeartMate 3 to reduce device thrombosis risk. INR target range revised to 2.0–3.0." ;
+          :hasActionDevicesAffected "850"^^xsd:int ;
+          :hasActionEudamedFscaRef "EU-FSCA-2024-000001" ;
+          :hasActionFscaId "FSCA-001" ;
+          :hasActionType "SafetyAlert" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#Female
+:Female rdf:type owl:NamedIndividual ,
+                 :IncidentPatientSex ;
+        rdfs:comment "Sex indicate Female" ;
+        rdfs:label "Female" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#Germany
+:Germany rdf:type owl:NamedIndividual ,
+                  :Country ;
+         owl:sameAs <https://dbpedia.org/resource/Germany> .
+
+
+###  https://dbpedia.org/resource/Germany
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#INC_001
+:INC_001 rdf:type owl:NamedIndividual ,
+                  :Incident ,
+                  [ rdf:type owl:Restriction ;
+                    owl:onProperty :hasIncidentPatientSex ;
+                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                    owl:onClass :IncidentPatientSex
+                  ] ,
+                  [ rdf:type owl:Restriction ;
+                    owl:onProperty :hasIncidentType ;
+                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                    owl:onClass :IncidentType
+                  ] ,
+                  [ rdf:type owl:Restriction ;
+                    owl:onProperty :isAboutDevice ;
+                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                    owl:onClass :Device
+                  ] ,
+                  [ rdf:type owl:Restriction ;
+                    owl:onProperty :isAboutRisk ;
+                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                    owl:onClass :Risk
+                  ] ,
+                  [ rdf:type owl:Restriction ;
+                    owl:onProperty :isReportedBy ;
+                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                    owl:onClass :Manufacturer
+                  ] ,
+                  [ rdf:type owl:Restriction ;
+                    owl:onProperty :isReportedIn ;
+                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                    owl:onClass :Country
+                  ] ;
+         :hasIncidentPatientSex :Male ;
+         :hasIncidentType :SeriousIncident ;
+         :isAboutDevice :DEV_001 ;
+         :isReportedBy :MAN_001 ;
+         :isReportedIn :Germany ;
+         :hasCorrectiveActionTaken "true"^^xsd:boolean ;
+         :hasIncidentDescription "Patient implanted with HeartMate 3 LVAD developed ischemic stroke 6 months post-implant. Device thrombus confirmed by echocardiography." ;
+         :hasIncidentDetectionDate "2024-01-10T00:00:00"^^xsd:dateTime ;
+         :hasIncidentEudamedNum "EU-INC-2024-000001" ;
+         :hasIncidentId "INC-001" ;
+         :hasIncidentOutcome "Serious patient injury - embolic stroke" ;
+         :hasIncidentPatientAge "58"^^xsd:int ;
+         :hasIncidentReportDate "2024-01-15T00:00:00"^^xsd:dateTime .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#ImplantableActiveDevice
+:ImplantableActiveDevice rdf:type owl:NamedIndividual ,
+                                  :DeviceType .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#ImplantableDevice
+:ImplantableDevice rdf:type owl:NamedIndividual ,
+                            :DeviceType .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#InVitroDiagnosticDevice
+:InVitroDiagnosticDevice rdf:type owl:NamedIndividual ,
+                                  :DeviceType .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#Ireland
+:Ireland rdf:type owl:NamedIndividual ,
+                  :Country ;
+         owl:sameAs <https://dbpedia.org/resource/Ireland> .
+
+
+###  https://dbpedia.org/resource/Ireland
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#MAN_001
+:MAN_001 rdf:type owl:NamedIndividual ,
+                  :Manufacturer ;
+         owl:sameAs <https://dbpedia.org/resource/Medtronic> ;
+         :hasManufacturerAuthNumber "IE/2017/001234" ;
+         :hasManufacturerCompetentAutority "Health Products Regulatory Authority (HPRA)" ;
+         :hasManufacturerEmail "regulatory@medtronic.com" ;
+         :hasManufacturerEudamedSn "SRN-IE-MED-0001" ;
+         :hasManufacturerId "MAN-001" ;
+         :hasManufacturerName "Medtronic plc" .
+
+[ rdf:type owl:NegativePropertyAssertion ;
+   owl:sourceIndividual :MAN_001 ;
+   owl:assertionProperty :isBasedIn ;
+   owl:targetIndividual :Ireland
+ ] .
+
+
+###  https://dbpedia.org/resource/Medtronic
+[ rdf:type owl:NegativePropertyAssertion ;
+  owl:sourceIndividual :MAN_001 ;
+  owl:assertionProperty :isBasedIn ;
+  owl:targetIndividual :Ireland
+] .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#Male
+:Male rdf:type owl:NamedIndividual ,
+               :IncidentPatientSex ;
+      rdfs:comment "Sex indicate Male" ;
+      rdfs:label "Male" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#NearMissIncident
+:NearMissIncident rdf:type owl:NamedIndividual ,
+                           :IncidentType ;
+                  rdfs:comment "Incident type representing a near miss event." ;
+                  rdfs:label "Near Miss Incident" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#Open
+:Open rdf:type owl:NamedIndividual ,
+               :CorrectiveActionStatus ;
+      rdfs:comment "Corrective action open" ;
+      rdfs:label "Open" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#PatientHarm
+:PatientHarm rdf:type owl:NamedIndividual ,
+                      :RiskCategory ;
+             rdfs:comment "Risk category referring to any patient harm produced" ;
+             rdfs:label "Patient Harm" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#ProductQuality
+:ProductQuality rdf:type owl:NamedIndividual ,
+                         :RiskCategory ;
+                rdfs:comment "Risk category referring to any product quality defect." ;
+                rdfs:label "Product Quality" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#RSK_003
+:RSK_003 rdf:type owl:NamedIndividual ,
+                  :Risk ,
+                  [ rdf:type owl:Restriction ;
+                    owl:onProperty :hasRiskCategory ;
+                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                    owl:onClass :RiskCategory
+                  ] ;
+         :affectsDeviceType :ImplantableActiveDevice ;
+         :hasRiskCategory :PatientHarm ;
+         :hasRiskDescription "Thrombus formation on device surface causing embolic events" ;
+         :hasRiskId "RSK-003" ;
+         :hasRiskImdrfCode "A0201" ;
+         :hasRiskName "Thrombosis - device-related" ;
+         :hasRiskType "InjuryRisk" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#SeriousIncident
+:SeriousIncident rdf:type owl:NamedIndividual ,
+                          :IncidentType ;
+                 rdfs:comment "Incident type representing a serious reportable incident." ;
+                 rdfs:label "Serious Incident" .
+
+
+###  http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#N/A
+<http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#N/A> rdf:type owl:NamedIndividual ,
+                                                                                :IncidentPatientSex ;
+                                                                       rdfs:comment "Not indicate sex" ;
+                                                                       rdfs:label "N/A" .
+
+
+###  https://dbpedia.org/resource/Germany
+<https://dbpedia.org/resource/Germany> rdf:type owl:NamedIndividual .
+
+
+###  https://dbpedia.org/resource/Ireland
+<https://dbpedia.org/resource/Ireland> rdf:type owl:NamedIndividual .
+
+
+###  https://dbpedia.org/resource/Medtronic
+<https://dbpedia.org/resource/Medtronic> rdf:type owl:NamedIndividual .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :CorrectiveActionStatus
+                :CorrectiveActions
+                :Country
+                :Device
+                :DeviceRiskClass
+                :DeviceType
+                :Incident
+                :IncidentPatientSex
+                :IncidentType
+                :Manufacturer
+                :Risk
+                :RiskCategory
+                <http://www.w3.org/2003/11/swrl#AtomList>
+                <http://www.w3.org/2003/11/swrl#ClassAtom>
+                <http://www.w3.org/2003/11/swrl#Imp>
+                <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom>
+                <http://www.w3.org/2003/11/swrl#Variable>
+              )
+] .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+<http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#/i> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#/d> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#/m> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#/c> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#/r> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#/dt> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Infers the reporting manufacturer of an incident based on the device manufacturer." ;
+   rdfs:label "S2" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Incident ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#/i>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :isAboutDevice ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#/i> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#/d>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasManufacturedBy ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#/d> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#/m>
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :isReportedBy ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#/i> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#/m>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Infers the risk associated with an incident based on the risks of the involved device." ;
+   rdfs:label "S1" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Incident ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#/i>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :isAboutDevice ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#/i> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#/d>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasManufacturedBy ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#/d> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#/m>
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :isReportedBy ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#/i> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#/m>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Infers the reporting country of an incident from the manufacturer's location." ;
+   rdfs:label "S3" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Incident ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#/i>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :isReportedBy ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#/i> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#/m>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :isBasedIn ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#/m> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#/c>
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :isReportedIn ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#/i> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#/c>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Infers the risks associated with a device based on its device type." ;
+   rdfs:label "S4" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Risk ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#/r>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :affectsDeviceType ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#/r> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#/dt>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> :Device ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#/d>
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasDeviceType ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#/d> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#/dt>
+                                                                                      ] ;
+                                                                            rdf:rest rdf:nil
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasAssociatedRisk ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#/d> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/pablo/ontologies/2026/3/PAC2_Ontology#/r>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
