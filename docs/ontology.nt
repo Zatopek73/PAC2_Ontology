@@ -1,0 +1,1080 @@
+<https://zatopek73.github.io/PAC2_Ontology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://zatopek73.github.io/PAC2_Ontology> <http://www.w3.org/2002/07/owl#versionIRI> <https://zatopek73.github.io/PAC2_Ontology/1.0.0> .
+<https://zatopek73.github.io/PAC2_Ontology> <http://purl.org/dc/terms/bibliographicCitation> "Parrado Gamito, P. (2026). European Medical Device Ontology (MDR-IVDR), version 1.0.0. https://zatopek73.github.io/PAC2_Ontology/" .
+<https://zatopek73.github.io/PAC2_Ontology> <http://purl.org/dc/terms/contributor> "Pablo Parrado Gamito" .
+<https://zatopek73.github.io/PAC2_Ontology> <http://purl.org/dc/terms/created> "2026-04-17T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://zatopek73.github.io/PAC2_Ontology> <http://purl.org/dc/terms/creator> "Pablo Parrado Gamito" .
+<https://zatopek73.github.io/PAC2_Ontology> <http://purl.org/dc/terms/description> "It is intended to formalize and categorize knowledge about the European catalog of high-risk medical devices and in vitro diagnostic devices according to their MDR (EU 2017/745) and IVDR (EU 2017/746) regulatory frameworks. The objective of this ontology is to structure and relate the information coming from the EUDAMED public repository covering the entire regulated part of the life cycle of the devices (Manufacturing, risk classification according to regulations and monitoring of their service (incidents and corrective actions)." .
+<https://zatopek73.github.io/PAC2_Ontology> <http://purl.org/dc/terms/issued> "2026-04-17T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://zatopek73.github.io/PAC2_Ontology> <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/" .
+<https://zatopek73.github.io/PAC2_Ontology> <http://purl.org/dc/terms/publisher> "Pablo Parrado Gamito (UOC)" .
+<https://zatopek73.github.io/PAC2_Ontology> <http://purl.org/dc/terms/references> "Dataset provided in the assignment (dades.xlsx)\nDBpedia (https://dbpedia.org)\nLinked Open Vocabularies (https://lov.linkeddata.es)\nEU Vocabularies (https://op.europa.eu)" .
+<https://zatopek73.github.io/PAC2_Ontology> <http://purl.org/dc/terms/source> "Dataset provided in the assignment (PAC2_Data.zip).\nhttps://dbpedia.org\nhttps://lov.linkeddata\nhttps://op.europa.eu" .
+<https://zatopek73.github.io/PAC2_Ontology> <http://purl.org/dc/terms/title> "European Medical Device Ontology (MDR-IVDR)" .
+<https://zatopek73.github.io/PAC2_Ontology> <http://purl.org/vocab/vann/preferredNamespacePrefix> "pac2" .
+<https://zatopek73.github.io/PAC2_Ontology> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://zatopek73.github.io/PAC2_Ontology#" .
+<https://zatopek73.github.io/PAC2_Ontology> <http://www.w3.org/2000/01/rdf-schema#label> "European Medical Device Ontology (MDR-IVDR)." .
+<https://zatopek73.github.io/PAC2_Ontology> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/bibliographicCitation
+<http://purl.org/dc/terms/bibliographicCitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/references
+<http://purl.org/dc/terms/references> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/source
+<http://purl.org/dc/terms/source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#sameAs
+<http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://zatopek73.github.io/PAC2_Ontologyvann:preferredNamespacePrefix
+<https://zatopek73.github.io/PAC2_Ontologyvann:preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://zatopek73.github.io/PAC2_Ontologyvann:preferredNamespaceUri
+<https://zatopek73.github.io/PAC2_Ontologyvann:preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://zatopek73.github.io/PAC2_Ontology#affectsDeviceType
+<https://zatopek73.github.io/PAC2_Ontology#affectsDeviceType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://zatopek73.github.io/PAC2_Ontology#affectsDeviceType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://zatopek73.github.io/PAC2_Ontology#Risk> .
+<https://zatopek73.github.io/PAC2_Ontology#affectsDeviceType> <http://www.w3.org/2000/01/rdf-schema#range> <https://zatopek73.github.io/PAC2_Ontology#DeviceType> .
+<https://zatopek73.github.io/PAC2_Ontology#affectsDeviceType> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a risk to the type of device it affects. Used to infer associations between risks and devices." .
+<https://zatopek73.github.io/PAC2_Ontology#affectsDeviceType> <http://www.w3.org/2000/01/rdf-schema#label> "affects device type" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#causesRisk
+<https://zatopek73.github.io/PAC2_Ontology#causesRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://zatopek73.github.io/PAC2_Ontology#causesRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<https://zatopek73.github.io/PAC2_Ontology#causesRisk> <http://www.w3.org/2000/01/rdf-schema#domain> <https://zatopek73.github.io/PAC2_Ontology#Risk> .
+<https://zatopek73.github.io/PAC2_Ontology#causesRisk> <http://www.w3.org/2000/01/rdf-schema#range> <https://zatopek73.github.io/PAC2_Ontology#Risk> .
+<https://zatopek73.github.io/PAC2_Ontology#causesRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a risk to another risk that it causes. This property is transitive." .
+<https://zatopek73.github.io/PAC2_Ontology#causesRisk> <http://www.w3.org/2000/01/rdf-schema#label> "causes risk" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#hasAssociatedRisk
+<https://zatopek73.github.io/PAC2_Ontology#hasAssociatedRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://zatopek73.github.io/PAC2_Ontology#hasAssociatedRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<https://zatopek73.github.io/PAC2_Ontology#hasAssociatedRisk> <http://www.w3.org/2000/01/rdf-schema#domain> <https://zatopek73.github.io/PAC2_Ontology#Device> .
+<https://zatopek73.github.io/PAC2_Ontology#hasAssociatedRisk> <http://www.w3.org/2000/01/rdf-schema#range> <https://zatopek73.github.io/PAC2_Ontology#Risk> .
+<https://zatopek73.github.io/PAC2_Ontology#hasAssociatedRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a device to risks associated with it. This relationship is derived from the correspondence between device types and affected device types." .
+<https://zatopek73.github.io/PAC2_Ontology#hasAssociatedRisk> <http://www.w3.org/2000/01/rdf-schema#label> "has associated risk" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#hasCorrectiveActionStatus
+<https://zatopek73.github.io/PAC2_Ontology#hasCorrectiveActionStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://zatopek73.github.io/PAC2_Ontology#hasCorrectiveActionStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://zatopek73.github.io/PAC2_Ontology#hasCorrectiveActionStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <https://zatopek73.github.io/PAC2_Ontology#CorrectiveActions> .
+<https://zatopek73.github.io/PAC2_Ontology#hasCorrectiveActionStatus> <http://www.w3.org/2000/01/rdf-schema#range> <https://zatopek73.github.io/PAC2_Ontology#CorrectiveActionStatus> .
+<https://zatopek73.github.io/PAC2_Ontology#hasCorrectiveActionStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a corrective action to its status, represented as a controlled vocabulary." .
+<https://zatopek73.github.io/PAC2_Ontology#hasCorrectiveActionStatus> <http://www.w3.org/2000/01/rdf-schema#label> "has corrective action status" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#hasDeviceRiskClass
+<https://zatopek73.github.io/PAC2_Ontology#hasDeviceRiskClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://zatopek73.github.io/PAC2_Ontology#hasDeviceRiskClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://zatopek73.github.io/PAC2_Ontology#hasDeviceRiskClass> <http://www.w3.org/2000/01/rdf-schema#domain> <https://zatopek73.github.io/PAC2_Ontology#Device> .
+<https://zatopek73.github.io/PAC2_Ontology#hasDeviceRiskClass> <http://www.w3.org/2000/01/rdf-schema#range> <https://zatopek73.github.io/PAC2_Ontology#DeviceRiskClass> .
+<https://zatopek73.github.io/PAC2_Ontology#hasDeviceRiskClass> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a device to its regulatory risk classification." .
+<https://zatopek73.github.io/PAC2_Ontology#hasDeviceRiskClass> <http://www.w3.org/2000/01/rdf-schema#label> "has device risk class" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#hasDeviceType
+<https://zatopek73.github.io/PAC2_Ontology#hasDeviceType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://zatopek73.github.io/PAC2_Ontology#hasDeviceType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://zatopek73.github.io/PAC2_Ontology#hasDeviceType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://zatopek73.github.io/PAC2_Ontology#Device> .
+<https://zatopek73.github.io/PAC2_Ontology#hasDeviceType> <http://www.w3.org/2000/01/rdf-schema#range> <https://zatopek73.github.io/PAC2_Ontology#DeviceType> .
+<https://zatopek73.github.io/PAC2_Ontology#hasDeviceType> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a device to its device type. This classification enables linking devices with risks." .
+<https://zatopek73.github.io/PAC2_Ontology#hasDeviceType> <http://www.w3.org/2000/01/rdf-schema#label> "has device type" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#hasIncidentPatientSex
+<https://zatopek73.github.io/PAC2_Ontology#hasIncidentPatientSex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://zatopek73.github.io/PAC2_Ontology#hasIncidentPatientSex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://zatopek73.github.io/PAC2_Ontology#hasIncidentPatientSex> <http://www.w3.org/2000/01/rdf-schema#domain> <https://zatopek73.github.io/PAC2_Ontology#Incident> .
+<https://zatopek73.github.io/PAC2_Ontology#hasIncidentPatientSex> <http://www.w3.org/2000/01/rdf-schema#range> <https://zatopek73.github.io/PAC2_Ontology#IncidentPatientSex> .
+<https://zatopek73.github.io/PAC2_Ontology#hasIncidentPatientSex> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an incident to the patient's sex category, represented as a controlled vocabulary." .
+<https://zatopek73.github.io/PAC2_Ontology#hasIncidentPatientSex> <http://www.w3.org/2000/01/rdf-schema#label> "has incident patient sex" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#hasIncidentType
+<https://zatopek73.github.io/PAC2_Ontology#hasIncidentType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://zatopek73.github.io/PAC2_Ontology#hasIncidentType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://zatopek73.github.io/PAC2_Ontology#hasIncidentType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://zatopek73.github.io/PAC2_Ontology#Incident> .
+<https://zatopek73.github.io/PAC2_Ontology#hasIncidentType> <http://www.w3.org/2000/01/rdf-schema#range> <https://zatopek73.github.io/PAC2_Ontology#IncidentType> .
+<https://zatopek73.github.io/PAC2_Ontology#hasIncidentType> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an incident to its type, modelled as a controlled classification." .
+<https://zatopek73.github.io/PAC2_Ontology#hasIncidentType> <http://www.w3.org/2000/01/rdf-schema#label> "has incident type" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#hasManufacturedBy
+<https://zatopek73.github.io/PAC2_Ontology#hasManufacturedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://zatopek73.github.io/PAC2_Ontology#hasManufacturedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://zatopek73.github.io/PAC2_Ontology#Device> .
+<https://zatopek73.github.io/PAC2_Ontology#hasManufacturedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://zatopek73.github.io/PAC2_Ontology#Manufacturer> .
+<https://zatopek73.github.io/PAC2_Ontology#hasManufacturedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a device to its manufacturer. Each device is associated with exactly one manufacturer." .
+<https://zatopek73.github.io/PAC2_Ontology#hasManufacturedBy> <http://www.w3.org/2000/01/rdf-schema#label> "has manufactured by" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#hasRiskCategory
+<https://zatopek73.github.io/PAC2_Ontology#hasRiskCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://zatopek73.github.io/PAC2_Ontology#hasRiskCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://zatopek73.github.io/PAC2_Ontology#hasRiskCategory> <http://www.w3.org/2000/01/rdf-schema#domain> <https://zatopek73.github.io/PAC2_Ontology#Risk> .
+<https://zatopek73.github.io/PAC2_Ontology#hasRiskCategory> <http://www.w3.org/2000/01/rdf-schema#range> <https://zatopek73.github.io/PAC2_Ontology#RiskCategory> .
+<https://zatopek73.github.io/PAC2_Ontology#hasRiskCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a risk to its category. This classification is aligned with controlled vocabularies similar to skos:Concept." .
+<https://zatopek73.github.io/PAC2_Ontology#hasRiskCategory> <http://www.w3.org/2000/01/rdf-schema#label> "has risk category" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#isAboutDevice
+<https://zatopek73.github.io/PAC2_Ontology#isAboutDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://zatopek73.github.io/PAC2_Ontology#isAboutDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://zatopek73.github.io/PAC2_Ontology#isAboutDevice> <http://www.w3.org/2000/01/rdf-schema#domain> <https://zatopek73.github.io/PAC2_Ontology#Incident> .
+<https://zatopek73.github.io/PAC2_Ontology#isAboutDevice> <http://www.w3.org/2000/01/rdf-schema#range> <https://zatopek73.github.io/PAC2_Ontology#Device> .
+<https://zatopek73.github.io/PAC2_Ontology#isAboutDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an incident to the device involved. Each incident refers to exactly one device." .
+<https://zatopek73.github.io/PAC2_Ontology#isAboutDevice> <http://www.w3.org/2000/01/rdf-schema#label> "is about device" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#isAboutRisk
+<https://zatopek73.github.io/PAC2_Ontology#isAboutRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://zatopek73.github.io/PAC2_Ontology#isAboutRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://zatopek73.github.io/PAC2_Ontology#isAboutRisk> <http://www.w3.org/2000/01/rdf-schema#domain> <https://zatopek73.github.io/PAC2_Ontology#Incident> .
+<https://zatopek73.github.io/PAC2_Ontology#isAboutRisk> <http://www.w3.org/2000/01/rdf-schema#range> <https://zatopek73.github.io/PAC2_Ontology#Risk> .
+<https://zatopek73.github.io/PAC2_Ontology#isAboutRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an incident to the associated risk. Each incident is linked to exactly one risk." .
+<https://zatopek73.github.io/PAC2_Ontology#isAboutRisk> <http://www.w3.org/2000/01/rdf-schema#label> "is about risk" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#isBasedIn
+<https://zatopek73.github.io/PAC2_Ontology#isBasedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://zatopek73.github.io/PAC2_Ontology#isBasedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://zatopek73.github.io/PAC2_Ontology#isBasedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://zatopek73.github.io/PAC2_Ontology#Manufacturer> .
+<https://zatopek73.github.io/PAC2_Ontology#isBasedIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://zatopek73.github.io/PAC2_Ontology#Country> .
+<https://zatopek73.github.io/PAC2_Ontology#isBasedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a manufacturer to the country where it is based." .
+<https://zatopek73.github.io/PAC2_Ontology#isBasedIn> <http://www.w3.org/2000/01/rdf-schema#label> "is based in" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#isReportedBy
+<https://zatopek73.github.io/PAC2_Ontology#isReportedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://zatopek73.github.io/PAC2_Ontology#isReportedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://zatopek73.github.io/PAC2_Ontology#isReportedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://zatopek73.github.io/PAC2_Ontology#Incident> .
+<https://zatopek73.github.io/PAC2_Ontology#isReportedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://zatopek73.github.io/PAC2_Ontology#Manufacturer> .
+<https://zatopek73.github.io/PAC2_Ontology#isReportedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an incident to the reporting entity, modelled as a manufacturer in this ontology." .
+<https://zatopek73.github.io/PAC2_Ontology#isReportedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is reported by" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#isReportedIn
+<https://zatopek73.github.io/PAC2_Ontology#isReportedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://zatopek73.github.io/PAC2_Ontology#isReportedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://zatopek73.github.io/PAC2_Ontology#isReportedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://zatopek73.github.io/PAC2_Ontology#Incident> .
+<https://zatopek73.github.io/PAC2_Ontology#isReportedIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://zatopek73.github.io/PAC2_Ontology#Country> .
+<https://zatopek73.github.io/PAC2_Ontology#isReportedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an incident to the country where it is reported. Each incident is associated with exactly one country." .
+<https://zatopek73.github.io/PAC2_Ontology#isReportedIn> <http://www.w3.org/2000/01/rdf-schema#label> "is reported in" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#isResponseTo
+<https://zatopek73.github.io/PAC2_Ontology#isResponseTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://zatopek73.github.io/PAC2_Ontology#isResponseTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://zatopek73.github.io/PAC2_Ontology#isResponseTo> <http://www.w3.org/2000/01/rdf-schema#domain> <https://zatopek73.github.io/PAC2_Ontology#CorrectiveActions> .
+<https://zatopek73.github.io/PAC2_Ontology#isResponseTo> <http://www.w3.org/2000/01/rdf-schema#range> <https://zatopek73.github.io/PAC2_Ontology#Incident> .
+<https://zatopek73.github.io/PAC2_Ontology#isResponseTo> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a corrective action to the incident it addresses. Each corrective action corresponds to exactly one incident." .
+<https://zatopek73.github.io/PAC2_Ontology#isResponseTo> <http://www.w3.org/2000/01/rdf-schema#label> "is response to" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://zatopek73.github.io/PAC2_Ontology#hasActionCountriesAffected
+<https://zatopek73.github.io/PAC2_Ontology#hasActionCountriesAffected> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://zatopek73.github.io/PAC2_Ontology#hasActionCountriesAffected> <http://www.w3.org/2000/01/rdf-schema#domain> <https://zatopek73.github.io/PAC2_Ontology#CorrectiveActions> .
+<https://zatopek73.github.io/PAC2_Ontology#hasActionCountriesAffected> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://zatopek73.github.io/PAC2_Ontology#hasActionCountriesAffected> <http://www.w3.org/2000/01/rdf-schema#comment> "Group of countries affected by the corrective action, represented as a group value." .
+<https://zatopek73.github.io/PAC2_Ontology#hasActionCountriesAffected> <http://www.w3.org/2000/01/rdf-schema#label> "has action countries affected" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#hasActionDate
+<https://zatopek73.github.io/PAC2_Ontology#hasActionDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://zatopek73.github.io/PAC2_Ontology#hasActionDate> <http://www.w3.org/2000/01/rdf-schema#domain> <https://zatopek73.github.io/PAC2_Ontology#CorrectiveActions> .
+<https://zatopek73.github.io/PAC2_Ontology#hasActionDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://zatopek73.github.io/PAC2_Ontology#hasActionDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Date when the corrective action was initiated. Aligned with dcterms:date." .
+<https://zatopek73.github.io/PAC2_Ontology#hasActionDate> <http://www.w3.org/2000/01/rdf-schema#label> "has action date" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#hasActionDescription
+<https://zatopek73.github.io/PAC2_Ontology#hasActionDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://zatopek73.github.io/PAC2_Ontology#hasActionDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <https://zatopek73.github.io/PAC2_Ontology#CorrectiveActions> .
+<https://zatopek73.github.io/PAC2_Ontology#hasActionDescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://zatopek73.github.io/PAC2_Ontology#hasActionDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "Textual description of a corrective action. Aligned with dcterms:description." .
+<https://zatopek73.github.io/PAC2_Ontology#hasActionDescription> <http://www.w3.org/2000/01/rdf-schema#label> "has action description" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#hasActionDevicesAffected
+<https://zatopek73.github.io/PAC2_Ontology#hasActionDevicesAffected> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://zatopek73.github.io/PAC2_Ontology#hasActionDevicesAffected> <http://www.w3.org/2000/01/rdf-schema#domain> <https://zatopek73.github.io/PAC2_Ontology#CorrectiveActions> .
+<https://zatopek73.github.io/PAC2_Ontology#hasActionDevicesAffected> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<https://zatopek73.github.io/PAC2_Ontology#hasActionDevicesAffected> <http://www.w3.org/2000/01/rdf-schema#comment> "Number of devices affected by the corrective action." .
+<https://zatopek73.github.io/PAC2_Ontology#hasActionDevicesAffected> <http://www.w3.org/2000/01/rdf-schema#label> "has action devices affected" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#hasActionEudamedFscaRef
+<https://zatopek73.github.io/PAC2_Ontology#hasActionEudamedFscaRef> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://zatopek73.github.io/PAC2_Ontology#hasActionEudamedFscaRef> <http://www.w3.org/2000/01/rdf-schema#domain> <https://zatopek73.github.io/PAC2_Ontology#CorrectiveActions> .
+<https://zatopek73.github.io/PAC2_Ontology#hasActionEudamedFscaRef> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://zatopek73.github.io/PAC2_Ontology#hasActionEudamedFscaRef> <http://www.w3.org/2000/01/rdf-schema#comment> "Stores the Eudamed Fsca Refence number." .
+<https://zatopek73.github.io/PAC2_Ontology#hasActionEudamedFscaRef> <http://www.w3.org/2000/01/rdf-schema#label> "has action Eudamed Fsca Ref" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#hasActionFscaId
+<https://zatopek73.github.io/PAC2_Ontology#hasActionFscaId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://zatopek73.github.io/PAC2_Ontology#hasActionFscaId> <http://www.w3.org/2000/01/rdf-schema#domain> <https://zatopek73.github.io/PAC2_Ontology#CorrectiveActions> .
+<https://zatopek73.github.io/PAC2_Ontology#hasActionFscaId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://zatopek73.github.io/PAC2_Ontology#hasActionFscaId> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifier of a corrective action. Aligned with dcterms:identifier." .
+<https://zatopek73.github.io/PAC2_Ontology#hasActionFscaId> <http://www.w3.org/2000/01/rdf-schema#label> "has action FscaId" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#hasActionType
+<https://zatopek73.github.io/PAC2_Ontology#hasActionType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://zatopek73.github.io/PAC2_Ontology#hasActionType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://zatopek73.github.io/PAC2_Ontology#CorrectiveActions> .
+<https://zatopek73.github.io/PAC2_Ontology#hasActionType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://zatopek73.github.io/PAC2_Ontology#hasActionType> <http://www.w3.org/2000/01/rdf-schema#comment> "Stores the type of corrective action type" .
+<https://zatopek73.github.io/PAC2_Ontology#hasActionType> <http://www.w3.org/2000/01/rdf-schema#label> "has action type" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#hasClosureDate
+<https://zatopek73.github.io/PAC2_Ontology#hasClosureDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://zatopek73.github.io/PAC2_Ontology#hasClosureDate> <http://www.w3.org/2000/01/rdf-schema#domain> <https://zatopek73.github.io/PAC2_Ontology#CorrectiveActions> .
+<https://zatopek73.github.io/PAC2_Ontology#hasClosureDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://zatopek73.github.io/PAC2_Ontology#hasClosureDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Date when the corrective action was closed. Aligned with dcterms:date." .
+<https://zatopek73.github.io/PAC2_Ontology#hasClosureDate> <http://www.w3.org/2000/01/rdf-schema#label> "has clousure date" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#hasCorrectiveActionTaken
+<https://zatopek73.github.io/PAC2_Ontology#hasCorrectiveActionTaken> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://zatopek73.github.io/PAC2_Ontology#hasCorrectiveActionTaken> <http://www.w3.org/2000/01/rdf-schema#domain> <https://zatopek73.github.io/PAC2_Ontology#Incident> .
+<https://zatopek73.github.io/PAC2_Ontology#hasCorrectiveActionTaken> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://zatopek73.github.io/PAC2_Ontology#hasCorrectiveActionTaken> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates whether a corrective action was taken for the incident." .
+<https://zatopek73.github.io/PAC2_Ontology#hasCorrectiveActionTaken> <http://www.w3.org/2000/01/rdf-schema#label> "is corrective action taken" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#hasDeviceId
+<https://zatopek73.github.io/PAC2_Ontology#hasDeviceId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://zatopek73.github.io/PAC2_Ontology#hasDeviceId> <http://www.w3.org/2000/01/rdf-schema#domain> <https://zatopek73.github.io/PAC2_Ontology#Device> .
+<https://zatopek73.github.io/PAC2_Ontology#hasDeviceId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://zatopek73.github.io/PAC2_Ontology#hasDeviceId> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifier of a device. Aligned with dcterms:identifier." .
+<https://zatopek73.github.io/PAC2_Ontology#hasDeviceId> <http://www.w3.org/2000/01/rdf-schema#label> "has device id" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#hasDeviceName
+<https://zatopek73.github.io/PAC2_Ontology#hasDeviceName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://zatopek73.github.io/PAC2_Ontology#hasDeviceName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://zatopek73.github.io/PAC2_Ontology#Device> .
+<https://zatopek73.github.io/PAC2_Ontology#hasDeviceName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://zatopek73.github.io/PAC2_Ontology#hasDeviceName> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of the device. Similar to rdfs:label." .
+<https://zatopek73.github.io/PAC2_Ontology#hasDeviceName> <http://www.w3.org/2000/01/rdf-schema#label> "device name" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#hasIncidentDescription
+<https://zatopek73.github.io/PAC2_Ontology#hasIncidentDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://zatopek73.github.io/PAC2_Ontology#hasIncidentDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <https://zatopek73.github.io/PAC2_Ontology#Incident> .
+<https://zatopek73.github.io/PAC2_Ontology#hasIncidentDescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://zatopek73.github.io/PAC2_Ontology#hasIncidentDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "Textual description of an incident. Aligned with dcterms:description." .
+<https://zatopek73.github.io/PAC2_Ontology#hasIncidentDescription> <http://www.w3.org/2000/01/rdf-schema#label> "has incident description" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#hasIncidentDetectionDate
+<https://zatopek73.github.io/PAC2_Ontology#hasIncidentDetectionDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://zatopek73.github.io/PAC2_Ontology#hasIncidentDetectionDate> <http://www.w3.org/2000/01/rdf-schema#domain> <https://zatopek73.github.io/PAC2_Ontology#Incident> .
+<https://zatopek73.github.io/PAC2_Ontology#hasIncidentDetectionDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://zatopek73.github.io/PAC2_Ontology#hasIncidentDetectionDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Date when the incident was detected. Aligned with dcterms:date." .
+<https://zatopek73.github.io/PAC2_Ontology#hasIncidentDetectionDate> <http://www.w3.org/2000/01/rdf-schema#label> "has incident detection date" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#hasIncidentEudamedNum
+<https://zatopek73.github.io/PAC2_Ontology#hasIncidentEudamedNum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://zatopek73.github.io/PAC2_Ontology#hasIncidentEudamedNum> <http://www.w3.org/2000/01/rdf-schema#domain> <https://zatopek73.github.io/PAC2_Ontology#Incident> .
+<https://zatopek73.github.io/PAC2_Ontology#hasIncidentEudamedNum> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://zatopek73.github.io/PAC2_Ontology#hasIncidentEudamedNum> <http://www.w3.org/2000/01/rdf-schema#comment> "Stores the Eudamed incident num." .
+<https://zatopek73.github.io/PAC2_Ontology#hasIncidentEudamedNum> <http://www.w3.org/2000/01/rdf-schema#label> "has incident Eudamed num" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#hasIncidentId
+<https://zatopek73.github.io/PAC2_Ontology#hasIncidentId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://zatopek73.github.io/PAC2_Ontology#hasIncidentId> <http://www.w3.org/2000/01/rdf-schema#domain> <https://zatopek73.github.io/PAC2_Ontology#Incident> .
+<https://zatopek73.github.io/PAC2_Ontology#hasIncidentId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://zatopek73.github.io/PAC2_Ontology#hasIncidentId> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifier of an incident. Aligned with dcterms:identifier." .
+<https://zatopek73.github.io/PAC2_Ontology#hasIncidentId> <http://www.w3.org/2000/01/rdf-schema#label> "has incident id" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#hasIncidentOutcome
+<https://zatopek73.github.io/PAC2_Ontology#hasIncidentOutcome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://zatopek73.github.io/PAC2_Ontology#hasIncidentOutcome> <http://www.w3.org/2000/01/rdf-schema#domain> <https://zatopek73.github.io/PAC2_Ontology#Incident> .
+<https://zatopek73.github.io/PAC2_Ontology#hasIncidentOutcome> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://zatopek73.github.io/PAC2_Ontology#hasIncidentOutcome> <http://www.w3.org/2000/01/rdf-schema#comment> "Outcome of the incident as a descriptive value." .
+<https://zatopek73.github.io/PAC2_Ontology#hasIncidentOutcome> <http://www.w3.org/2000/01/rdf-schema#label> "incident outcome" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#hasIncidentPatientAge
+<https://zatopek73.github.io/PAC2_Ontology#hasIncidentPatientAge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://zatopek73.github.io/PAC2_Ontology#hasIncidentPatientAge> <http://www.w3.org/2000/01/rdf-schema#domain> <https://zatopek73.github.io/PAC2_Ontology#Incident> .
+<https://zatopek73.github.io/PAC2_Ontology#hasIncidentPatientAge> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<https://zatopek73.github.io/PAC2_Ontology#hasIncidentPatientAge> <http://www.w3.org/2000/01/rdf-schema#comment> "Store the age of the patient affected." .
+<https://zatopek73.github.io/PAC2_Ontology#hasIncidentPatientAge> <http://www.w3.org/2000/01/rdf-schema#label> "has incident patient age" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#hasIncidentReportDate
+<https://zatopek73.github.io/PAC2_Ontology#hasIncidentReportDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://zatopek73.github.io/PAC2_Ontology#hasIncidentReportDate> <http://www.w3.org/2000/01/rdf-schema#domain> <https://zatopek73.github.io/PAC2_Ontology#Incident> .
+<https://zatopek73.github.io/PAC2_Ontology#hasIncidentReportDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://zatopek73.github.io/PAC2_Ontology#hasIncidentReportDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Date when the incident was reported. Aligned with dcterms:date." .
+<https://zatopek73.github.io/PAC2_Ontology#hasIncidentReportDate> <http://www.w3.org/2000/01/rdf-schema#label> "has incident report date" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#hasIntendedPurpose
+<https://zatopek73.github.io/PAC2_Ontology#hasIntendedPurpose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://zatopek73.github.io/PAC2_Ontology#hasIntendedPurpose> <http://www.w3.org/2000/01/rdf-schema#domain> <https://zatopek73.github.io/PAC2_Ontology#Device> .
+<https://zatopek73.github.io/PAC2_Ontology#hasIntendedPurpose> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://zatopek73.github.io/PAC2_Ontology#hasIntendedPurpose> <http://www.w3.org/2000/01/rdf-schema#comment> "Stores the purpose" .
+<https://zatopek73.github.io/PAC2_Ontology#hasIntendedPurpose> <http://www.w3.org/2000/01/rdf-schema#label> "has intended purpose" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#hasManufacturerAuthNumber
+<https://zatopek73.github.io/PAC2_Ontology#hasManufacturerAuthNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://zatopek73.github.io/PAC2_Ontology#hasManufacturerAuthNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <https://zatopek73.github.io/PAC2_Ontology#Manufacturer> .
+<https://zatopek73.github.io/PAC2_Ontology#hasManufacturerAuthNumber> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://zatopek73.github.io/PAC2_Ontology#hasManufacturerAuthNumber> <http://www.w3.org/2000/01/rdf-schema#comment> "Stores the manufacturer's authorization number." .
+<https://zatopek73.github.io/PAC2_Ontology#hasManufacturerAuthNumber> <http://www.w3.org/2000/01/rdf-schema#label> "has manufacturer auth number." .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#hasManufacturerCompetentAutority
+<https://zatopek73.github.io/PAC2_Ontology#hasManufacturerCompetentAutority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://zatopek73.github.io/PAC2_Ontology#hasManufacturerCompetentAutority> <http://www.w3.org/2000/01/rdf-schema#domain> <https://zatopek73.github.io/PAC2_Ontology#Manufacturer> .
+<https://zatopek73.github.io/PAC2_Ontology#hasManufacturerCompetentAutority> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://zatopek73.github.io/PAC2_Ontology#hasManufacturerCompetentAutority> <http://www.w3.org/2000/01/rdf-schema#comment> "Stores the manufacturer competent autority." .
+<https://zatopek73.github.io/PAC2_Ontology#hasManufacturerCompetentAutority> <http://www.w3.org/2000/01/rdf-schema#label> "has manufacturer competent autority" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#hasManufacturerEmail
+<https://zatopek73.github.io/PAC2_Ontology#hasManufacturerEmail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://zatopek73.github.io/PAC2_Ontology#hasManufacturerEmail> <http://www.w3.org/2000/01/rdf-schema#domain> <https://zatopek73.github.io/PAC2_Ontology#Manufacturer> .
+<https://zatopek73.github.io/PAC2_Ontology#hasManufacturerEmail> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://zatopek73.github.io/PAC2_Ontology#hasManufacturerEmail> <http://www.w3.org/2000/01/rdf-schema#comment> "Email address of the manufacturer. Conceptually aligned with foaf:mbox." .
+<https://zatopek73.github.io/PAC2_Ontology#hasManufacturerEmail> <http://www.w3.org/2000/01/rdf-schema#label> "has manufacturer email" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#hasManufacturerEudamedSn
+<https://zatopek73.github.io/PAC2_Ontology#hasManufacturerEudamedSn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://zatopek73.github.io/PAC2_Ontology#hasManufacturerEudamedSn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://zatopek73.github.io/PAC2_Ontology#Manufacturer> .
+<https://zatopek73.github.io/PAC2_Ontology#hasManufacturerEudamedSn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://zatopek73.github.io/PAC2_Ontology#hasManufacturerEudamedSn> <http://www.w3.org/2000/01/rdf-schema#comment> "Stores the Eudamed sn" .
+<https://zatopek73.github.io/PAC2_Ontology#hasManufacturerEudamedSn> <http://www.w3.org/2000/01/rdf-schema#label> "has manufacturer Eudamed sn" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#hasManufacturerId
+<https://zatopek73.github.io/PAC2_Ontology#hasManufacturerId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://zatopek73.github.io/PAC2_Ontology#hasManufacturerId> <http://www.w3.org/2000/01/rdf-schema#domain> <https://zatopek73.github.io/PAC2_Ontology#Manufacturer> .
+<https://zatopek73.github.io/PAC2_Ontology#hasManufacturerId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://zatopek73.github.io/PAC2_Ontology#hasManufacturerId> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifier of a manufacturer. Aligned with dcterms:identifier." .
+<https://zatopek73.github.io/PAC2_Ontology#hasManufacturerId> <http://www.w3.org/2000/01/rdf-schema#label> "has manufacturer id" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#hasManufacturerName
+<https://zatopek73.github.io/PAC2_Ontology#hasManufacturerName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://zatopek73.github.io/PAC2_Ontology#hasManufacturerName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://zatopek73.github.io/PAC2_Ontology#Manufacturer> .
+<https://zatopek73.github.io/PAC2_Ontology#hasManufacturerName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://zatopek73.github.io/PAC2_Ontology#hasManufacturerName> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of the manufacturer. Conceptually aligned with foaf:name." .
+<https://zatopek73.github.io/PAC2_Ontology#hasManufacturerName> <http://www.w3.org/2000/01/rdf-schema#label> "has manufacturer name" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#hasRiskDescription
+<https://zatopek73.github.io/PAC2_Ontology#hasRiskDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://zatopek73.github.io/PAC2_Ontology#hasRiskDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <https://zatopek73.github.io/PAC2_Ontology#Risk> .
+<https://zatopek73.github.io/PAC2_Ontology#hasRiskDescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://zatopek73.github.io/PAC2_Ontology#hasRiskDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "Textual description of a risk. Aligned with dcterms:description." .
+<https://zatopek73.github.io/PAC2_Ontology#hasRiskDescription> <http://www.w3.org/2000/01/rdf-schema#label> "has risk description" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#hasRiskId
+<https://zatopek73.github.io/PAC2_Ontology#hasRiskId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://zatopek73.github.io/PAC2_Ontology#hasRiskId> <http://www.w3.org/2000/01/rdf-schema#domain> <https://zatopek73.github.io/PAC2_Ontology#Risk> .
+<https://zatopek73.github.io/PAC2_Ontology#hasRiskId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://zatopek73.github.io/PAC2_Ontology#hasRiskId> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifier of a risk. Aligned with dcterms:identifier." .
+<https://zatopek73.github.io/PAC2_Ontology#hasRiskId> <http://www.w3.org/2000/01/rdf-schema#label> "has risk id" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#hasRiskImdrfCode
+<https://zatopek73.github.io/PAC2_Ontology#hasRiskImdrfCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://zatopek73.github.io/PAC2_Ontology#hasRiskImdrfCode> <http://www.w3.org/2000/01/rdf-schema#domain> <https://zatopek73.github.io/PAC2_Ontology#Risk> .
+<https://zatopek73.github.io/PAC2_Ontology#hasRiskImdrfCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://zatopek73.github.io/PAC2_Ontology#hasRiskImdrfCode> <http://www.w3.org/2000/01/rdf-schema#comment> "Stores the imdrf code." .
+<https://zatopek73.github.io/PAC2_Ontology#hasRiskImdrfCode> <http://www.w3.org/2000/01/rdf-schema#label> "has risk imdrf code" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#hasRiskName
+<https://zatopek73.github.io/PAC2_Ontology#hasRiskName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://zatopek73.github.io/PAC2_Ontology#hasRiskName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://zatopek73.github.io/PAC2_Ontology#Risk> .
+<https://zatopek73.github.io/PAC2_Ontology#hasRiskName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://zatopek73.github.io/PAC2_Ontology#hasRiskName> <http://www.w3.org/2000/01/rdf-schema#comment> "Stores the risk name." .
+<https://zatopek73.github.io/PAC2_Ontology#hasRiskName> <http://www.w3.org/2000/01/rdf-schema#label> "has risk name" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#hasRiskType
+<https://zatopek73.github.io/PAC2_Ontology#hasRiskType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://zatopek73.github.io/PAC2_Ontology#hasRiskType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://zatopek73.github.io/PAC2_Ontology#Risk> .
+<https://zatopek73.github.io/PAC2_Ontology#hasRiskType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://zatopek73.github.io/PAC2_Ontology#hasRiskType> <http://www.w3.org/2000/01/rdf-schema#comment> "Type of risk represented as a literal value. Not modelled as a separate ontology concept." .
+<https://zatopek73.github.io/PAC2_Ontology#hasRiskType> <http://www.w3.org/2000/01/rdf-schema#label> "has risk type" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#hasUdi_di
+<https://zatopek73.github.io/PAC2_Ontology#hasUdi_di> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://zatopek73.github.io/PAC2_Ontology#hasUdi_di> <http://www.w3.org/2000/01/rdf-schema#domain> <https://zatopek73.github.io/PAC2_Ontology#Device> .
+<https://zatopek73.github.io/PAC2_Ontology#hasUdi_di> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://zatopek73.github.io/PAC2_Ontology#hasUdi_di> <http://www.w3.org/2000/01/rdf-schema#comment> "Stores the udi_di reference" .
+<https://zatopek73.github.io/PAC2_Ontology#hasUdi_di> <http://www.w3.org/2000/01/rdf-schema#label> "has udi_di" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#isDeviceActive
+<https://zatopek73.github.io/PAC2_Ontology#isDeviceActive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://zatopek73.github.io/PAC2_Ontology#isDeviceActive> <http://www.w3.org/2000/01/rdf-schema#domain> <https://zatopek73.github.io/PAC2_Ontology#Device> .
+<https://zatopek73.github.io/PAC2_Ontology#isDeviceActive> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://zatopek73.github.io/PAC2_Ontology#isDeviceActive> <http://www.w3.org/2000/01/rdf-schema#comment> "store the device status" .
+<https://zatopek73.github.io/PAC2_Ontology#isDeviceActive> <http://www.w3.org/2000/01/rdf-schema#label> "is device active" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#isDeviceImplantable
+<https://zatopek73.github.io/PAC2_Ontology#isDeviceImplantable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://zatopek73.github.io/PAC2_Ontology#isDeviceImplantable> <http://www.w3.org/2000/01/rdf-schema#domain> <https://zatopek73.github.io/PAC2_Ontology#Device> .
+<https://zatopek73.github.io/PAC2_Ontology#isDeviceImplantable> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://zatopek73.github.io/PAC2_Ontology#isDeviceImplantable> <http://www.w3.org/2000/01/rdf-schema#comment> "store if the device is implantable or not." .
+<https://zatopek73.github.io/PAC2_Ontology#isDeviceImplantable> <http://www.w3.org/2000/01/rdf-schema#label> "is device implantable" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#isDeviceIvd
+<https://zatopek73.github.io/PAC2_Ontology#isDeviceIvd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://zatopek73.github.io/PAC2_Ontology#isDeviceIvd> <http://www.w3.org/2000/01/rdf-schema#domain> <https://zatopek73.github.io/PAC2_Ontology#Device> .
+<https://zatopek73.github.io/PAC2_Ontology#isDeviceIvd> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://zatopek73.github.io/PAC2_Ontology#isDeviceIvd> <http://www.w3.org/2000/01/rdf-schema#comment> "Stores if the device is Invitro Device or not" .
+<https://zatopek73.github.io/PAC2_Ontology#isDeviceIvd> <http://www.w3.org/2000/01/rdf-schema#label> "is device idv" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#isDeviceRegulatoryId
+<https://zatopek73.github.io/PAC2_Ontology#isDeviceRegulatoryId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://zatopek73.github.io/PAC2_Ontology#isDeviceRegulatoryId> <http://www.w3.org/2000/01/rdf-schema#domain> <https://zatopek73.github.io/PAC2_Ontology#Device> .
+<https://zatopek73.github.io/PAC2_Ontology#isDeviceRegulatoryId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://zatopek73.github.io/PAC2_Ontology#isDeviceRegulatoryId> <http://www.w3.org/2000/01/rdf-schema#comment> "The regulatory framework of the device (MDR or IVDR)" .
+<https://zatopek73.github.io/PAC2_Ontology#isDeviceRegulatoryId> <http://www.w3.org/2000/01/rdf-schema#label> "is device regulatory" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#isDeviceReusable
+<https://zatopek73.github.io/PAC2_Ontology#isDeviceReusable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://zatopek73.github.io/PAC2_Ontology#isDeviceReusable> <http://www.w3.org/2000/01/rdf-schema#domain> <https://zatopek73.github.io/PAC2_Ontology#Device> .
+<https://zatopek73.github.io/PAC2_Ontology#isDeviceReusable> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://zatopek73.github.io/PAC2_Ontology#isDeviceReusable> <http://www.w3.org/2000/01/rdf-schema#comment> "Stores if the device is reusable or not" .
+<https://zatopek73.github.io/PAC2_Ontology#isDeviceReusable> <http://www.w3.org/2000/01/rdf-schema#label> "is device reusable" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2003/11/swrl#AtomList
+<http://www.w3.org/2003/11/swrl#AtomList> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2003/11/swrl#AtomList> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a SWRL rule." .
+<http://www.w3.org/2003/11/swrl#AtomList> <http://www.w3.org/2000/01/rdf-schema#label> "SWRL Rule" .
+# 
+# http://www.w3.org/2003/11/swrl#ClassAtom
+<http://www.w3.org/2003/11/swrl#ClassAtom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2003/11/swrl#ClassAtom> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a SWRL rule." .
+<http://www.w3.org/2003/11/swrl#ClassAtom> <http://www.w3.org/2000/01/rdf-schema#label> "SWRL Rule" .
+# 
+# http://www.w3.org/2003/11/swrl#Imp
+<http://www.w3.org/2003/11/swrl#Imp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2003/11/swrl#Imp> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a SWRL rule." .
+<http://www.w3.org/2003/11/swrl#Imp> <http://www.w3.org/2000/01/rdf-schema#label> "SWRL Rule" .
+# 
+# http://www.w3.org/2003/11/swrl#IndividualPropertyAtom
+<http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a SWRL rule." .
+<http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> <http://www.w3.org/2000/01/rdf-schema#label> "SWRL Rule" .
+# 
+# http://www.w3.org/2003/11/swrl#Variable
+<http://www.w3.org/2003/11/swrl#Variable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2003/11/swrl#Variable> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a SWRL rule." .
+<http://www.w3.org/2003/11/swrl#Variable> <http://www.w3.org/2000/01/rdf-schema#label> "SWRL Rule" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#CorrectiveActionStatus
+<https://zatopek73.github.io/PAC2_Ontology#CorrectiveActionStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://zatopek73.github.io/PAC2_Ontology#CorrectiveActionStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "Class representing the status of a corrective action. Modelled as a controlled vocabulary." .
+<https://zatopek73.github.io/PAC2_Ontology#CorrectiveActionStatus> <http://www.w3.org/2000/01/rdf-schema#label> "Corrective status" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#CorrectiveActions
+<https://zatopek73.github.io/PAC2_Ontology#CorrectiveActions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://zatopek73.github.io/PAC2_Ontology#CorrectiveActions> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://zatopek73.github.io/PAC2_Ontology#Incident> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <https://zatopek73.github.io/PAC2_Ontology#isResponseTo> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://zatopek73.github.io/PAC2_Ontology#CorrectiveActions> <http://www.w3.org/2000/01/rdf-schema#comment> "Class representing corrective actions taken in response to incidents. Descriptions and dates are aligned with Dublin Core terms." .
+<https://zatopek73.github.io/PAC2_Ontology#CorrectiveActions> <http://www.w3.org/2000/01/rdf-schema#label> "Corrective Actions" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#Country
+<https://zatopek73.github.io/PAC2_Ontology#Country> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://zatopek73.github.io/PAC2_Ontology#Country> <http://www.w3.org/2000/01/rdf-schema#comment> "Class representing a country associated with reporting or manufacturer location. Conceptually aligned with EU controlled vocabularies for countries." .
+<https://zatopek73.github.io/PAC2_Ontology#Country> <http://www.w3.org/2000/01/rdf-schema#label> "Country" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#Device
+<https://zatopek73.github.io/PAC2_Ontology#Device> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://zatopek73.github.io/PAC2_Ontology#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://zatopek73.github.io/PAC2_Ontology#Manufacturer> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <https://zatopek73.github.io/PAC2_Ontology#hasManufacturedBy> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://zatopek73.github.io/PAC2_Ontology#Device> <http://www.w3.org/2000/01/rdf-schema#comment> "Class representing a medical device within the surveillance domain. Device identifiers are aligned with dcterms:identifier." .
+<https://zatopek73.github.io/PAC2_Ontology#Device> <http://www.w3.org/2000/01/rdf-schema#label> "Device" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#DeviceRiskClass
+<https://zatopek73.github.io/PAC2_Ontology#DeviceRiskClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://zatopek73.github.io/PAC2_Ontology#DeviceRiskClass> <http://www.w3.org/2000/01/rdf-schema#comment> "Class representing the regulatory risk classification of a device. Modelled as a controlled classification." .
+<https://zatopek73.github.io/PAC2_Ontology#DeviceRiskClass> <http://www.w3.org/2000/01/rdf-schema#label> "Device risk class" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#DeviceType
+<https://zatopek73.github.io/PAC2_Ontology#DeviceType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://zatopek73.github.io/PAC2_Ontology#DeviceType> <http://www.w3.org/2000/01/rdf-schema#comment> "Device type about interaction with patient (Active,Implantable,invitro,single use, etc.)" .
+<https://zatopek73.github.io/PAC2_Ontology#DeviceType> <http://www.w3.org/2000/01/rdf-schema#label> "Device type" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#Incident
+<https://zatopek73.github.io/PAC2_Ontology#Incident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://zatopek73.github.io/PAC2_Ontology#Incident> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://zatopek73.github.io/PAC2_Ontology#Device> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <https://zatopek73.github.io/PAC2_Ontology#isAboutDevice> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://zatopek73.github.io/PAC2_Ontology#Incident> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://zatopek73.github.io/PAC2_Ontology#Country> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <https://zatopek73.github.io/PAC2_Ontology#isReportedIn> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://zatopek73.github.io/PAC2_Ontology#Incident> <http://www.w3.org/2000/01/rdf-schema#comment> "Class representing an incident involving a medical device. Temporal properties are aligned with dcterms:date." .
+<https://zatopek73.github.io/PAC2_Ontology#Incident> <http://www.w3.org/2000/01/rdf-schema#label> "Incident" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#IncidentPatientSex
+<https://zatopek73.github.io/PAC2_Ontology#IncidentPatientSex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://zatopek73.github.io/PAC2_Ontology#IncidentPatientSex> <http://www.w3.org/2000/01/rdf-schema#comment> "Class representing the sex category of a patient involved in an incident. Modelled as a controlled vocabulary." .
+<https://zatopek73.github.io/PAC2_Ontology#IncidentPatientSex> <http://www.w3.org/2000/01/rdf-schema#label> "Incident patient sex" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#IncidentType
+<https://zatopek73.github.io/PAC2_Ontology#IncidentType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://zatopek73.github.io/PAC2_Ontology#IncidentType> <http://www.w3.org/2000/01/rdf-schema#comment> "Class representing the type of incident. Modelled as a controlled classification similar to skos:Concept." .
+<https://zatopek73.github.io/PAC2_Ontology#IncidentType> <http://www.w3.org/2000/01/rdf-schema#label> "Incident type" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#Manufacturer
+<https://zatopek73.github.io/PAC2_Ontology#Manufacturer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://zatopek73.github.io/PAC2_Ontology#Manufacturer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://zatopek73.github.io/PAC2_Ontology#Country> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <https://zatopek73.github.io/PAC2_Ontology#isBasedIn> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://zatopek73.github.io/PAC2_Ontology#Manufacturer> <http://www.w3.org/2000/01/rdf-schema#comment> "Class representing the manufacturer of a medical device. Conceptually aligned with foaf:Organization." .
+<https://zatopek73.github.io/PAC2_Ontology#Manufacturer> <http://www.w3.org/2000/01/rdf-schema#label> "Manufacturer" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#Risk
+<https://zatopek73.github.io/PAC2_Ontology#Risk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://zatopek73.github.io/PAC2_Ontology#Risk> <http://www.w3.org/2000/01/rdf-schema#comment> "Class representing a risk associated with a device or incident. Risk descriptions are aligned with dcterms:description." .
+<https://zatopek73.github.io/PAC2_Ontology#Risk> <http://www.w3.org/2000/01/rdf-schema#label> "Risk" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#RiskCategory
+<https://zatopek73.github.io/PAC2_Ontology#RiskCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://zatopek73.github.io/PAC2_Ontology#RiskCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "Class representing the category assigned to a risk. Conceptually aligned with skos:Concept for classification purposes." .
+<https://zatopek73.github.io/PAC2_Ontology#RiskCategory> <http://www.w3.org/2000/01/rdf-schema#label> "Risk Category" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://dbpedia.org/resource/Germany
+<https://dbpedia.org/resource/Germany> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://dbpedia.org/resource/Germany> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://zatopek73.github.io/PAC2_Ontology#Country> .
+<https://dbpedia.org/resource/Germany> <http://www.w3.org/2002/07/owl#sameAs> <https://zatopek73.github.io/PAC2_Ontology#Germany> .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#Germany
+# 
+# https://dbpedia.org/resource/Ireland
+<https://dbpedia.org/resource/Ireland> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://dbpedia.org/resource/Ireland> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://zatopek73.github.io/PAC2_Ontology#Country> .
+<https://dbpedia.org/resource/Ireland> <http://www.w3.org/2002/07/owl#sameAs> <https://zatopek73.github.io/PAC2_Ontology#Ireland> .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#Ireland
+# 
+# https://dbpedia.org/resource/Medtronic
+<https://dbpedia.org/resource/Medtronic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://dbpedia.org/resource/Medtronic> <http://www.w3.org/2000/01/rdf-schema#comment> "Medotronic manufacturer" .
+<https://dbpedia.org/resource/Medtronic> <http://www.w3.org/2000/01/rdf-schema#label> "Medtronic" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#ActiveDevice
+<https://zatopek73.github.io/PAC2_Ontology#ActiveDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://zatopek73.github.io/PAC2_Ontology#ActiveDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://zatopek73.github.io/PAC2_Ontology#DeviceType> .
+<https://zatopek73.github.io/PAC2_Ontology#ActiveDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "The device is active now." .
+<https://zatopek73.github.io/PAC2_Ontology#ActiveDevice> <http://www.w3.org/2000/01/rdf-schema#label> "Active device" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#ActiveImplant
+<https://zatopek73.github.io/PAC2_Ontology#ActiveImplant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://zatopek73.github.io/PAC2_Ontology#ActiveImplant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://zatopek73.github.io/PAC2_Ontology#DeviceType> .
+<https://zatopek73.github.io/PAC2_Ontology#ActiveImplant> <http://www.w3.org/2000/01/rdf-schema#comment> "The device status is active implant." .
+<https://zatopek73.github.io/PAC2_Ontology#ActiveImplant> <http://www.w3.org/2000/01/rdf-schema#label> "Active implant" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#ClassA
+<https://zatopek73.github.io/PAC2_Ontology#ClassA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://zatopek73.github.io/PAC2_Ontology#ClassA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://zatopek73.github.io/PAC2_Ontology#DeviceRiskClass> .
+<https://zatopek73.github.io/PAC2_Ontology#ClassA> <http://www.w3.org/2000/01/rdf-schema#comment> "Class by the IVDR (EU 2017/746)" .
+<https://zatopek73.github.io/PAC2_Ontology#ClassA> <http://www.w3.org/2000/01/rdf-schema#label> "Class A" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#ClassB
+<https://zatopek73.github.io/PAC2_Ontology#ClassB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://zatopek73.github.io/PAC2_Ontology#ClassB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://zatopek73.github.io/PAC2_Ontology#DeviceRiskClass> .
+<https://zatopek73.github.io/PAC2_Ontology#ClassB> <http://www.w3.org/2000/01/rdf-schema#comment> "Class by the IVDR (EU 2017/746)" .
+<https://zatopek73.github.io/PAC2_Ontology#ClassB> <http://www.w3.org/2000/01/rdf-schema#label> "Class B" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#ClassC
+<https://zatopek73.github.io/PAC2_Ontology#ClassC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://zatopek73.github.io/PAC2_Ontology#ClassC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://zatopek73.github.io/PAC2_Ontology#DeviceRiskClass> .
+<https://zatopek73.github.io/PAC2_Ontology#ClassC> <http://www.w3.org/2000/01/rdf-schema#comment> "Class by the IVDR (EU 2017/746)" .
+<https://zatopek73.github.io/PAC2_Ontology#ClassC> <http://www.w3.org/2000/01/rdf-schema#label> "Class C" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#ClassD
+<https://zatopek73.github.io/PAC2_Ontology#ClassD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://zatopek73.github.io/PAC2_Ontology#ClassD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://zatopek73.github.io/PAC2_Ontology#DeviceRiskClass> .
+<https://zatopek73.github.io/PAC2_Ontology#ClassD> <http://www.w3.org/2000/01/rdf-schema#comment> "Class by the IVDR (EU 2017/746)" .
+<https://zatopek73.github.io/PAC2_Ontology#ClassD> <http://www.w3.org/2000/01/rdf-schema#label> "Class D" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#ClassIII
+<https://zatopek73.github.io/PAC2_Ontology#ClassIII> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://zatopek73.github.io/PAC2_Ontology#ClassIII> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://zatopek73.github.io/PAC2_Ontology#DeviceRiskClass> .
+<https://zatopek73.github.io/PAC2_Ontology#ClassIII> <http://www.w3.org/2000/01/rdf-schema#comment> "Class by the MDR (EU 2017/745)" .
+<https://zatopek73.github.io/PAC2_Ontology#ClassIII> <http://www.w3.org/2000/01/rdf-schema#label> "Class III" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#ClassIIa
+<https://zatopek73.github.io/PAC2_Ontology#ClassIIa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://zatopek73.github.io/PAC2_Ontology#ClassIIa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://zatopek73.github.io/PAC2_Ontology#DeviceRiskClass> .
+<https://zatopek73.github.io/PAC2_Ontology#ClassIIa> <http://www.w3.org/2000/01/rdf-schema#comment> "Class by the MDR (EU 2017/745)" .
+<https://zatopek73.github.io/PAC2_Ontology#ClassIIa> <http://www.w3.org/2000/01/rdf-schema#label> "Class IIa" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#ClassIIb
+<https://zatopek73.github.io/PAC2_Ontology#ClassIIb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://zatopek73.github.io/PAC2_Ontology#ClassIIb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://zatopek73.github.io/PAC2_Ontology#DeviceRiskClass> .
+<https://zatopek73.github.io/PAC2_Ontology#ClassIIb> <http://www.w3.org/2000/01/rdf-schema#comment> "Class by the MDR (EU 2017/745)" .
+<https://zatopek73.github.io/PAC2_Ontology#ClassIIb> <http://www.w3.org/2000/01/rdf-schema#label> "Class IIb" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#Closed
+<https://zatopek73.github.io/PAC2_Ontology#Closed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://zatopek73.github.io/PAC2_Ontology#Closed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://zatopek73.github.io/PAC2_Ontology#CorrectiveActionStatus> .
+<https://zatopek73.github.io/PAC2_Ontology#Closed> <http://www.w3.org/2000/01/rdf-schema#comment> "Corrective action closed" .
+<https://zatopek73.github.io/PAC2_Ontology#Closed> <http://www.w3.org/2000/01/rdf-schema#label> "Closed" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#DEV_001
+<https://zatopek73.github.io/PAC2_Ontology#DEV_001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://zatopek73.github.io/PAC2_Ontology#DEV_001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://zatopek73.github.io/PAC2_Ontology#Device> .
+<https://zatopek73.github.io/PAC2_Ontology#DEV_001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid6 .
+_:genid6 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://zatopek73.github.io/PAC2_Ontology#Manufacturer> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <https://zatopek73.github.io/PAC2_Ontology#hasManufacturedBy> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://zatopek73.github.io/PAC2_Ontology#DEV_001> <https://zatopek73.github.io/PAC2_Ontology#hasAssociatedRisk> <https://zatopek73.github.io/PAC2_Ontology#RSK_003> .
+<https://zatopek73.github.io/PAC2_Ontology#DEV_001> <https://zatopek73.github.io/PAC2_Ontology#hasDeviceRiskClass> <https://zatopek73.github.io/PAC2_Ontology#ClassIII> .
+<https://zatopek73.github.io/PAC2_Ontology#DEV_001> <https://zatopek73.github.io/PAC2_Ontology#hasDeviceType> <https://zatopek73.github.io/PAC2_Ontology#ImplantableActiveDevice> .
+<https://zatopek73.github.io/PAC2_Ontology#DEV_001> <https://zatopek73.github.io/PAC2_Ontology#hasManufacturedBy> <https://zatopek73.github.io/PAC2_Ontology#MAN_001> .
+<https://zatopek73.github.io/PAC2_Ontology#DEV_001> <https://zatopek73.github.io/PAC2_Ontology#hasDeviceId> "DEV-001" .
+<https://zatopek73.github.io/PAC2_Ontology#DEV_001> <https://zatopek73.github.io/PAC2_Ontology#hasDeviceName> "HeartMate 3 LVAD" .
+<https://zatopek73.github.io/PAC2_Ontology#DEV_001> <https://zatopek73.github.io/PAC2_Ontology#hasIntendedPurpose> "Ventricular assist device for end-stage heart failure" .
+<https://zatopek73.github.io/PAC2_Ontology#DEV_001> <https://zatopek73.github.io/PAC2_Ontology#hasUdi_di> "(01)00380740009095" .
+<https://zatopek73.github.io/PAC2_Ontology#DEV_001> <https://zatopek73.github.io/PAC2_Ontology#isDeviceActive> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<https://zatopek73.github.io/PAC2_Ontology#DEV_001> <https://zatopek73.github.io/PAC2_Ontology#isDeviceImplantable> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<https://zatopek73.github.io/PAC2_Ontology#DEV_001> <https://zatopek73.github.io/PAC2_Ontology#isDeviceIvd> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<https://zatopek73.github.io/PAC2_Ontology#DEV_001> <https://zatopek73.github.io/PAC2_Ontology#isDeviceRegulatoryId> "MDR" .
+<https://zatopek73.github.io/PAC2_Ontology#DEV_001> <https://zatopek73.github.io/PAC2_Ontology#isDeviceReusable> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<https://zatopek73.github.io/PAC2_Ontology#DEV_001> <http://www.w3.org/2000/01/rdf-schema#comment> "The DEV001 Device." .
+<https://zatopek73.github.io/PAC2_Ontology#DEV_001> <http://www.w3.org/2000/01/rdf-schema#label> "DEV 001" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#DeviceFailure
+<https://zatopek73.github.io/PAC2_Ontology#DeviceFailure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://zatopek73.github.io/PAC2_Ontology#DeviceFailure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://zatopek73.github.io/PAC2_Ontology#RiskCategory> .
+<https://zatopek73.github.io/PAC2_Ontology#DeviceFailure> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk category referring to failures of the device." .
+<https://zatopek73.github.io/PAC2_Ontology#DeviceFailure> <http://www.w3.org/2000/01/rdf-schema#label> "Device Failure" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#DevicePerformance
+<https://zatopek73.github.io/PAC2_Ontology#DevicePerformance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://zatopek73.github.io/PAC2_Ontology#DevicePerformance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://zatopek73.github.io/PAC2_Ontology#RiskCategory> .
+<https://zatopek73.github.io/PAC2_Ontology#DevicePerformance> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk category to performance of the device" .
+<https://zatopek73.github.io/PAC2_Ontology#DevicePerformance> <http://www.w3.org/2000/01/rdf-schema#label> "Device Performance" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#DeviceSafety
+<https://zatopek73.github.io/PAC2_Ontology#DeviceSafety> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://zatopek73.github.io/PAC2_Ontology#DeviceSafety> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://zatopek73.github.io/PAC2_Ontology#RiskCategory> .
+<https://zatopek73.github.io/PAC2_Ontology#DeviceSafety> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk category referring to safety situation of the device" .
+<https://zatopek73.github.io/PAC2_Ontology#DeviceSafety> <http://www.w3.org/2000/01/rdf-schema#label> "Device Safety" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#DiagnosticError
+<https://zatopek73.github.io/PAC2_Ontology#DiagnosticError> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://zatopek73.github.io/PAC2_Ontology#DiagnosticError> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://zatopek73.github.io/PAC2_Ontology#RiskCategory> .
+<https://zatopek73.github.io/PAC2_Ontology#DiagnosticError> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk category referring to errors in diagnostics by the device" .
+<https://zatopek73.github.io/PAC2_Ontology#DiagnosticError> <http://www.w3.org/2000/01/rdf-schema#label> "Diagnostic Error" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#FSCA_001
+<https://zatopek73.github.io/PAC2_Ontology#FSCA_001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://zatopek73.github.io/PAC2_Ontology#FSCA_001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://zatopek73.github.io/PAC2_Ontology#CorrectiveActions> .
+<https://zatopek73.github.io/PAC2_Ontology#FSCA_001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://zatopek73.github.io/PAC2_Ontology#Incident> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <https://zatopek73.github.io/PAC2_Ontology#isResponseTo> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://zatopek73.github.io/PAC2_Ontology#FSCA_001> <https://zatopek73.github.io/PAC2_Ontology#hasCorrectiveActionStatus> <https://zatopek73.github.io/PAC2_Ontology#Open> .
+<https://zatopek73.github.io/PAC2_Ontology#FSCA_001> <https://zatopek73.github.io/PAC2_Ontology#isResponseTo> <https://zatopek73.github.io/PAC2_Ontology#INC_001> .
+<https://zatopek73.github.io/PAC2_Ontology#FSCA_001> <https://zatopek73.github.io/PAC2_Ontology#hasActionCountriesAffected> "EU-wide" .
+<https://zatopek73.github.io/PAC2_Ontology#FSCA_001> <https://zatopek73.github.io/PAC2_Ontology#hasActionDate> "2024-02-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://zatopek73.github.io/PAC2_Ontology#FSCA_001> <https://zatopek73.github.io/PAC2_Ontology#hasActionDescription> "Safety alert issued to all implanting centres regarding anticoagulation protocol update for HeartMate 3 to reduce device thrombosis risk. INR target range revised to 2.0–3.0." .
+<https://zatopek73.github.io/PAC2_Ontology#FSCA_001> <https://zatopek73.github.io/PAC2_Ontology#hasActionDevicesAffected> "850"^^<http://www.w3.org/2001/XMLSchema#int> .
+<https://zatopek73.github.io/PAC2_Ontology#FSCA_001> <https://zatopek73.github.io/PAC2_Ontology#hasActionEudamedFscaRef> "EU-FSCA-2024-000001" .
+<https://zatopek73.github.io/PAC2_Ontology#FSCA_001> <https://zatopek73.github.io/PAC2_Ontology#hasActionFscaId> "FSCA-001" .
+<https://zatopek73.github.io/PAC2_Ontology#FSCA_001> <https://zatopek73.github.io/PAC2_Ontology#hasActionType> "SafetyAlert" .
+<https://zatopek73.github.io/PAC2_Ontology#FSCA_001> <http://www.w3.org/2000/01/rdf-schema#comment> "The FSCA 001 corrective action." .
+<https://zatopek73.github.io/PAC2_Ontology#FSCA_001> <http://www.w3.org/2000/01/rdf-schema#label> "FSCA 001" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#Female
+<https://zatopek73.github.io/PAC2_Ontology#Female> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://zatopek73.github.io/PAC2_Ontology#Female> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://zatopek73.github.io/PAC2_Ontology#IncidentPatientSex> .
+<https://zatopek73.github.io/PAC2_Ontology#Female> <http://www.w3.org/2000/01/rdf-schema#comment> "Sex indicate Female" .
+<https://zatopek73.github.io/PAC2_Ontology#Female> <http://www.w3.org/2000/01/rdf-schema#label> "Female" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#Germany
+<https://zatopek73.github.io/PAC2_Ontology#Germany> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://zatopek73.github.io/PAC2_Ontology#Germany> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://zatopek73.github.io/PAC2_Ontology#Country> .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#INC_001
+<https://zatopek73.github.io/PAC2_Ontology#INC_001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://zatopek73.github.io/PAC2_Ontology#INC_001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://zatopek73.github.io/PAC2_Ontology#Incident> .
+<https://zatopek73.github.io/PAC2_Ontology#INC_001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid8 .
+_:genid8 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://zatopek73.github.io/PAC2_Ontology#Device> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <https://zatopek73.github.io/PAC2_Ontology#isAboutDevice> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://zatopek73.github.io/PAC2_Ontology#INC_001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid9 .
+_:genid9 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://zatopek73.github.io/PAC2_Ontology#Country> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <https://zatopek73.github.io/PAC2_Ontology#isReportedIn> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://zatopek73.github.io/PAC2_Ontology#INC_001> <https://zatopek73.github.io/PAC2_Ontology#hasIncidentPatientSex> <https://zatopek73.github.io/PAC2_Ontology#Male> .
+<https://zatopek73.github.io/PAC2_Ontology#INC_001> <https://zatopek73.github.io/PAC2_Ontology#hasIncidentType> <https://zatopek73.github.io/PAC2_Ontology#SeriousIncident> .
+<https://zatopek73.github.io/PAC2_Ontology#INC_001> <https://zatopek73.github.io/PAC2_Ontology#isAboutDevice> <https://zatopek73.github.io/PAC2_Ontology#DEV_001> .
+<https://zatopek73.github.io/PAC2_Ontology#INC_001> <https://zatopek73.github.io/PAC2_Ontology#isAboutRisk> <https://zatopek73.github.io/PAC2_Ontology#RSK_003> .
+<https://zatopek73.github.io/PAC2_Ontology#INC_001> <https://zatopek73.github.io/PAC2_Ontology#isReportedBy> <https://zatopek73.github.io/PAC2_Ontology#MAN_001> .
+<https://zatopek73.github.io/PAC2_Ontology#INC_001> <https://zatopek73.github.io/PAC2_Ontology#isReportedIn> <https://dbpedia.org/resource/Germany> .
+<https://zatopek73.github.io/PAC2_Ontology#INC_001> <https://zatopek73.github.io/PAC2_Ontology#isReportedIn> <https://zatopek73.github.io/PAC2_Ontology#Germany> .
+<https://zatopek73.github.io/PAC2_Ontology#INC_001> <https://zatopek73.github.io/PAC2_Ontology#hasCorrectiveActionTaken> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<https://zatopek73.github.io/PAC2_Ontology#INC_001> <https://zatopek73.github.io/PAC2_Ontology#hasIncidentDescription> "Patient implanted with HeartMate 3 LVAD developed ischemic stroke 6 months post-implant. Device thrombus confirmed by echocardiography." .
+<https://zatopek73.github.io/PAC2_Ontology#INC_001> <https://zatopek73.github.io/PAC2_Ontology#hasIncidentDetectionDate> "2024-01-10T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://zatopek73.github.io/PAC2_Ontology#INC_001> <https://zatopek73.github.io/PAC2_Ontology#hasIncidentEudamedNum> "EU-INC-2024-000001" .
+<https://zatopek73.github.io/PAC2_Ontology#INC_001> <https://zatopek73.github.io/PAC2_Ontology#hasIncidentId> "INC-001" .
+<https://zatopek73.github.io/PAC2_Ontology#INC_001> <https://zatopek73.github.io/PAC2_Ontology#hasIncidentOutcome> "Serious patient injury - embolic stroke" .
+<https://zatopek73.github.io/PAC2_Ontology#INC_001> <https://zatopek73.github.io/PAC2_Ontology#hasIncidentPatientAge> "58"^^<http://www.w3.org/2001/XMLSchema#int> .
+<https://zatopek73.github.io/PAC2_Ontology#INC_001> <https://zatopek73.github.io/PAC2_Ontology#hasIncidentReportDate> "2024-01-15T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://zatopek73.github.io/PAC2_Ontology#INC_001> <http://www.w3.org/2000/01/rdf-schema#comment> "The INC 001 incident" .
+<https://zatopek73.github.io/PAC2_Ontology#INC_001> <http://www.w3.org/2000/01/rdf-schema#label> "INC 001" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#ImplantableActiveDevice
+<https://zatopek73.github.io/PAC2_Ontology#ImplantableActiveDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://zatopek73.github.io/PAC2_Ontology#ImplantableActiveDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://zatopek73.github.io/PAC2_Ontology#DeviceType> .
+<https://zatopek73.github.io/PAC2_Ontology#ImplantableActiveDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "The device status is active implantable." .
+<https://zatopek73.github.io/PAC2_Ontology#ImplantableActiveDevice> <http://www.w3.org/2000/01/rdf-schema#label> "Implantable active device" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#ImplantableDevice
+<https://zatopek73.github.io/PAC2_Ontology#ImplantableDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://zatopek73.github.io/PAC2_Ontology#ImplantableDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://zatopek73.github.io/PAC2_Ontology#DeviceType> .
+<https://zatopek73.github.io/PAC2_Ontology#ImplantableDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "The device status is implantable." .
+<https://zatopek73.github.io/PAC2_Ontology#ImplantableDevice> <http://www.w3.org/2000/01/rdf-schema#label> "Implantable device" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#InVitroDiagnosticDevice
+<https://zatopek73.github.io/PAC2_Ontology#InVitroDiagnosticDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://zatopek73.github.io/PAC2_Ontology#InVitroDiagnosticDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://zatopek73.github.io/PAC2_Ontology#DeviceType> .
+<https://zatopek73.github.io/PAC2_Ontology#InVitroDiagnosticDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "The device status is invitro diagnostic." .
+<https://zatopek73.github.io/PAC2_Ontology#InVitroDiagnosticDevice> <http://www.w3.org/2000/01/rdf-schema#label> "Invitro diagnostic device" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#Ireland
+<https://zatopek73.github.io/PAC2_Ontology#Ireland> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://zatopek73.github.io/PAC2_Ontology#Ireland> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://zatopek73.github.io/PAC2_Ontology#Country> .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#MAN_001
+<https://zatopek73.github.io/PAC2_Ontology#MAN_001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://zatopek73.github.io/PAC2_Ontology#MAN_001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://zatopek73.github.io/PAC2_Ontology#Manufacturer> .
+<https://zatopek73.github.io/PAC2_Ontology#MAN_001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid10 .
+_:genid10 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://zatopek73.github.io/PAC2_Ontology#Country> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <https://zatopek73.github.io/PAC2_Ontology#isBasedIn> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://zatopek73.github.io/PAC2_Ontology#MAN_001> <https://zatopek73.github.io/PAC2_Ontology#hasManufacturerAuthNumber> "IE/2017/001234" .
+<https://zatopek73.github.io/PAC2_Ontology#MAN_001> <https://zatopek73.github.io/PAC2_Ontology#hasManufacturerCompetentAutority> "Health Products Regulatory Authority (HPRA)" .
+<https://zatopek73.github.io/PAC2_Ontology#MAN_001> <https://zatopek73.github.io/PAC2_Ontology#hasManufacturerEmail> "regulatory@medtronic.com" .
+<https://zatopek73.github.io/PAC2_Ontology#MAN_001> <https://zatopek73.github.io/PAC2_Ontology#hasManufacturerEudamedSn> "SRN-IE-MED-0001" .
+<https://zatopek73.github.io/PAC2_Ontology#MAN_001> <https://zatopek73.github.io/PAC2_Ontology#hasManufacturerId> "MAN-001" .
+<https://zatopek73.github.io/PAC2_Ontology#MAN_001> <https://zatopek73.github.io/PAC2_Ontology#hasManufacturerName> "Medtronic plc" .
+<https://zatopek73.github.io/PAC2_Ontology#MAN_001> <http://www.w3.org/2000/01/rdf-schema#comment> "The MAN 001 Manufacturer." .
+<https://zatopek73.github.io/PAC2_Ontology#MAN_001> <http://www.w3.org/2000/01/rdf-schema#label> "MAN 001" .
+<https://zatopek73.github.io/PAC2_Ontology#MAN_001> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://dbpedia.org/resource/Medtronic" .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NegativePropertyAssertion> .
+_:genid11 <http://www.w3.org/2002/07/owl#sourceIndividual> <https://zatopek73.github.io/PAC2_Ontology#MAN_001> .
+_:genid11 <http://www.w3.org/2002/07/owl#assertionProperty> <https://zatopek73.github.io/PAC2_Ontology#isBasedIn> .
+_:genid11 <http://www.w3.org/2002/07/owl#targetIndividual> <https://zatopek73.github.io/PAC2_Ontology#Ireland> .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#Male
+<https://zatopek73.github.io/PAC2_Ontology#Male> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://zatopek73.github.io/PAC2_Ontology#Male> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://zatopek73.github.io/PAC2_Ontology#IncidentPatientSex> .
+<https://zatopek73.github.io/PAC2_Ontology#Male> <http://www.w3.org/2000/01/rdf-schema#comment> "Sex indicate Male" .
+<https://zatopek73.github.io/PAC2_Ontology#Male> <http://www.w3.org/2000/01/rdf-schema#label> "Male" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#NearMissIncident
+<https://zatopek73.github.io/PAC2_Ontology#NearMissIncident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://zatopek73.github.io/PAC2_Ontology#NearMissIncident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://zatopek73.github.io/PAC2_Ontology#IncidentType> .
+<https://zatopek73.github.io/PAC2_Ontology#NearMissIncident> <http://www.w3.org/2000/01/rdf-schema#comment> "Incident type representing a near miss event." .
+<https://zatopek73.github.io/PAC2_Ontology#NearMissIncident> <http://www.w3.org/2000/01/rdf-schema#label> "Near Miss Incident" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#Open
+<https://zatopek73.github.io/PAC2_Ontology#Open> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://zatopek73.github.io/PAC2_Ontology#Open> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://zatopek73.github.io/PAC2_Ontology#CorrectiveActionStatus> .
+<https://zatopek73.github.io/PAC2_Ontology#Open> <http://www.w3.org/2000/01/rdf-schema#comment> "Corrective action open" .
+<https://zatopek73.github.io/PAC2_Ontology#Open> <http://www.w3.org/2000/01/rdf-schema#label> "Open" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#PatientHarm
+<https://zatopek73.github.io/PAC2_Ontology#PatientHarm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://zatopek73.github.io/PAC2_Ontology#PatientHarm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://zatopek73.github.io/PAC2_Ontology#RiskCategory> .
+<https://zatopek73.github.io/PAC2_Ontology#PatientHarm> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk category referring to any patient harm produced" .
+<https://zatopek73.github.io/PAC2_Ontology#PatientHarm> <http://www.w3.org/2000/01/rdf-schema#label> "Patient Harm" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#ProductQuality
+<https://zatopek73.github.io/PAC2_Ontology#ProductQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://zatopek73.github.io/PAC2_Ontology#ProductQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://zatopek73.github.io/PAC2_Ontology#RiskCategory> .
+<https://zatopek73.github.io/PAC2_Ontology#ProductQuality> <http://www.w3.org/2000/01/rdf-schema#comment> "Risk category referring to any product quality defect." .
+<https://zatopek73.github.io/PAC2_Ontology#ProductQuality> <http://www.w3.org/2000/01/rdf-schema#label> "Product Quality" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#RSK_003
+<https://zatopek73.github.io/PAC2_Ontology#RSK_003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://zatopek73.github.io/PAC2_Ontology#RSK_003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://zatopek73.github.io/PAC2_Ontology#Risk> .
+<https://zatopek73.github.io/PAC2_Ontology#RSK_003> <https://zatopek73.github.io/PAC2_Ontology#affectsDeviceType> <https://zatopek73.github.io/PAC2_Ontology#ImplantableActiveDevice> .
+<https://zatopek73.github.io/PAC2_Ontology#RSK_003> <https://zatopek73.github.io/PAC2_Ontology#hasRiskCategory> <https://zatopek73.github.io/PAC2_Ontology#PatientHarm> .
+<https://zatopek73.github.io/PAC2_Ontology#RSK_003> <https://zatopek73.github.io/PAC2_Ontology#hasRiskDescription> "Thrombus formation on device surface causing embolic events" .
+<https://zatopek73.github.io/PAC2_Ontology#RSK_003> <https://zatopek73.github.io/PAC2_Ontology#hasRiskId> "RSK-003" .
+<https://zatopek73.github.io/PAC2_Ontology#RSK_003> <https://zatopek73.github.io/PAC2_Ontology#hasRiskImdrfCode> "A0201" .
+<https://zatopek73.github.io/PAC2_Ontology#RSK_003> <https://zatopek73.github.io/PAC2_Ontology#hasRiskName> "Thrombosis - device-related" .
+<https://zatopek73.github.io/PAC2_Ontology#RSK_003> <https://zatopek73.github.io/PAC2_Ontology#hasRiskType> "InjuryRisk" .
+<https://zatopek73.github.io/PAC2_Ontology#RSK_003> <http://www.w3.org/2000/01/rdf-schema#comment> "The RSK 003 risk." .
+<https://zatopek73.github.io/PAC2_Ontology#RSK_003> <http://www.w3.org/2000/01/rdf-schema#label> "RSK 003" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#SeriousIncident
+<https://zatopek73.github.io/PAC2_Ontology#SeriousIncident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://zatopek73.github.io/PAC2_Ontology#SeriousIncident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://zatopek73.github.io/PAC2_Ontology#IncidentType> .
+<https://zatopek73.github.io/PAC2_Ontology#SeriousIncident> <http://www.w3.org/2000/01/rdf-schema#comment> "Incident type representing a serious reportable incident." .
+<https://zatopek73.github.io/PAC2_Ontology#SeriousIncident> <http://www.w3.org/2000/01/rdf-schema#label> "Serious Incident" .
+# 
+# https://zatopek73.github.io/PAC2_Ontology#N/A
+<https://zatopek73.github.io/PAC2_Ontology#N/A> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://zatopek73.github.io/PAC2_Ontology#N/A> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://zatopek73.github.io/PAC2_Ontology#IncidentPatientSex> .
+<https://zatopek73.github.io/PAC2_Ontology#N/A> <http://www.w3.org/2000/01/rdf-schema#comment> "Not indicate sex" .
+<https://zatopek73.github.io/PAC2_Ontology#N/A> <http://www.w3.org/2000/01/rdf-schema#label> "N/A" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid12 <http://www.w3.org/2002/07/owl#members> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://zatopek73.github.io/PAC2_Ontology#RiskCategory> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://zatopek73.github.io/PAC2_Ontology#Risk> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://zatopek73.github.io/PAC2_Ontology#Manufacturer> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://zatopek73.github.io/PAC2_Ontology#IncidentType> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://zatopek73.github.io/PAC2_Ontology#IncidentPatientSex> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://zatopek73.github.io/PAC2_Ontology#Incident> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://zatopek73.github.io/PAC2_Ontology#DeviceType> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://zatopek73.github.io/PAC2_Ontology#DeviceRiskClass> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://zatopek73.github.io/PAC2_Ontology#Device> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://zatopek73.github.io/PAC2_Ontology#Country> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://zatopek73.github.io/PAC2_Ontology#CorrectiveActions> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://zatopek73.github.io/PAC2_Ontology#CorrectiveActionStatus> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Rules
+# #
+# #################################################################
+# 
+# 
+<https://zatopek73.github.io/PAC2_Ontology#/i> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<https://zatopek73.github.io/PAC2_Ontology#/d> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<https://zatopek73.github.io/PAC2_Ontology#/m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<https://zatopek73.github.io/PAC2_Ontology#/r> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<https://zatopek73.github.io/PAC2_Ontology#/c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<https://zatopek73.github.io/PAC2_Ontology#/dt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+_:genid25 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid25 <http://www.w3.org/2000/01/rdf-schema#comment> "Infers the reporting manufacturer of an incident based on the device manufacturer." .
+_:genid25 <http://www.w3.org/2000/01/rdf-schema#label> "S2" .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid25 <http://www.w3.org/2003/11/swrl#body> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid27 .
+_:genid27 <http://www.w3.org/2003/11/swrl#argument2> <https://zatopek73.github.io/PAC2_Ontology#/m> .
+_:genid27 <http://www.w3.org/2003/11/swrl#argument1> <https://zatopek73.github.io/PAC2_Ontology#/d> .
+_:genid27 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://zatopek73.github.io/PAC2_Ontology#hasManufacturedBy> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid29 .
+_:genid29 <http://www.w3.org/2003/11/swrl#argument2> <https://zatopek73.github.io/PAC2_Ontology#/d> .
+_:genid29 <http://www.w3.org/2003/11/swrl#argument1> <https://zatopek73.github.io/PAC2_Ontology#/i> .
+_:genid29 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://zatopek73.github.io/PAC2_Ontology#isAboutDevice> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid31 .
+_:genid31 <http://www.w3.org/2003/11/swrl#argument1> <https://zatopek73.github.io/PAC2_Ontology#/i> .
+_:genid31 <http://www.w3.org/2003/11/swrl#classPredicate> <https://zatopek73.github.io/PAC2_Ontology#Incident> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid25 <http://www.w3.org/2003/11/swrl#head> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid33 .
+_:genid33 <http://www.w3.org/2003/11/swrl#argument2> <https://zatopek73.github.io/PAC2_Ontology#/m> .
+_:genid33 <http://www.w3.org/2003/11/swrl#argument1> <https://zatopek73.github.io/PAC2_Ontology#/i> .
+_:genid33 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://zatopek73.github.io/PAC2_Ontology#isReportedBy> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid34 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid34 <http://www.w3.org/2000/01/rdf-schema#comment> "Infers the risk associated with an incident based on the risks of the involved device." .
+_:genid34 <http://www.w3.org/2000/01/rdf-schema#label> "S1" .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid34 <http://www.w3.org/2003/11/swrl#body> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid36 .
+_:genid36 <http://www.w3.org/2003/11/swrl#argument2> <https://zatopek73.github.io/PAC2_Ontology#/r> .
+_:genid36 <http://www.w3.org/2003/11/swrl#argument1> <https://zatopek73.github.io/PAC2_Ontology#/d> .
+_:genid36 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://zatopek73.github.io/PAC2_Ontology#hasAssociatedRisk> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid38 .
+_:genid38 <http://www.w3.org/2003/11/swrl#argument2> <https://zatopek73.github.io/PAC2_Ontology#/d> .
+_:genid38 <http://www.w3.org/2003/11/swrl#argument1> <https://zatopek73.github.io/PAC2_Ontology#/i> .
+_:genid38 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://zatopek73.github.io/PAC2_Ontology#isAboutDevice> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid40 .
+_:genid40 <http://www.w3.org/2003/11/swrl#argument1> <https://zatopek73.github.io/PAC2_Ontology#/i> .
+_:genid40 <http://www.w3.org/2003/11/swrl#classPredicate> <https://zatopek73.github.io/PAC2_Ontology#Incident> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid34 <http://www.w3.org/2003/11/swrl#head> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid42 .
+_:genid42 <http://www.w3.org/2003/11/swrl#argument2> <https://zatopek73.github.io/PAC2_Ontology#/r> .
+_:genid42 <http://www.w3.org/2003/11/swrl#argument1> <https://zatopek73.github.io/PAC2_Ontology#/i> .
+_:genid42 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://zatopek73.github.io/PAC2_Ontology#isAboutRisk> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid43 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid43 <http://www.w3.org/2000/01/rdf-schema#comment> "Infers the reporting country of an incident from the manufacturer's location." .
+_:genid43 <http://www.w3.org/2000/01/rdf-schema#label> "S3" .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid43 <http://www.w3.org/2003/11/swrl#body> _:genid48 .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid45 .
+_:genid45 <http://www.w3.org/2003/11/swrl#argument2> <https://zatopek73.github.io/PAC2_Ontology#/c> .
+_:genid45 <http://www.w3.org/2003/11/swrl#argument1> <https://zatopek73.github.io/PAC2_Ontology#/m> .
+_:genid45 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://zatopek73.github.io/PAC2_Ontology#isBasedIn> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid47 .
+_:genid47 <http://www.w3.org/2003/11/swrl#argument2> <https://zatopek73.github.io/PAC2_Ontology#/m> .
+_:genid47 <http://www.w3.org/2003/11/swrl#argument1> <https://zatopek73.github.io/PAC2_Ontology#/i> .
+_:genid47 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://zatopek73.github.io/PAC2_Ontology#isReportedBy> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid49 .
+_:genid49 <http://www.w3.org/2003/11/swrl#argument1> <https://zatopek73.github.io/PAC2_Ontology#/i> .
+_:genid49 <http://www.w3.org/2003/11/swrl#classPredicate> <https://zatopek73.github.io/PAC2_Ontology#Incident> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid43 <http://www.w3.org/2003/11/swrl#head> _:genid50 .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid51 .
+_:genid51 <http://www.w3.org/2003/11/swrl#argument2> <https://zatopek73.github.io/PAC2_Ontology#/c> .
+_:genid51 <http://www.w3.org/2003/11/swrl#argument1> <https://zatopek73.github.io/PAC2_Ontology#/i> .
+_:genid51 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://zatopek73.github.io/PAC2_Ontology#isReportedIn> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid52 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid52 <http://www.w3.org/2000/01/rdf-schema#comment> "Infers the risks associated with a device based on its device type." .
+_:genid52 <http://www.w3.org/2000/01/rdf-schema#label> "S4" .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid52 <http://www.w3.org/2003/11/swrl#body> _:genid59 .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid57 .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid55 .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid53 .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid54 .
+_:genid54 <http://www.w3.org/2003/11/swrl#argument2> <https://zatopek73.github.io/PAC2_Ontology#/dt> .
+_:genid54 <http://www.w3.org/2003/11/swrl#argument1> <https://zatopek73.github.io/PAC2_Ontology#/d> .
+_:genid54 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://zatopek73.github.io/PAC2_Ontology#hasDeviceType> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid56 .
+_:genid56 <http://www.w3.org/2003/11/swrl#argument1> <https://zatopek73.github.io/PAC2_Ontology#/d> .
+_:genid56 <http://www.w3.org/2003/11/swrl#classPredicate> <https://zatopek73.github.io/PAC2_Ontology#Device> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid58 .
+_:genid58 <http://www.w3.org/2003/11/swrl#argument2> <https://zatopek73.github.io/PAC2_Ontology#/dt> .
+_:genid58 <http://www.w3.org/2003/11/swrl#argument1> <https://zatopek73.github.io/PAC2_Ontology#/r> .
+_:genid58 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://zatopek73.github.io/PAC2_Ontology#affectsDeviceType> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid60 .
+_:genid60 <http://www.w3.org/2003/11/swrl#argument1> <https://zatopek73.github.io/PAC2_Ontology#/r> .
+_:genid60 <http://www.w3.org/2003/11/swrl#classPredicate> <https://zatopek73.github.io/PAC2_Ontology#Risk> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid52 <http://www.w3.org/2003/11/swrl#head> _:genid61 .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid62 .
+_:genid62 <http://www.w3.org/2003/11/swrl#argument2> <https://zatopek73.github.io/PAC2_Ontology#/r> .
+_:genid62 <http://www.w3.org/2003/11/swrl#argument1> <https://zatopek73.github.io/PAC2_Ontology#/d> .
+_:genid62 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://zatopek73.github.io/PAC2_Ontology#hasAssociatedRisk> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

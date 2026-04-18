@@ -1,0 +1,2565 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://www.w3.org/2003/11/swrl", "https://zatopek73.github.io/PAC2_Ontology" ],
+    "title" : {
+      "undefined" : "European Medical Device Ontology (MDR-IVDR)"
+    },
+    "iri" : "https://zatopek73.github.io/PAC2_Ontology",
+    "version" : "1.0.0",
+    "author" : [ "Pablo Parrado Gamito" ],
+    "description" : {
+      "undefined" : "It is intended to formalize and categorize knowledge about the European catalog of high-risk medical devices and in vitro diagnostic devices according to their MDR (EU 2017/745) and IVDR (EU 2017/746) regulatory frameworks. The objective of this ontology is to structure and relate the information coming from the EUDAMED public repository covering the entire regulated part of the life cycle of the devices (Manufacturing, risk classification according to regulations and monitoring of their service (incidents and corrective actions)."
+    },
+    "labels" : {
+      "undefined" : "European Medical Device Ontology (MDR-IVDR)."
+    },
+    "other" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Pablo Parrado Gamito",
+        "type" : "label"
+      } ],
+      "references" : [ {
+        "identifier" : "references",
+        "language" : "undefined",
+        "value" : "Dataset provided in the assignment (dades.xlsx)\nDBpedia (https://dbpedia.org)\nLinked Open Vocabularies (https://lov.linkeddata.es)\nEU Vocabularies (https://op.europa.eu)",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2026-04-17T00:00:00",
+        "type" : "label"
+      } ],
+      "source" : [ {
+        "identifier" : "source",
+        "language" : "undefined",
+        "value" : "Dataset provided in the assignment (PAC2_Data.zip).\nhttps://dbpedia.org\nhttps://lov.linkeddata\nhttps://op.europa.eu",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.0.0",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "European Medical Device Ontology (MDR-IVDR)",
+        "type" : "label"
+      } ],
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/",
+        "type" : "label"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Pablo Parrado Gamito",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "pac2",
+        "type" : "label"
+      } ],
+      "publisher" : [ {
+        "identifier" : "publisher",
+        "language" : "undefined",
+        "value" : "Pablo Parrado Gamito (UOC)",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://zatopek73.github.io/PAC2_Ontology#",
+        "type" : "label"
+      } ],
+      "bibliographicCitation" : [ {
+        "identifier" : "bibliographicCitation",
+        "language" : "undefined",
+        "value" : "Parrado Gamito, P. (2026). European Medical Device Ontology (MDR-IVDR), version 1.0.0. https://zatopek73.github.io/PAC2_Ontology/",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2026-04-17T00:00:00",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "4",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "44",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "47",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "48",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "67",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "72",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "73",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "77",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "80",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "98",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "62",
+    "type" : "owl:Class"
+  }, {
+    "id" : "112",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "113",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "115",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "146",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "121",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "46",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "50",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "149",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "101",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "134",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "69",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "165",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "66",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "64",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "85",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "95",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "52",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "171",
+    "type" : "owl:Class"
+  }, {
+    "id" : "172",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "10",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "128",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "131",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "82",
+    "type" : "rdfs:Datatype"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom",
+    "baseIri" : "http://www.w3.org/2003/11/swrl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IndividualPropertyAtom",
+      "undefined" : "SWRL Rule"
+    },
+    "comment" : {
+      "undefined" : "Represents a SWRL rule."
+    },
+    "attributes" : [ "external" ],
+    "id" : "25"
+  }, {
+    "iri" : "https://zatopek73.github.io/PAC2_Ontology#Manufacturer",
+    "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Manufacturer",
+      "undefined" : "Manufacturer"
+    },
+    "individuals" : [ {
+      "iri" : "https://zatopek73.github.io/PAC2_Ontology#MAN_001",
+      "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+      "annotations" : {
+        "seeAlso" : [ {
+          "identifier" : "seeAlso",
+          "language" : "undefined",
+          "value" : "https://dbpedia.org/resource/Medtronic",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "undefined" : "The MAN 001 Manufacturer."
+      },
+      "labels" : {
+        "IRI-based" : "MAN_001",
+        "undefined" : "MAN 001"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Class representing the manufacturer of a medical device. Conceptually aligned with foaf:Organization."
+    },
+    "id" : "30"
+  }, {
+    "iri" : "https://zatopek73.github.io/PAC2_Ontology#Device",
+    "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Device",
+      "undefined" : "Device"
+    },
+    "individuals" : [ {
+      "iri" : "https://zatopek73.github.io/PAC2_Ontology#DEV_001",
+      "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+      "comment" : {
+        "undefined" : "The DEV001 Device."
+      },
+      "labels" : {
+        "IRI-based" : "DEV_001",
+        "undefined" : "DEV 001"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Class representing a medical device within the surveillance domain. Device identifiers are aligned with dcterms:identifier."
+    },
+    "id" : "1"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "42",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "43",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "4",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "44",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "47",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "48",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "https://zatopek73.github.io/PAC2_Ontology#DeviceType",
+    "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DeviceType",
+      "undefined" : "Device type"
+    },
+    "individuals" : [ {
+      "iri" : "https://zatopek73.github.io/PAC2_Ontology#ImplantableActiveDevice",
+      "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+      "comment" : {
+        "undefined" : "The device status is active implantable."
+      },
+      "labels" : {
+        "IRI-based" : "ImplantableActiveDevice",
+        "undefined" : "Implantable active device"
+      }
+    }, {
+      "iri" : "https://zatopek73.github.io/PAC2_Ontology#ActiveImplant",
+      "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+      "comment" : {
+        "undefined" : "The device status is active implant."
+      },
+      "labels" : {
+        "IRI-based" : "ActiveImplant",
+        "undefined" : "Active implant"
+      }
+    }, {
+      "iri" : "https://zatopek73.github.io/PAC2_Ontology#ActiveDevice",
+      "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+      "comment" : {
+        "undefined" : "The device is active now."
+      },
+      "labels" : {
+        "IRI-based" : "ActiveDevice",
+        "undefined" : "Active device"
+      }
+    }, {
+      "iri" : "https://zatopek73.github.io/PAC2_Ontology#InVitroDiagnosticDevice",
+      "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+      "comment" : {
+        "undefined" : "The device status is invitro diagnostic."
+      },
+      "labels" : {
+        "IRI-based" : "InVitroDiagnosticDevice",
+        "undefined" : "Invitro diagnostic device"
+      }
+    }, {
+      "iri" : "https://zatopek73.github.io/PAC2_Ontology#ImplantableDevice",
+      "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+      "comment" : {
+        "undefined" : "The device status is implantable."
+      },
+      "labels" : {
+        "IRI-based" : "ImplantableDevice",
+        "undefined" : "Implantable device"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Device type about interaction with patient (Active,Implantable,invitro,single use, etc.)"
+    },
+    "id" : "36"
+  }, {
+    "iri" : "https://zatopek73.github.io/PAC2_Ontology#DeviceRiskClass",
+    "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DeviceRiskClass",
+      "undefined" : "Device risk class"
+    },
+    "individuals" : [ {
+      "iri" : "https://zatopek73.github.io/PAC2_Ontology#ClassB",
+      "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+      "comment" : {
+        "undefined" : "Class by the IVDR (EU 2017/746)"
+      },
+      "labels" : {
+        "IRI-based" : "ClassB",
+        "undefined" : "Class B"
+      }
+    }, {
+      "iri" : "https://zatopek73.github.io/PAC2_Ontology#ClassC",
+      "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+      "comment" : {
+        "undefined" : "Class by the IVDR (EU 2017/746)"
+      },
+      "labels" : {
+        "IRI-based" : "ClassC",
+        "undefined" : "Class C"
+      }
+    }, {
+      "iri" : "https://zatopek73.github.io/PAC2_Ontology#ClassA",
+      "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+      "comment" : {
+        "undefined" : "Class by the IVDR (EU 2017/746)"
+      },
+      "labels" : {
+        "IRI-based" : "ClassA",
+        "undefined" : "Class A"
+      }
+    }, {
+      "iri" : "https://zatopek73.github.io/PAC2_Ontology#ClassD",
+      "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+      "comment" : {
+        "undefined" : "Class by the IVDR (EU 2017/746)"
+      },
+      "labels" : {
+        "IRI-based" : "ClassD",
+        "undefined" : "Class D"
+      }
+    }, {
+      "iri" : "https://zatopek73.github.io/PAC2_Ontology#ClassIII",
+      "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+      "comment" : {
+        "undefined" : "Class by the MDR (EU 2017/745)"
+      },
+      "labels" : {
+        "IRI-based" : "ClassIII",
+        "undefined" : "Class III"
+      }
+    }, {
+      "iri" : "https://zatopek73.github.io/PAC2_Ontology#ClassIIb",
+      "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+      "comment" : {
+        "undefined" : "Class by the MDR (EU 2017/745)"
+      },
+      "labels" : {
+        "IRI-based" : "ClassIIb",
+        "undefined" : "Class IIb"
+      }
+    }, {
+      "iri" : "https://zatopek73.github.io/PAC2_Ontology#ClassIIa",
+      "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+      "comment" : {
+        "undefined" : "Class by the MDR (EU 2017/745)"
+      },
+      "labels" : {
+        "IRI-based" : "ClassIIa",
+        "undefined" : "Class IIa"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Class representing the regulatory risk classification of a device. Modelled as a controlled classification."
+    },
+    "id" : "2"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "15",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "67",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "72",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "73",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2003/11/swrl#Variable",
+    "baseIri" : "http://www.w3.org/2003/11/swrl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Variable",
+      "undefined" : "SWRL Rule"
+    },
+    "comment" : {
+      "undefined" : "Represents a SWRL rule."
+    },
+    "attributes" : [ "external" ],
+    "id" : "77"
+  }, {
+    "iri" : "https://zatopek73.github.io/PAC2_Ontology#CorrectiveActions",
+    "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CorrectiveActions",
+      "undefined" : "Corrective Actions"
+    },
+    "individuals" : [ {
+      "iri" : "https://zatopek73.github.io/PAC2_Ontology#FSCA_001",
+      "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+      "comment" : {
+        "undefined" : "The FSCA 001 corrective action."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA_001",
+        "undefined" : "FSCA 001"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Class representing corrective actions taken in response to incidents. Descriptions and dates are aligned with Dublin Core terms."
+    },
+    "id" : "9"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "80",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "98",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://zatopek73.github.io/PAC2_Ontology#CorrectiveActionStatus",
+    "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CorrectiveActionStatus",
+      "undefined" : "Corrective status"
+    },
+    "individuals" : [ {
+      "iri" : "https://zatopek73.github.io/PAC2_Ontology#Open",
+      "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+      "comment" : {
+        "undefined" : "Corrective action open"
+      },
+      "labels" : {
+        "IRI-based" : "Open",
+        "undefined" : "Open"
+      }
+    }, {
+      "iri" : "https://zatopek73.github.io/PAC2_Ontology#Closed",
+      "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+      "comment" : {
+        "undefined" : "Corrective action closed"
+      },
+      "labels" : {
+        "IRI-based" : "Closed",
+        "undefined" : "Closed"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Class representing the status of a corrective action. Modelled as a controlled vocabulary."
+    },
+    "id" : "62"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "112",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "113",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2003/11/swrl#ClassAtom",
+    "baseIri" : "http://www.w3.org/2003/11/swrl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ClassAtom",
+      "undefined" : "SWRL Rule"
+    },
+    "comment" : {
+      "undefined" : "Represents a SWRL rule."
+    },
+    "attributes" : [ "external" ],
+    "id" : "115"
+  }, {
+    "iri" : "https://zatopek73.github.io/PAC2_Ontology#Country",
+    "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Country",
+      "undefined" : "Country"
+    },
+    "individuals" : [ {
+      "iri" : "https://zatopek73.github.io/PAC2_Ontology#Germany",
+      "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+      "labels" : {
+        "IRI-based" : "Germany"
+      }
+    }, {
+      "iri" : "https://zatopek73.github.io/PAC2_Ontology#Ireland",
+      "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+      "labels" : {
+        "IRI-based" : "Ireland"
+      }
+    }, {
+      "iri" : "https://dbpedia.org/resource/Germany",
+      "baseIri" : "https://dbpedia.org/resource",
+      "labels" : {
+        "IRI-based" : "Germany"
+      }
+    }, {
+      "iri" : "https://dbpedia.org/resource/Ireland",
+      "baseIri" : "https://dbpedia.org/resource",
+      "labels" : {
+        "IRI-based" : "Ireland"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Class representing a country associated with reporting or manufacturer location. Conceptually aligned with EU controlled vocabularies for countries."
+    },
+    "id" : "17"
+  }, {
+    "iri" : "https://zatopek73.github.io/PAC2_Ontology#IncidentType",
+    "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IncidentType",
+      "undefined" : "Incident type"
+    },
+    "individuals" : [ {
+      "iri" : "https://zatopek73.github.io/PAC2_Ontology#SeriousIncident",
+      "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+      "comment" : {
+        "undefined" : "Incident type representing a serious reportable incident."
+      },
+      "labels" : {
+        "IRI-based" : "SeriousIncident",
+        "undefined" : "Serious Incident"
+      }
+    }, {
+      "iri" : "https://zatopek73.github.io/PAC2_Ontology#NearMissIncident",
+      "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+      "comment" : {
+        "undefined" : "Incident type representing a near miss event."
+      },
+      "labels" : {
+        "IRI-based" : "NearMissIncident",
+        "undefined" : "Near Miss Incident"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Class representing the type of incident. Modelled as a controlled classification similar to skos:Concept."
+    },
+    "id" : "21"
+  }, {
+    "iri" : "https://zatopek73.github.io/PAC2_Ontology#RiskCategory",
+    "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RiskCategory",
+      "undefined" : "Risk Category"
+    },
+    "individuals" : [ {
+      "iri" : "https://zatopek73.github.io/PAC2_Ontology#DevicePerformance",
+      "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+      "comment" : {
+        "undefined" : "Risk category to performance of the device"
+      },
+      "labels" : {
+        "IRI-based" : "DevicePerformance",
+        "undefined" : "Device Performance"
+      }
+    }, {
+      "iri" : "https://zatopek73.github.io/PAC2_Ontology#DeviceFailure",
+      "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+      "comment" : {
+        "undefined" : "Risk category referring to failures of the device."
+      },
+      "labels" : {
+        "IRI-based" : "DeviceFailure",
+        "undefined" : "Device Failure"
+      }
+    }, {
+      "iri" : "https://zatopek73.github.io/PAC2_Ontology#ProductQuality",
+      "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+      "comment" : {
+        "undefined" : "Risk category referring to any product quality defect."
+      },
+      "labels" : {
+        "IRI-based" : "ProductQuality",
+        "undefined" : "Product Quality"
+      }
+    }, {
+      "iri" : "https://zatopek73.github.io/PAC2_Ontology#PatientHarm",
+      "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+      "comment" : {
+        "undefined" : "Risk category referring to any patient harm produced"
+      },
+      "labels" : {
+        "IRI-based" : "PatientHarm",
+        "undefined" : "Patient Harm"
+      }
+    }, {
+      "iri" : "https://zatopek73.github.io/PAC2_Ontology#DeviceSafety",
+      "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+      "comment" : {
+        "undefined" : "Risk category referring to safety situation of the device"
+      },
+      "labels" : {
+        "IRI-based" : "DeviceSafety",
+        "undefined" : "Device Safety"
+      }
+    }, {
+      "iri" : "https://zatopek73.github.io/PAC2_Ontology#DiagnosticError",
+      "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+      "comment" : {
+        "undefined" : "Risk category referring to errors in diagnostics by the device"
+      },
+      "labels" : {
+        "IRI-based" : "DiagnosticError",
+        "undefined" : "Diagnostic Error"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Class representing the category assigned to a risk. Conceptually aligned with skos:Concept for classification purposes."
+    },
+    "id" : "18"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "146",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "121",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://zatopek73.github.io/PAC2_Ontology#Risk",
+    "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Risk",
+      "undefined" : "Risk"
+    },
+    "individuals" : [ {
+      "iri" : "https://zatopek73.github.io/PAC2_Ontology#RSK_003",
+      "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+      "comment" : {
+        "undefined" : "The RSK 003 risk."
+      },
+      "labels" : {
+        "IRI-based" : "RSK_003",
+        "undefined" : "RSK 003"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Class representing a risk associated with a device or incident. Risk descriptions are aligned with dcterms:description."
+    },
+    "id" : "14"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "28",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "46",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "50",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "149",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "101",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "134",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "69",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "165",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "24",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "66",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "64",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://zatopek73.github.io/PAC2_Ontology#Incident",
+    "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Incident",
+      "undefined" : "Incident"
+    },
+    "individuals" : [ {
+      "iri" : "https://zatopek73.github.io/PAC2_Ontology#INC_001",
+      "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+      "comment" : {
+        "undefined" : "The INC 001 incident"
+      },
+      "labels" : {
+        "IRI-based" : "INC_001",
+        "undefined" : "INC 001"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Class representing an incident involving a medical device. Temporal properties are aligned with dcterms:date."
+    },
+    "id" : "6"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "85",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "95",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "12",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "52",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2003/11/swrl#AtomList",
+    "baseIri" : "http://www.w3.org/2003/11/swrl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AtomList",
+      "undefined" : "SWRL Rule"
+    },
+    "comment" : {
+      "undefined" : "Represents a SWRL rule."
+    },
+    "attributes" : [ "external" ],
+    "id" : "171"
+  }, {
+    "iri" : "http://www.w3.org/2003/11/swrl#Imp",
+    "baseIri" : "http://www.w3.org/2003/11/swrl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Imp",
+      "undefined" : "SWRL Rule"
+    },
+    "comment" : {
+      "undefined" : "Represents a SWRL rule."
+    },
+    "attributes" : [ "external" ],
+    "id" : "172"
+  }, {
+    "iri" : "https://zatopek73.github.io/PAC2_Ontology#IncidentPatientSex",
+    "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IncidentPatientSex",
+      "undefined" : "Incident patient sex"
+    },
+    "individuals" : [ {
+      "iri" : "https://zatopek73.github.io/PAC2_Ontology#N/A",
+      "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+      "comment" : {
+        "undefined" : "Not indicate sex"
+      },
+      "labels" : {
+        "IRI-based" : "N/A",
+        "undefined" : "N/A"
+      }
+    }, {
+      "iri" : "https://zatopek73.github.io/PAC2_Ontology#Female",
+      "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+      "comment" : {
+        "undefined" : "Sex indicate Female"
+      },
+      "labels" : {
+        "IRI-based" : "Female",
+        "undefined" : "Female"
+      }
+    }, {
+      "iri" : "https://zatopek73.github.io/PAC2_Ontology#Male",
+      "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+      "comment" : {
+        "undefined" : "Sex indicate Male"
+      },
+      "labels" : {
+        "IRI-based" : "Male",
+        "undefined" : "Male"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Class representing the sex category of a patient involved in an incident. Modelled as a controlled vocabulary."
+    },
+    "id" : "7"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "41",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "10",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "128",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "131",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "82",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "3",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "5",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "8",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "11",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "13",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "16",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "19",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "20",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "22",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "23",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "26",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "27",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "29",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "31",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "32",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "33",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "34",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "35",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "37",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "38",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "39",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "40",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "45",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "49",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "51",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "53",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "54",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "55",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "56",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "57",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "58",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "59",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "60",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "61",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "63",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "65",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "68",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "70",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "71",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "74",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "75",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "76",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "78",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "79",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "81",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "83",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "84",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "86",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "87",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "88",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "89",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "90",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "91",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "92",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "93",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "94",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "96",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "97",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "99",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "100",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "102",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "103",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "104",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "105",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "106",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "107",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "108",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "109",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "110",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "111",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "114",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "116",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "117",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "118",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "119",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "120",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "122",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "123",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "124",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "125",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "126",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "127",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "129",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "130",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "132",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "133",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "135",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "136",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "137",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "138",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "139",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "140",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "141",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "142",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "143",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "144",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "145",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "147",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "148",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "150",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "151",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "152",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "153",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "154",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "155",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "156",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "157",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "158",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "159",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "160",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "161",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "162",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "163",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "164",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "166",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "167",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "168",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "169",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "170",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "173",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "174",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "175",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "0"
+  }, {
+    "iri" : "https://zatopek73.github.io/PAC2_Ontology#isDeviceImplantable",
+    "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "isDeviceImplantable",
+      "undefined" : "is device implantable"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "store if the device is implantable or not."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "3"
+  }, {
+    "iri" : "https://zatopek73.github.io/PAC2_Ontology#hasIncidentPatientSex",
+    "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hasIncidentPatientSex",
+      "undefined" : "has incident patient sex"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "Relates an incident to the patient's sex category, represented as a controlled vocabulary."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "5"
+  }, {
+    "iri" : "https://zatopek73.github.io/PAC2_Ontology#hasActionFscaId",
+    "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "hasActionFscaId",
+      "undefined" : "has action FscaId"
+    },
+    "domain" : "9",
+    "comment" : {
+      "undefined" : "Identifier of a corrective action. Aligned with dcterms:identifier."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "8"
+  }, {
+    "iri" : "https://zatopek73.github.io/PAC2_Ontology#hasDeviceName",
+    "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "hasDeviceName",
+      "undefined" : "device name"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Name of the device. Similar to rdfs:label."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "11"
+  }, {
+    "iri" : "https://zatopek73.github.io/PAC2_Ontology#hasRiskImdrfCode",
+    "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "hasRiskImdrfCode",
+      "undefined" : "has risk imdrf code"
+    },
+    "domain" : "14",
+    "comment" : {
+      "undefined" : "Stores the imdrf code."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "13"
+  }, {
+    "range" : "18",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "16"
+  }, {
+    "range" : "14",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "19"
+  }, {
+    "iri" : "https://zatopek73.github.io/PAC2_Ontology#hasIncidentType",
+    "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "hasIncidentType",
+      "undefined" : "has incident type"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "Relates an incident to its type, modelled as a controlled classification."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "20"
+  }, {
+    "range" : "7",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "22"
+  }, {
+    "iri" : "https://zatopek73.github.io/PAC2_Ontology#hasIncidentReportDate",
+    "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "hasIncidentReportDate",
+      "undefined" : "has incident report date"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "Date when the incident was reported. Aligned with dcterms:date."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "23"
+  }, {
+    "range" : "6",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "26"
+  }, {
+    "iri" : "https://zatopek73.github.io/PAC2_Ontology#hasRiskDescription",
+    "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "hasRiskDescription",
+      "undefined" : "has risk description"
+    },
+    "domain" : "14",
+    "comment" : {
+      "undefined" : "Textual description of a risk. Aligned with dcterms:description."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "27"
+  }, {
+    "range" : "30",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "29"
+  }, {
+    "iri" : "https://zatopek73.github.io/PAC2_Ontology#isAboutRisk",
+    "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "isAboutRisk",
+      "undefined" : "is about risk"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "Relates an incident to the associated risk. Each incident is linked to exactly one risk."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "31"
+  }, {
+    "range" : "21",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "32"
+  }, {
+    "range" : "1",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "33"
+  }, {
+    "range" : "18",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "34"
+  }, {
+    "range" : "36",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "35"
+  }, {
+    "iri" : "https://zatopek73.github.io/PAC2_Ontology#hasRiskCategory",
+    "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "hasRiskCategory",
+      "undefined" : "has risk category"
+    },
+    "domain" : "14",
+    "comment" : {
+      "undefined" : "Relates a risk to its category. This classification is aligned with controlled vocabularies similar to skos:Concept."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "37"
+  }, {
+    "iri" : "https://zatopek73.github.io/PAC2_Ontology#causesRisk",
+    "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "causesRisk",
+      "undefined" : "causes risk"
+    },
+    "domain" : "14",
+    "comment" : {
+      "undefined" : "Relates a risk to another risk that it causes. This property is transitive."
+    },
+    "attributes" : [ "object", "transitive" ],
+    "id" : "38"
+  }, {
+    "range" : "2",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "39"
+  }, {
+    "iri" : "https://zatopek73.github.io/PAC2_Ontology#hasCorrectiveActionTaken",
+    "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+    "range" : "41",
+    "label" : {
+      "IRI-based" : "hasCorrectiveActionTaken",
+      "undefined" : "is corrective action taken"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "Indicates whether a corrective action was taken for the incident."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "40"
+  }, {
+    "iri" : "https://zatopek73.github.io/PAC2_Ontology#hasManufacturerName",
+    "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+    "range" : "46",
+    "label" : {
+      "IRI-based" : "hasManufacturerName",
+      "undefined" : "has manufacturer name"
+    },
+    "domain" : "30",
+    "comment" : {
+      "undefined" : "Name of the manufacturer. Conceptually aligned with foaf:name."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "45"
+  }, {
+    "iri" : "https://zatopek73.github.io/PAC2_Ontology#hasManufacturerAuthNumber",
+    "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+    "range" : "50",
+    "label" : {
+      "IRI-based" : "hasManufacturerAuthNumber",
+      "undefined" : "has manufacturer auth number."
+    },
+    "domain" : "30",
+    "comment" : {
+      "undefined" : "Stores the manufacturer's authorization number."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "49"
+  }, {
+    "iri" : "https://zatopek73.github.io/PAC2_Ontology#hasDeviceId",
+    "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+    "range" : "52",
+    "label" : {
+      "IRI-based" : "hasDeviceId",
+      "undefined" : "has device id"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Identifier of a device. Aligned with dcterms:identifier."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "51"
+  }, {
+    "range" : "30",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "53"
+  }, {
+    "iri" : "https://zatopek73.github.io/PAC2_Ontology#isReportedIn",
+    "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "isReportedIn",
+      "undefined" : "is reported in"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "Relates an incident to the country where it is reported. Each incident is associated with exactly one country."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "54"
+  }, {
+    "range" : "21",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "55"
+  }, {
+    "range" : "14",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "56"
+  }, {
+    "range" : "36",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "57"
+  }, {
+    "range" : "2",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "58"
+  }, {
+    "range" : "7",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "59"
+  }, {
+    "range" : "6",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "60"
+  }, {
+    "range" : "18",
+    "domain" : "62",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "61"
+  }, {
+    "iri" : "https://zatopek73.github.io/PAC2_Ontology#hasIncidentDescription",
+    "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+    "range" : "64",
+    "label" : {
+      "IRI-based" : "hasIncidentDescription",
+      "undefined" : "has incident description"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "Textual description of an incident. Aligned with dcterms:description."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "63"
+  }, {
+    "iri" : "https://zatopek73.github.io/PAC2_Ontology#hasIncidentDetectionDate",
+    "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+    "range" : "66",
+    "label" : {
+      "IRI-based" : "hasIncidentDetectionDate",
+      "undefined" : "has incident detection date"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "Date when the incident was detected. Aligned with dcterms:date."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "65"
+  }, {
+    "iri" : "https://zatopek73.github.io/PAC2_Ontology#hasIncidentOutcome",
+    "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+    "range" : "69",
+    "label" : {
+      "IRI-based" : "hasIncidentOutcome",
+      "undefined" : "incident outcome"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "Outcome of the incident as a descriptive value."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "68"
+  }, {
+    "range" : "1",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "70"
+  }, {
+    "range" : "17",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "71"
+  }, {
+    "range" : "18",
+    "domain" : "36",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "74"
+  }, {
+    "range" : "21",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "75"
+  }, {
+    "range" : "7",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "76"
+  }, {
+    "iri" : "https://zatopek73.github.io/PAC2_Ontology#hasDeviceType",
+    "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+    "range" : "36",
+    "label" : {
+      "IRI-based" : "hasDeviceType",
+      "undefined" : "has device type"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Relates a device to its device type. This classification enables linking devices with risks."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "78"
+  }, {
+    "iri" : "https://zatopek73.github.io/PAC2_Ontology#hasActionDate",
+    "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+    "range" : "80",
+    "label" : {
+      "IRI-based" : "hasActionDate",
+      "undefined" : "has action date"
+    },
+    "domain" : "9",
+    "comment" : {
+      "undefined" : "Date when the corrective action was initiated. Aligned with dcterms:date."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "79"
+  }, {
+    "iri" : "https://zatopek73.github.io/PAC2_Ontology#hasActionType",
+    "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+    "range" : "82",
+    "label" : {
+      "IRI-based" : "hasActionType",
+      "undefined" : "has action type"
+    },
+    "domain" : "9",
+    "comment" : {
+      "undefined" : "Stores the type of corrective action type"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "81"
+  }, {
+    "iri" : "https://zatopek73.github.io/PAC2_Ontology#isDeviceIvd",
+    "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+    "range" : "44",
+    "label" : {
+      "IRI-based" : "isDeviceIvd",
+      "undefined" : "is device idv"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Stores if the device is Invitro Device or not"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "83"
+  }, {
+    "iri" : "https://zatopek73.github.io/PAC2_Ontology#hasIncidentId",
+    "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+    "range" : "85",
+    "label" : {
+      "IRI-based" : "hasIncidentId",
+      "undefined" : "has incident id"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "Identifier of an incident. Aligned with dcterms:identifier."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "84"
+  }, {
+    "range" : "21",
+    "domain" : "36",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "86"
+  }, {
+    "range" : "7",
+    "domain" : "36",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "87"
+  }, {
+    "range" : "14",
+    "domain" : "36",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "88"
+  }, {
+    "range" : "30",
+    "domain" : "36",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "89"
+  }, {
+    "range" : "14",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "90"
+  }, {
+    "range" : "30",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "91"
+  }, {
+    "range" : "6",
+    "domain" : "36",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "92"
+  }, {
+    "range" : "18",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "93"
+  }, {
+    "iri" : "https://zatopek73.github.io/PAC2_Ontology#hasIncidentEudamedNum",
+    "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+    "range" : "95",
+    "label" : {
+      "IRI-based" : "hasIncidentEudamedNum",
+      "undefined" : "has incident Eudamed num"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "Stores the Eudamed incident num."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "94"
+  }, {
+    "range" : "21",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "96"
+  }, {
+    "iri" : "https://zatopek73.github.io/PAC2_Ontology#hasActionCountriesAffected",
+    "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+    "range" : "98",
+    "label" : {
+      "IRI-based" : "hasActionCountriesAffected",
+      "undefined" : "has action countries affected"
+    },
+    "domain" : "9",
+    "comment" : {
+      "undefined" : "Group of countries affected by the corrective action, represented as a group value."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "97"
+  }, {
+    "range" : "7",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "99"
+  }, {
+    "iri" : "https://zatopek73.github.io/PAC2_Ontology#hasManufacturerCompetentAutority",
+    "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+    "range" : "101",
+    "label" : {
+      "IRI-based" : "hasManufacturerCompetentAutority",
+      "undefined" : "has manufacturer competent autority"
+    },
+    "domain" : "30",
+    "comment" : {
+      "undefined" : "Stores the manufacturer competent autority."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "100"
+  }, {
+    "range" : "6",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "102"
+  }, {
+    "range" : "14",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "103"
+  }, {
+    "range" : "30",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "104"
+  }, {
+    "range" : "36",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "105"
+  }, {
+    "range" : "18",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "106"
+  }, {
+    "range" : "6",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "107"
+  }, {
+    "iri" : "https://zatopek73.github.io/PAC2_Ontology#hasManufacturedBy",
+    "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+    "range" : "30",
+    "label" : {
+      "IRI-based" : "hasManufacturedBy",
+      "undefined" : "has manufactured by"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Relates a device to its manufacturer. Each device is associated with exactly one manufacturer."
+    },
+    "attributes" : [ "object" ],
+    "id" : "108"
+  }, {
+    "range" : "36",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "109"
+  }, {
+    "range" : "21",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "110"
+  }, {
+    "range" : "7",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "111"
+  }, {
+    "iri" : "https://zatopek73.github.io/PAC2_Ontology#isBasedIn",
+    "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "isBasedIn",
+      "undefined" : "is based in"
+    },
+    "domain" : "30",
+    "comment" : {
+      "undefined" : "Relates a manufacturer to the country where it is based."
+    },
+    "attributes" : [ "functional", "object", "someValues" ],
+    "id" : "114"
+  }, {
+    "iri" : "https://zatopek73.github.io/PAC2_Ontology#isBasedIn",
+    "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "isBasedIn",
+      "undefined" : "is based in"
+    },
+    "domain" : "30",
+    "comment" : {
+      "undefined" : "Relates a manufacturer to the country where it is based."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "116"
+  }, {
+    "iri" : "https://zatopek73.github.io/PAC2_Ontology#hasAssociatedRisk",
+    "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "hasAssociatedRisk",
+      "undefined" : "has associated risk"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Relates a device to risks associated with it. This relationship is derived from the correspondence between device types and affected device types."
+    },
+    "attributes" : [ "asymmetric", "object" ],
+    "id" : "117"
+  }, {
+    "iri" : "https://zatopek73.github.io/PAC2_Ontology#isDeviceReusable",
+    "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "isDeviceReusable",
+      "undefined" : "is device reusable"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Stores if the device is reusable or not"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "118"
+  }, {
+    "iri" : "https://zatopek73.github.io/PAC2_Ontology#isAboutDevice",
+    "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "isAboutDevice",
+      "undefined" : "is about device"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "Relates an incident to the device involved. Each incident refers to exactly one device."
+    },
+    "attributes" : [ "functional", "object", "someValues" ],
+    "id" : "119"
+  }, {
+    "iri" : "https://zatopek73.github.io/PAC2_Ontology#hasManufacturerEudamedSn",
+    "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+    "range" : "121",
+    "label" : {
+      "IRI-based" : "hasManufacturerEudamedSn",
+      "undefined" : "has manufacturer Eudamed sn"
+    },
+    "domain" : "30",
+    "comment" : {
+      "undefined" : "Stores the Eudamed sn"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "120"
+  }, {
+    "iri" : "https://zatopek73.github.io/PAC2_Ontology#isReportedIn",
+    "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "isReportedIn",
+      "undefined" : "is reported in"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "Relates an incident to the country where it is reported. Each incident is associated with exactly one country."
+    },
+    "attributes" : [ "functional", "allValues", "object" ],
+    "id" : "122"
+  }, {
+    "range" : "18",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "123"
+  }, {
+    "range" : "18",
+    "domain" : "30",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "124"
+  }, {
+    "iri" : "https://zatopek73.github.io/PAC2_Ontology#hasManufacturedBy",
+    "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+    "range" : "30",
+    "label" : {
+      "IRI-based" : "hasManufacturedBy",
+      "undefined" : "has manufactured by"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Relates a device to its manufacturer. Each device is associated with exactly one manufacturer."
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "125"
+  }, {
+    "iri" : "https://zatopek73.github.io/PAC2_Ontology#isResponseTo",
+    "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "isResponseTo",
+      "undefined" : "is response to"
+    },
+    "domain" : "9",
+    "comment" : {
+      "undefined" : "Relates a corrective action to the incident it addresses. Each corrective action corresponds to exactly one incident."
+    },
+    "attributes" : [ "functional", "object", "someValues" ],
+    "id" : "126"
+  }, {
+    "iri" : "https://zatopek73.github.io/PAC2_Ontology#hasActionEudamedFscaRef",
+    "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+    "range" : "128",
+    "label" : {
+      "IRI-based" : "hasActionEudamedFscaRef",
+      "undefined" : "has action Eudamed Fsca Ref"
+    },
+    "domain" : "9",
+    "comment" : {
+      "undefined" : "Stores the Eudamed Fsca Refence number."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "127"
+  }, {
+    "range" : "14",
+    "domain" : "21",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "129"
+  }, {
+    "iri" : "https://zatopek73.github.io/PAC2_Ontology#hasClosureDate",
+    "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+    "range" : "131",
+    "label" : {
+      "IRI-based" : "hasClosureDate",
+      "undefined" : "has clousure date"
+    },
+    "domain" : "9",
+    "comment" : {
+      "undefined" : "Date when the corrective action was closed. Aligned with dcterms:date."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "130"
+  }, {
+    "range" : "30",
+    "domain" : "21",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "132"
+  }, {
+    "iri" : "https://zatopek73.github.io/PAC2_Ontology#hasIncidentPatientAge",
+    "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+    "range" : "134",
+    "label" : {
+      "IRI-based" : "hasIncidentPatientAge",
+      "undefined" : "has incident patient age"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "Store the age of the patient affected."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "133"
+  }, {
+    "range" : "14",
+    "domain" : "30",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "135"
+  }, {
+    "range" : "18",
+    "domain" : "21",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "136"
+  }, {
+    "iri" : "https://zatopek73.github.io/PAC2_Ontology#hasUdi_di",
+    "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+    "range" : "42",
+    "label" : {
+      "IRI-based" : "hasUdi_di",
+      "undefined" : "has udi_di"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Stores the udi_di reference"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "137"
+  }, {
+    "range" : "14",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "138"
+  }, {
+    "range" : "30",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "139"
+  }, {
+    "iri" : "https://zatopek73.github.io/PAC2_Ontology#hasRiskType",
+    "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+    "range" : "73",
+    "label" : {
+      "IRI-based" : "hasRiskType",
+      "undefined" : "has risk type"
+    },
+    "domain" : "14",
+    "comment" : {
+      "undefined" : "Type of risk represented as a literal value. Not modelled as a separate ontology concept."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "140"
+  }, {
+    "range" : "18",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "141"
+  }, {
+    "range" : "14",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "142"
+  }, {
+    "range" : "30",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "143"
+  }, {
+    "range" : "21",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "144"
+  }, {
+    "range" : "18",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "145"
+  }, {
+    "iri" : "https://zatopek73.github.io/PAC2_Ontology#isAboutDevice",
+    "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "isAboutDevice",
+      "undefined" : "is about device"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "Relates an incident to the device involved. Each incident refers to exactly one device."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "147"
+  }, {
+    "iri" : "https://zatopek73.github.io/PAC2_Ontology#isReportedBy",
+    "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+    "range" : "30",
+    "label" : {
+      "IRI-based" : "isReportedBy",
+      "undefined" : "is reported by"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "Relates an incident to the reporting entity, modelled as a manufacturer in this ontology."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "148"
+  }, {
+    "iri" : "https://zatopek73.github.io/PAC2_Ontology#isDeviceRegulatoryId",
+    "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+    "range" : "47",
+    "label" : {
+      "IRI-based" : "isDeviceRegulatoryId",
+      "undefined" : "is device regulatory"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The regulatory framework of the device (MDR or IVDR)"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "150"
+  }, {
+    "range" : "1",
+    "domain" : "62",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "151"
+  }, {
+    "range" : "2",
+    "domain" : "62",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "152"
+  }, {
+    "range" : "36",
+    "domain" : "62",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "153"
+  }, {
+    "range" : "6",
+    "domain" : "62",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "154"
+  }, {
+    "range" : "7",
+    "domain" : "62",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "155"
+  }, {
+    "range" : "21",
+    "domain" : "62",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "156"
+  }, {
+    "range" : "30",
+    "domain" : "62",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "157"
+  }, {
+    "iri" : "https://zatopek73.github.io/PAC2_Ontology#hasManufacturerId",
+    "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+    "range" : "146",
+    "label" : {
+      "IRI-based" : "hasManufacturerId",
+      "undefined" : "has manufacturer id"
+    },
+    "domain" : "30",
+    "comment" : {
+      "undefined" : "Identifier of a manufacturer. Aligned with dcterms:identifier."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "158"
+  }, {
+    "range" : "14",
+    "domain" : "62",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "159"
+  }, {
+    "iri" : "https://zatopek73.github.io/PAC2_Ontology#isResponseTo",
+    "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "isResponseTo",
+      "undefined" : "is response to"
+    },
+    "domain" : "9",
+    "comment" : {
+      "undefined" : "Relates a corrective action to the incident it addresses. Each corrective action corresponds to exactly one incident."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "160"
+  }, {
+    "iri" : "https://zatopek73.github.io/PAC2_Ontology#hasManufacturerEmail",
+    "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+    "range" : "149",
+    "label" : {
+      "IRI-based" : "hasManufacturerEmail",
+      "undefined" : "has manufacturer email"
+    },
+    "domain" : "30",
+    "comment" : {
+      "undefined" : "Email address of the manufacturer. Conceptually aligned with foaf:mbox."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "161"
+  }, {
+    "range" : "9",
+    "domain" : "62",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "162"
+  }, {
+    "range" : "17",
+    "domain" : "62",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "163"
+  }, {
+    "iri" : "https://zatopek73.github.io/PAC2_Ontology#hasActionDevicesAffected",
+    "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+    "range" : "112",
+    "label" : {
+      "IRI-based" : "hasActionDevicesAffected",
+      "undefined" : "has action devices affected"
+    },
+    "domain" : "9",
+    "comment" : {
+      "undefined" : "Number of devices affected by the corrective action."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "164"
+  }, {
+    "iri" : "https://zatopek73.github.io/PAC2_Ontology#hasRiskName",
+    "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+    "range" : "72",
+    "label" : {
+      "IRI-based" : "hasRiskName",
+      "undefined" : "has risk name"
+    },
+    "domain" : "14",
+    "comment" : {
+      "undefined" : "Stores the risk name."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "166"
+  }, {
+    "iri" : "https://zatopek73.github.io/PAC2_Ontology#hasCorrectiveActionStatus",
+    "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+    "range" : "62",
+    "label" : {
+      "IRI-based" : "hasCorrectiveActionStatus",
+      "undefined" : "has corrective action status"
+    },
+    "domain" : "9",
+    "comment" : {
+      "undefined" : "Relates a corrective action to its status, represented as a controlled vocabulary."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "167"
+  }, {
+    "iri" : "https://zatopek73.github.io/PAC2_Ontology#hasActionDescription",
+    "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+    "range" : "113",
+    "label" : {
+      "IRI-based" : "hasActionDescription",
+      "undefined" : "has action description"
+    },
+    "domain" : "9",
+    "comment" : {
+      "undefined" : "Textual description of a corrective action. Aligned with dcterms:description."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "168"
+  }, {
+    "iri" : "https://zatopek73.github.io/PAC2_Ontology#isDeviceActive",
+    "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "isDeviceActive",
+      "undefined" : "is device active"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "store the device status"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "169"
+  }, {
+    "iri" : "https://zatopek73.github.io/PAC2_Ontology#hasDeviceRiskClass",
+    "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasDeviceRiskClass",
+      "undefined" : "has device risk class"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Relates a device to its regulatory risk classification."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "170"
+  }, {
+    "iri" : "https://zatopek73.github.io/PAC2_Ontology#affectsDeviceType",
+    "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+    "range" : "36",
+    "label" : {
+      "IRI-based" : "affectsDeviceType",
+      "undefined" : "affects device type"
+    },
+    "domain" : "14",
+    "comment" : {
+      "undefined" : "Relates a risk to the type of device it affects. Used to infer associations between risks and devices."
+    },
+    "attributes" : [ "object" ],
+    "id" : "173"
+  }, {
+    "iri" : "https://zatopek73.github.io/PAC2_Ontology#hasRiskId",
+    "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+    "range" : "67",
+    "label" : {
+      "IRI-based" : "hasRiskId",
+      "undefined" : "has risk id"
+    },
+    "domain" : "14",
+    "comment" : {
+      "undefined" : "Identifier of a risk. Aligned with dcterms:identifier."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "174"
+  }, {
+    "iri" : "https://zatopek73.github.io/PAC2_Ontology#hasIntendedPurpose",
+    "baseIri" : "https://zatopek73.github.io/PAC2_Ontology",
+    "range" : "165",
+    "label" : {
+      "IRI-based" : "hasIntendedPurpose",
+      "undefined" : "has intended purpose"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Stores the purpose"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "175"
+  } ]
+}
