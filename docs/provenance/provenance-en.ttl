@@ -1,0 +1,14 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix : <> .
+<https://zatopek73.github.io/PAC2_Ontology/1.0.0> a prov:Entity;
+	 dc:title "European Medical Device Ontology (MDR-IVDR)";
+	 prov:wasAttributedTo :agent0;
+	 prov:wasAttributedTo :agent1;
+	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+	 prov:specializationOf <https://zatopek73.github.io/PAC2_Ontology#>;
+	 prov:wasGeneratedAt "2026-04-17T00:00:00";
+.
+:agent0 a prov:Agent; foaf:name "Pablo Parrado Gamito".
+:agent1 a prov:Agent; foaf:name "Pablo Parrado Gamito".
