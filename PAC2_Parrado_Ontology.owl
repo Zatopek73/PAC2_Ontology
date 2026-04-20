@@ -1,0 +1,2181 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://zatopek73.github.io/PAC2_Ontology#"
+     xml:base="https://zatopek73.github.io/PAC2_Ontology"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:vann1="https://zatopek73.github.io/PAC2_Ontology/vann:"
+     xmlns:vann2="vann:"
+     xmlns:PAC2_Ontology="https://zatopek73.github.io/PAC2_Ontology#"
+     xmlns:PAC2_Ontologyvann="https://zatopek73.github.io/PAC2_Ontologyvann:">
+    <owl:Ontology rdf:about="https://zatopek73.github.io/PAC2_Ontology">
+        <owl:versionIRI rdf:resource="https://zatopek73.github.io/PAC2_Ontology/1.0.0"/>
+        <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+        <terms:bibliographicCitation>Parrado Gamito, P. (2026). European Medical Device Ontology (MDR-IVDR), version 1.0.0. https://zatopek73.github.io/PAC2_Ontology/</terms:bibliographicCitation>
+        <terms:contributor>Pablo Parrado Gamito</terms:contributor>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-04-17T00:00:00</terms:created>
+        <terms:creator>Pablo Parrado Gamito</terms:creator>
+        <terms:description>It is intended to formalize and categorize knowledge about the European catalog of high-risk medical devices and in vitro diagnostic devices according to their MDR (EU 2017/745) and IVDR (EU 2017/746) regulatory frameworks. The objective of this ontology is to structure and relate the information coming from the EUDAMED public repository covering the entire regulated part of the life cycle of the devices (Manufacturing, risk classification according to regulations and monitoring of their service (incidents and corrective actions).</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-04-17T00:00:00</terms:issued>
+        <terms:license>https://creativecommons.org/licenses/by/4.0/</terms:license>
+        <terms:publisher>Pablo Parrado Gamito (UOC)</terms:publisher>
+        <terms:references>Dataset provided in the assignment (dades.xlsx)
+DBpedia (https://dbpedia.org)
+Linked Open Vocabularies (https://lov.linkeddata.es)
+EU Vocabularies (https://op.europa.eu)</terms:references>
+        <terms:source>Dataset provided in the assignment (PAC2_Data.zip).
+https://dbpedia.org
+https://lov.linkeddata
+https://op.europa.eu</terms:source>
+        <terms:title>European Medical Device Ontology (MDR-IVDR)</terms:title>
+        <vann:preferredNamespacePrefix>pac2</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>https://zatopek73.github.io/PAC2_Ontology#</vann:preferredNamespaceUri>
+        <rdfs:label>European Medical Device Ontology (MDR-IVDR).</rdfs:label>
+        <owl:versionInfo>1.0.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/bibliographicCitation -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/bibliographicCitation"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/references -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/references"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/source -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#sameAs -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#sameAs"/>
+    
+
+
+    <!-- vann:preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="vann:preferredNamespacePrefix"/>
+    
+
+
+    <!-- vann:preferredNamespaceUri -->
+
+    <owl:AnnotationProperty rdf:about="vann:preferredNamespaceUri"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#broadMatch -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#broadMatch">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#broaderTransitive"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#semanticRelation"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#broader -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#broader">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#semanticRelation"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#broaderTransitive -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#broaderTransitive">
+        <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#closeMatch -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#closeMatch">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#semanticRelation"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#exactMatch -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#exactMatch">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#mappingRelation"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#semanticRelation"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#mappingRelation -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#mappingRelation">
+        <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#narrowMatch -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#narrowMatch">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#narrowerTransitive"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#semanticRelation"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#narrower -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#narrower">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#semanticRelation"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#narrowerTransitive -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#narrowerTransitive">
+        <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#related -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#related">
+        <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#relatedMatch -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#relatedMatch">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#semanticRelation"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#affectsDeviceType -->
+
+    <owl:ObjectProperty rdf:about="https://zatopek73.github.io/PAC2_Ontology#affectsDeviceType">
+        <rdfs:domain rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Risk"/>
+        <rdfs:range rdf:resource="https://zatopek73.github.io/PAC2_Ontology#DeviceType"/>
+        <rdfs:comment>Relates a risk to the type of device it affects. Used to infer associations between risks and devices.</rdfs:comment>
+        <rdfs:label>affects device type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#causesRisk -->
+
+    <owl:ObjectProperty rdf:about="https://zatopek73.github.io/PAC2_Ontology#causesRisk">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Risk"/>
+        <rdfs:range rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Risk"/>
+        <rdfs:comment>Relates a risk to another risk that it causes. This property is transitive.</rdfs:comment>
+        <rdfs:label>causes risk</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#hasAssociatedRisk -->
+
+    <owl:ObjectProperty rdf:about="https://zatopek73.github.io/PAC2_Ontology#hasAssociatedRisk">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Device"/>
+        <rdfs:range rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Risk"/>
+        <rdfs:comment>Relates a device to risks associated with it. This relationship is derived from the correspondence between device types and affected device types.</rdfs:comment>
+        <rdfs:label>has associated risk</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#hasCorrectiveActionStatus -->
+
+    <owl:ObjectProperty rdf:about="https://zatopek73.github.io/PAC2_Ontology#hasCorrectiveActionStatus">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://zatopek73.github.io/PAC2_Ontology#CorrectiveActions"/>
+        <rdfs:range rdf:resource="https://zatopek73.github.io/PAC2_Ontology#CorrectiveActionStatus"/>
+        <rdfs:comment>Relates a corrective action to its status, represented as a controlled vocabulary.</rdfs:comment>
+        <rdfs:label>has corrective action status</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#hasDeviceRiskClass -->
+
+    <owl:ObjectProperty rdf:about="https://zatopek73.github.io/PAC2_Ontology#hasDeviceRiskClass">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Device"/>
+        <rdfs:range rdf:resource="https://zatopek73.github.io/PAC2_Ontology#DeviceRiskClass"/>
+        <rdfs:comment>Relates a device to its regulatory risk classification.</rdfs:comment>
+        <rdfs:label>has device risk class</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#hasDeviceType -->
+
+    <owl:ObjectProperty rdf:about="https://zatopek73.github.io/PAC2_Ontology#hasDeviceType">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Device"/>
+        <rdfs:range rdf:resource="https://zatopek73.github.io/PAC2_Ontology#DeviceType"/>
+        <rdfs:comment>Relates a device to its device type. This classification enables linking devices with risks.</rdfs:comment>
+        <rdfs:label>has device type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#hasIncidentPatientSex -->
+
+    <owl:ObjectProperty rdf:about="https://zatopek73.github.io/PAC2_Ontology#hasIncidentPatientSex">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Incident"/>
+        <rdfs:range rdf:resource="https://zatopek73.github.io/PAC2_Ontology#IncidentPatientSex"/>
+        <rdfs:comment>Relates an incident to the patient&apos;s sex category, represented as a controlled vocabulary.</rdfs:comment>
+        <rdfs:label>has incident patient sex</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#hasIncidentType -->
+
+    <owl:ObjectProperty rdf:about="https://zatopek73.github.io/PAC2_Ontology#hasIncidentType">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Incident"/>
+        <rdfs:range rdf:resource="https://zatopek73.github.io/PAC2_Ontology#IncidentType"/>
+        <rdfs:comment>Relates an incident to its type, modelled as a controlled classification.</rdfs:comment>
+        <rdfs:label>has incident type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#hasManufacturedBy -->
+
+    <owl:ObjectProperty rdf:about="https://zatopek73.github.io/PAC2_Ontology#hasManufacturedBy">
+        <rdfs:domain rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Device"/>
+        <rdfs:range rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Manufacturer"/>
+        <rdfs:comment>Relates a device to its manufacturer. Each device is associated with exactly one manufacturer.</rdfs:comment>
+        <rdfs:label>has manufactured by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#hasRegulatory -->
+
+    <owl:ObjectProperty rdf:about="https://zatopek73.github.io/PAC2_Ontology#hasRegulatory">
+        <rdfs:domain rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Device"/>
+        <rdfs:range rdf:resource="https://zatopek73.github.io/PAC2_Ontology#RegulatoryFramework"/>
+        <rdfs:comment>Relates a risk to its regulatory framework.</rdfs:comment>
+        <rdfs:label>has regulatory</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#hasRiskCategory -->
+
+    <owl:ObjectProperty rdf:about="https://zatopek73.github.io/PAC2_Ontology#hasRiskCategory">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Risk"/>
+        <rdfs:range rdf:resource="https://zatopek73.github.io/PAC2_Ontology#RiskCategory"/>
+        <rdfs:comment>Relates a risk to its category.</rdfs:comment>
+        <rdfs:label>has risk category</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#hasRiskProbability -->
+
+    <owl:ObjectProperty rdf:about="https://zatopek73.github.io/PAC2_Ontology#hasRiskProbability">
+        <rdfs:domain rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Risk"/>
+        <rdfs:range rdf:resource="https://zatopek73.github.io/PAC2_Ontology#RiskProbability"/>
+        <rdfs:comment>Relates a risk to its probability level..</rdfs:comment>
+        <rdfs:label>has risk probability</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#hasRiskSeverity -->
+
+    <owl:ObjectProperty rdf:about="https://zatopek73.github.io/PAC2_Ontology#hasRiskSeverity">
+        <rdfs:domain rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Risk"/>
+        <rdfs:range rdf:resource="https://zatopek73.github.io/PAC2_Ontology#RiskSeverity"/>
+        <rdfs:comment>Relates a risk to its severity level..</rdfs:comment>
+        <rdfs:label>has risk severity</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#hasRiskType -->
+
+    <owl:ObjectProperty rdf:about="https://zatopek73.github.io/PAC2_Ontology#hasRiskType">
+        <rdfs:domain rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Risk"/>
+        <rdfs:range rdf:resource="https://zatopek73.github.io/PAC2_Ontology#RiskType"/>
+        <rdfs:comment>Relates a risk to its defined type.</rdfs:comment>
+        <rdfs:label>has risk type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#isAboutDevice -->
+
+    <owl:ObjectProperty rdf:about="https://zatopek73.github.io/PAC2_Ontology#isAboutDevice">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Incident"/>
+        <rdfs:range rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Device"/>
+        <rdfs:comment>Relates an incident to the device involved. Each incident refers to exactly one device.</rdfs:comment>
+        <rdfs:label>is about device</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#isAboutRisk -->
+
+    <owl:ObjectProperty rdf:about="https://zatopek73.github.io/PAC2_Ontology#isAboutRisk">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Incident"/>
+        <rdfs:range rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Risk"/>
+        <rdfs:comment>Relates an incident to the associated risk. Each incident is linked to exactly one risk.</rdfs:comment>
+        <rdfs:label>is about risk</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#isBasedIn -->
+
+    <owl:ObjectProperty rdf:about="https://zatopek73.github.io/PAC2_Ontology#isBasedIn">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Manufacturer"/>
+        <rdfs:range rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Country"/>
+        <rdfs:comment>Relates a manufacturer to the country where it is based.</rdfs:comment>
+        <rdfs:label>is based in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#isReportedBy -->
+
+    <owl:ObjectProperty rdf:about="https://zatopek73.github.io/PAC2_Ontology#isReportedBy">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Incident"/>
+        <rdfs:range rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Manufacturer"/>
+        <rdfs:comment>Relates an incident to the reporting entity, modelled as a manufacturer in this ontology.</rdfs:comment>
+        <rdfs:label>is reported by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#isReportedIn -->
+
+    <owl:ObjectProperty rdf:about="https://zatopek73.github.io/PAC2_Ontology#isReportedIn">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Incident"/>
+        <rdfs:range rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Country"/>
+        <rdfs:comment>Relates an incident to the country where it is reported. Each incident is associated with exactly one country.</rdfs:comment>
+        <rdfs:label>is reported in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#isResponseTo -->
+
+    <owl:ObjectProperty rdf:about="https://zatopek73.github.io/PAC2_Ontology#isResponseTo">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://zatopek73.github.io/PAC2_Ontology#CorrectiveActions"/>
+        <rdfs:range rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Incident"/>
+        <rdfs:comment>Relates a corrective action to the incident it addresses. Each corrective action corresponds to exactly one incident.</rdfs:comment>
+        <rdfs:label>is response to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#hasActionCountriesAffected -->
+
+    <owl:DatatypeProperty rdf:about="https://zatopek73.github.io/PAC2_Ontology#hasActionCountriesAffected">
+        <rdfs:domain rdf:resource="https://zatopek73.github.io/PAC2_Ontology#CorrectiveActions"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Group of countries affected by the corrective action, represented as a group value.</rdfs:comment>
+        <rdfs:label>has action countries affected</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#hasActionDate -->
+
+    <owl:DatatypeProperty rdf:about="https://zatopek73.github.io/PAC2_Ontology#hasActionDate">
+        <rdfs:domain rdf:resource="https://zatopek73.github.io/PAC2_Ontology#CorrectiveActions"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment>Date when the corrective action was initiated. Aligned with dcterms:date.</rdfs:comment>
+        <rdfs:label>has action date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#hasActionDescription -->
+
+    <owl:DatatypeProperty rdf:about="https://zatopek73.github.io/PAC2_Ontology#hasActionDescription">
+        <rdfs:domain rdf:resource="https://zatopek73.github.io/PAC2_Ontology#CorrectiveActions"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Textual description of a corrective action. Aligned with dcterms:description.</rdfs:comment>
+        <rdfs:label>has action description</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#hasActionDevicesAffected -->
+
+    <owl:DatatypeProperty rdf:about="https://zatopek73.github.io/PAC2_Ontology#hasActionDevicesAffected">
+        <rdfs:domain rdf:resource="https://zatopek73.github.io/PAC2_Ontology#CorrectiveActions"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment>Number of devices affected by the corrective action.</rdfs:comment>
+        <rdfs:label>has action devices affected</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#hasActionEudamedFscaRef -->
+
+    <owl:DatatypeProperty rdf:about="https://zatopek73.github.io/PAC2_Ontology#hasActionEudamedFscaRef">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://zatopek73.github.io/PAC2_Ontology#CorrectiveActions"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Stores the Eudamed Fsca Refence number.</rdfs:comment>
+        <rdfs:label>has action Eudamed Fsca Ref</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#hasActionFscaId -->
+
+    <owl:DatatypeProperty rdf:about="https://zatopek73.github.io/PAC2_Ontology#hasActionFscaId">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://zatopek73.github.io/PAC2_Ontology#CorrectiveActions"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Identifier of a corrective action. Aligned with dcterms:identifier.</rdfs:comment>
+        <rdfs:label>has action FscaId</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#hasActionType -->
+
+    <owl:DatatypeProperty rdf:about="https://zatopek73.github.io/PAC2_Ontology#hasActionType">
+        <rdfs:domain rdf:resource="https://zatopek73.github.io/PAC2_Ontology#CorrectiveActions"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Stores the type of corrective action type</rdfs:comment>
+        <rdfs:label>has action type</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#hasClosureDate -->
+
+    <owl:DatatypeProperty rdf:about="https://zatopek73.github.io/PAC2_Ontology#hasClosureDate">
+        <rdfs:domain rdf:resource="https://zatopek73.github.io/PAC2_Ontology#CorrectiveActions"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment>Date when the corrective action was closed. Aligned with dcterms:date.</rdfs:comment>
+        <rdfs:label>has clousure date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#hasCorrectiveActionTaken -->
+
+    <owl:DatatypeProperty rdf:about="https://zatopek73.github.io/PAC2_Ontology#hasCorrectiveActionTaken">
+        <rdfs:domain rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Incident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>Indicates whether a corrective action was taken for the incident.</rdfs:comment>
+        <rdfs:label>is corrective action taken</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#hasDeviceId -->
+
+    <owl:DatatypeProperty rdf:about="https://zatopek73.github.io/PAC2_Ontology#hasDeviceId">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Device"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Identifier of a device. Aligned with dcterms:identifier.</rdfs:comment>
+        <rdfs:label>has device id</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#hasDeviceName -->
+
+    <owl:DatatypeProperty rdf:about="https://zatopek73.github.io/PAC2_Ontology#hasDeviceName">
+        <rdfs:domain rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Device"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Name of the device. Similar to rdfs:label.</rdfs:comment>
+        <rdfs:label>device name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#hasIncidentDescription -->
+
+    <owl:DatatypeProperty rdf:about="https://zatopek73.github.io/PAC2_Ontology#hasIncidentDescription">
+        <rdfs:domain rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Incident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Textual description of an incident. Aligned with dcterms:description.</rdfs:comment>
+        <rdfs:label>has incident description</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#hasIncidentDetectionDate -->
+
+    <owl:DatatypeProperty rdf:about="https://zatopek73.github.io/PAC2_Ontology#hasIncidentDetectionDate">
+        <rdfs:domain rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Incident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment>Date when the incident was detected. Aligned with dcterms:date.</rdfs:comment>
+        <rdfs:label>has incident detection date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#hasIncidentEudamedNum -->
+
+    <owl:DatatypeProperty rdf:about="https://zatopek73.github.io/PAC2_Ontology#hasIncidentEudamedNum">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Incident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Stores the Eudamed incident num.</rdfs:comment>
+        <rdfs:label>has incident Eudamed num</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#hasIncidentId -->
+
+    <owl:DatatypeProperty rdf:about="https://zatopek73.github.io/PAC2_Ontology#hasIncidentId">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Incident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Identifier of an incident. Aligned with dcterms:identifier.</rdfs:comment>
+        <rdfs:label>has incident id</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#hasIncidentOutcome -->
+
+    <owl:DatatypeProperty rdf:about="https://zatopek73.github.io/PAC2_Ontology#hasIncidentOutcome">
+        <rdfs:domain rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Incident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Outcome of the incident as a descriptive value.</rdfs:comment>
+        <rdfs:label>incident outcome</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#hasIncidentPatientAge -->
+
+    <owl:DatatypeProperty rdf:about="https://zatopek73.github.io/PAC2_Ontology#hasIncidentPatientAge">
+        <rdfs:domain rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Incident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment>Store the age of the patient affected.</rdfs:comment>
+        <rdfs:label>has incident patient age</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#hasIncidentReportDate -->
+
+    <owl:DatatypeProperty rdf:about="https://zatopek73.github.io/PAC2_Ontology#hasIncidentReportDate">
+        <rdfs:domain rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Incident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment>Date when the incident was reported. Aligned with dcterms:date.</rdfs:comment>
+        <rdfs:label>has incident report date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#hasIntendedPurpose -->
+
+    <owl:DatatypeProperty rdf:about="https://zatopek73.github.io/PAC2_Ontology#hasIntendedPurpose">
+        <rdfs:domain rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Device"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Stores the purpose</rdfs:comment>
+        <rdfs:label>has intended purpose</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#hasManufacturerAuthNumber -->
+
+    <owl:DatatypeProperty rdf:about="https://zatopek73.github.io/PAC2_Ontology#hasManufacturerAuthNumber">
+        <rdfs:domain rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Manufacturer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Stores the manufacturer&apos;s authorization number.</rdfs:comment>
+        <rdfs:label>has manufacturer auth number.</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#hasManufacturerCompetentAutority -->
+
+    <owl:DatatypeProperty rdf:about="https://zatopek73.github.io/PAC2_Ontology#hasManufacturerCompetentAutority">
+        <rdfs:domain rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Manufacturer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Stores the manufacturer competent autority.</rdfs:comment>
+        <rdfs:label>has manufacturer competent autority</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#hasManufacturerEmail -->
+
+    <owl:DatatypeProperty rdf:about="https://zatopek73.github.io/PAC2_Ontology#hasManufacturerEmail">
+        <rdfs:domain rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Manufacturer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Email address of the manufacturer. Conceptually aligned with foaf:mbox.</rdfs:comment>
+        <rdfs:label>has manufacturer email</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#hasManufacturerEudamedSn -->
+
+    <owl:DatatypeProperty rdf:about="https://zatopek73.github.io/PAC2_Ontology#hasManufacturerEudamedSn">
+        <rdfs:domain rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Manufacturer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Stores the Eudamed sn</rdfs:comment>
+        <rdfs:label>has manufacturer Eudamed sn</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#hasManufacturerId -->
+
+    <owl:DatatypeProperty rdf:about="https://zatopek73.github.io/PAC2_Ontology#hasManufacturerId">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Manufacturer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Identifier of a manufacturer. Aligned with dcterms:identifier.</rdfs:comment>
+        <rdfs:label>has manufacturer id</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#hasManufacturerName -->
+
+    <owl:DatatypeProperty rdf:about="https://zatopek73.github.io/PAC2_Ontology#hasManufacturerName">
+        <rdfs:domain rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Manufacturer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Name of the manufacturer. Conceptually aligned with foaf:name.</rdfs:comment>
+        <rdfs:label>has manufacturer name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#hasRiskDescription -->
+
+    <owl:DatatypeProperty rdf:about="https://zatopek73.github.io/PAC2_Ontology#hasRiskDescription">
+        <rdfs:domain rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Risk"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Textual description of a risk. Aligned with dcterms:description.</rdfs:comment>
+        <rdfs:label>has risk description</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#hasRiskId -->
+
+    <owl:DatatypeProperty rdf:about="https://zatopek73.github.io/PAC2_Ontology#hasRiskId">
+        <rdfs:domain rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Risk"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Identifier of a risk. Aligned with dcterms:identifier.</rdfs:comment>
+        <rdfs:label>has risk id</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#hasRiskImdrfCode -->
+
+    <owl:DatatypeProperty rdf:about="https://zatopek73.github.io/PAC2_Ontology#hasRiskImdrfCode">
+        <rdfs:domain rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Risk"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Stores the imdrf code.</rdfs:comment>
+        <rdfs:label>has risk imdrf code</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#hasRiskName -->
+
+    <owl:DatatypeProperty rdf:about="https://zatopek73.github.io/PAC2_Ontology#hasRiskName">
+        <rdfs:domain rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Risk"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Stores the risk name.</rdfs:comment>
+        <rdfs:label>has risk name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#hasUdi_di -->
+
+    <owl:DatatypeProperty rdf:about="https://zatopek73.github.io/PAC2_Ontology#hasUdi_di">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Device"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Stores the udi_di reference</rdfs:comment>
+        <rdfs:label>has udi_di</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#isDeviceActive -->
+
+    <owl:DatatypeProperty rdf:about="https://zatopek73.github.io/PAC2_Ontology#isDeviceActive">
+        <rdfs:domain rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Device"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>store the device status</rdfs:comment>
+        <rdfs:label>is device active</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#isDeviceImplantable -->
+
+    <owl:DatatypeProperty rdf:about="https://zatopek73.github.io/PAC2_Ontology#isDeviceImplantable">
+        <rdfs:domain rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Device"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>store if the device is implantable or not.</rdfs:comment>
+        <rdfs:label>is device implantable</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#isDeviceIvd -->
+
+    <owl:DatatypeProperty rdf:about="https://zatopek73.github.io/PAC2_Ontology#isDeviceIvd">
+        <rdfs:domain rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Device"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>Stores if the device is Invitro Device or not</rdfs:comment>
+        <rdfs:label>is device idv</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#isDeviceReusable -->
+
+    <owl:DatatypeProperty rdf:about="https://zatopek73.github.io/PAC2_Ontology#isDeviceReusable">
+        <rdfs:domain rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Device"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>Stores if the device is reusable or not</rdfs:comment>
+        <rdfs:label>is device reusable</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2003/11/swrl#AtomList -->
+
+    <owl:Class rdf:about="http://www.w3.org/2003/11/swrl#AtomList">
+        <rdfs:comment>Represents a SWRL rule.</rdfs:comment>
+        <rdfs:label>SWRL Rule</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2003/11/swrl#ClassAtom -->
+
+    <owl:Class rdf:about="http://www.w3.org/2003/11/swrl#ClassAtom">
+        <rdfs:comment>Represents a SWRL rule.</rdfs:comment>
+        <rdfs:label>SWRL Rule</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2003/11/swrl#Imp -->
+
+    <owl:Class rdf:about="http://www.w3.org/2003/11/swrl#Imp">
+        <rdfs:comment>Represents a SWRL rule.</rdfs:comment>
+        <rdfs:label>SWRL Rule</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2003/11/swrl#IndividualPropertyAtom -->
+
+    <owl:Class rdf:about="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom">
+        <rdfs:comment>Represents a SWRL rule.</rdfs:comment>
+        <rdfs:label>SWRL Rule</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2003/11/swrl#Variable -->
+
+    <owl:Class rdf:about="http://www.w3.org/2003/11/swrl#Variable">
+        <rdfs:comment>Represents a SWRL rule.</rdfs:comment>
+        <rdfs:label>SWRL Rule</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Collection -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Collection">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Collection"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Collection"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#OrderedCollection -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#OrderedCollection">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Collection"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#CorrectiveActionStatus -->
+
+    <owl:Class rdf:about="https://zatopek73.github.io/PAC2_Ontology#CorrectiveActionStatus">
+        <rdfs:comment>Class representing the status of a corrective action. Modelled as a controlled vocabulary.</rdfs:comment>
+        <rdfs:label>Corrective status</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#CorrectiveActions -->
+
+    <owl:Class rdf:about="https://zatopek73.github.io/PAC2_Ontology#CorrectiveActions">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://zatopek73.github.io/PAC2_Ontology#isResponseTo"/>
+                <owl:someValuesFrom rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Incident"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Class representing corrective actions taken in response to incidents. Descriptions and dates are aligned with Dublin Core terms.</rdfs:comment>
+        <rdfs:label>Corrective Actions</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#Country -->
+
+    <owl:Class rdf:about="https://zatopek73.github.io/PAC2_Ontology#Country">
+        <rdfs:comment>Class representing a country associated with reporting or manufacturer location. Conceptually aligned with EU controlled vocabularies for countries.</rdfs:comment>
+        <rdfs:label>Country</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#Device -->
+
+    <owl:Class rdf:about="https://zatopek73.github.io/PAC2_Ontology#Device">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://zatopek73.github.io/PAC2_Ontology#hasManufacturedBy"/>
+                <owl:someValuesFrom rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Manufacturer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Class representing a medical device within the surveillance domain. Device identifiers are aligned with dcterms:identifier.</rdfs:comment>
+        <rdfs:label>Device</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#DeviceRiskClass -->
+
+    <owl:Class rdf:about="https://zatopek73.github.io/PAC2_Ontology#DeviceRiskClass">
+        <rdfs:comment>Class representing the regulatory risk classification of a device. Modelled as a controlled classification.</rdfs:comment>
+        <rdfs:label>Device risk class</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#DeviceType -->
+
+    <owl:Class rdf:about="https://zatopek73.github.io/PAC2_Ontology#DeviceType">
+        <rdfs:comment>Device type about interaction with patient (Active,Implantable,invitro,single use, etc.)</rdfs:comment>
+        <rdfs:label>Device type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#Incident -->
+
+    <owl:Class rdf:about="https://zatopek73.github.io/PAC2_Ontology#Incident">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://zatopek73.github.io/PAC2_Ontology#isAboutDevice"/>
+                <owl:someValuesFrom rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Device"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://zatopek73.github.io/PAC2_Ontology#isReportedIn"/>
+                <owl:allValuesFrom rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Country"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Class representing an incident involving a medical device. Temporal properties are aligned with dcterms:date.</rdfs:comment>
+        <rdfs:label>Incident</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#IncidentPatientSex -->
+
+    <owl:Class rdf:about="https://zatopek73.github.io/PAC2_Ontology#IncidentPatientSex">
+        <rdfs:comment>Class representing the sex category of a patient involved in an incident. Modelled as a controlled vocabulary.</rdfs:comment>
+        <rdfs:label>Incident patient sex</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#IncidentType -->
+
+    <owl:Class rdf:about="https://zatopek73.github.io/PAC2_Ontology#IncidentType">
+        <rdfs:comment>Class representing the type of incident. Modelled as a controlled classification similar to skos:Concept.</rdfs:comment>
+        <rdfs:label>Incident type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#Manufacturer -->
+
+    <owl:Class rdf:about="https://zatopek73.github.io/PAC2_Ontology#Manufacturer">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://zatopek73.github.io/PAC2_Ontology#isBasedIn"/>
+                <owl:someValuesFrom rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Country"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Class representing the manufacturer of a medical device. Conceptually aligned with foaf:Organization.</rdfs:comment>
+        <rdfs:label>Manufacturer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#RegulatoryFramework -->
+
+    <owl:Class rdf:about="https://zatopek73.github.io/PAC2_Ontology#RegulatoryFramework">
+        <rdfs:comment>Class representing the regulatory framework assigned to a device.</rdfs:comment>
+        <rdfs:label>Regulatory Framework</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#Risk -->
+
+    <owl:Class rdf:about="https://zatopek73.github.io/PAC2_Ontology#Risk">
+        <rdfs:comment>Class representing a risk associated with a device or incident. Risk descriptions are aligned with dcterms:description.</rdfs:comment>
+        <rdfs:label>Risk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#RiskCategory -->
+
+    <owl:Class rdf:about="https://zatopek73.github.io/PAC2_Ontology#RiskCategory">
+        <rdfs:comment>Class representing the category assigned to a risk.</rdfs:comment>
+        <rdfs:label>Risk Category</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#RiskProbability -->
+
+    <owl:Class rdf:about="https://zatopek73.github.io/PAC2_Ontology#RiskProbability">
+        <rdfs:comment>Class representing the probability assigned to a risk.</rdfs:comment>
+        <rdfs:label>Risk Probability</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#RiskSeverity -->
+
+    <owl:Class rdf:about="https://zatopek73.github.io/PAC2_Ontology#RiskSeverity">
+        <rdfs:comment>Class representing the severity assigned to a risk.</rdfs:comment>
+        <rdfs:label>Risk Severity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#RiskType -->
+
+    <owl:Class rdf:about="https://zatopek73.github.io/PAC2_Ontology#RiskType">
+        <rdfs:comment>Class representing the type assigned to a risk.</rdfs:comment>
+        <rdfs:label>Risk Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://dbpedia.org/resource/Germany -->
+
+    <owl:NamedIndividual rdf:about="https://dbpedia.org/resource/Germany">
+        <rdf:type rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://dbpedia.org/resource/Ireland -->
+
+    <owl:NamedIndividual rdf:about="https://dbpedia.org/resource/Ireland">
+        <rdf:type rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://dbpedia.org/resource/Medtronic -->
+
+    <owl:NamedIndividual rdf:about="https://dbpedia.org/resource/Medtronic">
+        <rdfs:comment>Medotronic manufacturer</rdfs:comment>
+        <rdfs:label>Medtronic</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#ActiveDevice -->
+
+    <owl:NamedIndividual rdf:about="https://zatopek73.github.io/PAC2_Ontology#ActiveDevice">
+        <rdf:type rdf:resource="https://zatopek73.github.io/PAC2_Ontology#DeviceType"/>
+        <rdfs:comment>The device is active now.</rdfs:comment>
+        <rdfs:label>Active device</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#ActiveImplant -->
+
+    <owl:NamedIndividual rdf:about="https://zatopek73.github.io/PAC2_Ontology#ActiveImplant">
+        <rdf:type rdf:resource="https://zatopek73.github.io/PAC2_Ontology#DeviceType"/>
+        <rdfs:comment>The device status is active implant.</rdfs:comment>
+        <rdfs:label>Active implant</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#Belgium -->
+
+    <owl:NamedIndividual rdf:about="https://zatopek73.github.io/PAC2_Ontology#Belgium">
+        <rdf:type rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#ClassA -->
+
+    <owl:NamedIndividual rdf:about="https://zatopek73.github.io/PAC2_Ontology#ClassA">
+        <rdf:type rdf:resource="https://zatopek73.github.io/PAC2_Ontology#DeviceRiskClass"/>
+        <rdfs:comment>Class by the IVDR (EU 2017/746)</rdfs:comment>
+        <rdfs:label>Class A</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#ClassB -->
+
+    <owl:NamedIndividual rdf:about="https://zatopek73.github.io/PAC2_Ontology#ClassB">
+        <rdf:type rdf:resource="https://zatopek73.github.io/PAC2_Ontology#DeviceRiskClass"/>
+        <rdfs:comment>Class by the IVDR (EU 2017/746)</rdfs:comment>
+        <rdfs:label>Class B</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#ClassC -->
+
+    <owl:NamedIndividual rdf:about="https://zatopek73.github.io/PAC2_Ontology#ClassC">
+        <rdf:type rdf:resource="https://zatopek73.github.io/PAC2_Ontology#DeviceRiskClass"/>
+        <rdfs:comment>Class by the IVDR (EU 2017/746)</rdfs:comment>
+        <rdfs:label>Class C</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#ClassD -->
+
+    <owl:NamedIndividual rdf:about="https://zatopek73.github.io/PAC2_Ontology#ClassD">
+        <rdf:type rdf:resource="https://zatopek73.github.io/PAC2_Ontology#DeviceRiskClass"/>
+        <rdfs:comment>Class by the IVDR (EU 2017/746)</rdfs:comment>
+        <rdfs:label>Class D</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#ClassIII -->
+
+    <owl:NamedIndividual rdf:about="https://zatopek73.github.io/PAC2_Ontology#ClassIII">
+        <rdf:type rdf:resource="https://zatopek73.github.io/PAC2_Ontology#DeviceRiskClass"/>
+        <rdfs:comment>Class by the MDR (EU 2017/745)</rdfs:comment>
+        <rdfs:label>Class III</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#ClassIIa -->
+
+    <owl:NamedIndividual rdf:about="https://zatopek73.github.io/PAC2_Ontology#ClassIIa">
+        <rdf:type rdf:resource="https://zatopek73.github.io/PAC2_Ontology#DeviceRiskClass"/>
+        <rdfs:comment>Class by the MDR (EU 2017/745)</rdfs:comment>
+        <rdfs:label>Class IIa</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#ClassIIb -->
+
+    <owl:NamedIndividual rdf:about="https://zatopek73.github.io/PAC2_Ontology#ClassIIb">
+        <rdf:type rdf:resource="https://zatopek73.github.io/PAC2_Ontology#DeviceRiskClass"/>
+        <rdfs:comment>Class by the MDR (EU 2017/745)</rdfs:comment>
+        <rdfs:label>Class IIb</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#Closed -->
+
+    <owl:NamedIndividual rdf:about="https://zatopek73.github.io/PAC2_Ontology#Closed">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://zatopek73.github.io/PAC2_Ontology#CorrectiveActionStatus"/>
+        <rdfs:comment>Corrective action closed</rdfs:comment>
+        <rdfs:label>Closed</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#Contamination -->
+
+    <owl:NamedIndividual rdf:about="https://zatopek73.github.io/PAC2_Ontology#Contamination">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://zatopek73.github.io/PAC2_Ontology#RiskType"/>
+        <rdfs:comment>Contamination risk type.</rdfs:comment>
+        <rdfs:label>Contamination</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#Critical -->
+
+    <owl:NamedIndividual rdf:about="https://zatopek73.github.io/PAC2_Ontology#Critical">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://zatopek73.github.io/PAC2_Ontology#RiskSeverity"/>
+        <rdfs:comment>Risk severity level critical.</rdfs:comment>
+        <rdfs:label>Critical</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#Cybersecurity -->
+
+    <owl:NamedIndividual rdf:about="https://zatopek73.github.io/PAC2_Ontology#Cybersecurity">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://zatopek73.github.io/PAC2_Ontology#RiskType"/>
+        <rdfs:comment>Cibersecurity risk type.</rdfs:comment>
+        <rdfs:label>Cybersecurity</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#DEV_001 -->
+
+    <owl:NamedIndividual rdf:about="https://zatopek73.github.io/PAC2_Ontology#DEV_001">
+        <rdf:type rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Device"/>
+        <hasAssociatedRisk rdf:resource="https://zatopek73.github.io/PAC2_Ontology#RSK_003"/>
+        <hasDeviceRiskClass rdf:resource="https://zatopek73.github.io/PAC2_Ontology#ClassIII"/>
+        <hasDeviceType rdf:resource="https://zatopek73.github.io/PAC2_Ontology#ImplantableActiveDevice"/>
+        <hasManufacturedBy rdf:resource="https://zatopek73.github.io/PAC2_Ontology#MAN_001"/>
+        <hasRegulatory rdf:resource="https://zatopek73.github.io/PAC2_Ontology#MDR"/>
+        <hasDeviceId>DEV-001</hasDeviceId>
+        <hasDeviceName>HeartMate 3 LVAD</hasDeviceName>
+        <hasIntendedPurpose>Ventricular assist device for end-stage heart failure</hasIntendedPurpose>
+        <hasUdi_di>(01)00380740009095</hasUdi_di>
+        <isDeviceActive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isDeviceActive>
+        <isDeviceImplantable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isDeviceImplantable>
+        <isDeviceIvd rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isDeviceIvd>
+        <isDeviceReusable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isDeviceReusable>
+        <rdfs:comment>The DEV001 Device.</rdfs:comment>
+        <rdfs:label>DEV 001</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#DEV_007 -->
+
+    <owl:NamedIndividual rdf:about="https://zatopek73.github.io/PAC2_Ontology#DEV_007">
+        <rdf:type rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Device"/>
+        <hasAssociatedRisk rdf:resource="https://zatopek73.github.io/PAC2_Ontology#RISK_001"/>
+        <hasDeviceRiskClass rdf:resource="https://zatopek73.github.io/PAC2_Ontology#ClassIIa"/>
+        <hasDeviceType rdf:resource="https://zatopek73.github.io/PAC2_Ontology#ActiveDevice"/>
+        <hasManufacturedBy rdf:resource="https://zatopek73.github.io/PAC2_Ontology#MAN_003"/>
+        <hasRegulatory rdf:resource="https://zatopek73.github.io/PAC2_Ontology#MDR"/>
+        <hasDeviceId>DEV-007</hasDeviceId>
+        <hasDeviceName>ACUSON Sequoia Ultrasound</hasDeviceName>
+        <hasIntendedPurpose>Diagnostic ultrasound imaging system</hasIntendedPurpose>
+        <hasUdi_di>(01)04054839450001</hasUdi_di>
+        <isDeviceActive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isDeviceActive>
+        <isDeviceImplantable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isDeviceImplantable>
+        <isDeviceIvd rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isDeviceIvd>
+        <isDeviceReusable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isDeviceReusable>
+        <rdfs:comment>The Dev-007 Device</rdfs:comment>
+        <rdfs:label>DEV-007</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#DEV_TEST_S4 -->
+
+    <owl:NamedIndividual rdf:about="https://zatopek73.github.io/PAC2_Ontology#DEV_TEST_S4">
+        <rdf:type rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Device"/>
+        <hasDeviceType rdf:resource="https://zatopek73.github.io/PAC2_Ontology#ActiveDevice"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#DeviceFailure -->
+
+    <owl:NamedIndividual rdf:about="https://zatopek73.github.io/PAC2_Ontology#DeviceFailure">
+        <rdf:type rdf:resource="https://zatopek73.github.io/PAC2_Ontology#RiskCategory"/>
+        <rdfs:comment>Risk category referring to failures of the device.</rdfs:comment>
+        <rdfs:label>Device Failure</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#DevicePerformance -->
+
+    <owl:NamedIndividual rdf:about="https://zatopek73.github.io/PAC2_Ontology#DevicePerformance">
+        <rdf:type rdf:resource="https://zatopek73.github.io/PAC2_Ontology#RiskCategory"/>
+        <rdfs:comment>Risk category to performance of the device</rdfs:comment>
+        <rdfs:label>Device Performance</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#DeviceSafety -->
+
+    <owl:NamedIndividual rdf:about="https://zatopek73.github.io/PAC2_Ontology#DeviceSafety">
+        <rdf:type rdf:resource="https://zatopek73.github.io/PAC2_Ontology#RiskCategory"/>
+        <rdfs:comment>Risk category referring to safety situation of the device</rdfs:comment>
+        <rdfs:label>Device Safety</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#Diagnostic -->
+
+    <owl:NamedIndividual rdf:about="https://zatopek73.github.io/PAC2_Ontology#Diagnostic">
+        <rdf:type rdf:resource="https://zatopek73.github.io/PAC2_Ontology#RiskType"/>
+        <rdfs:comment>Diagnostic risk type.</rdfs:comment>
+        <rdfs:label>Diagnostic</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#DiagnosticError -->
+
+    <owl:NamedIndividual rdf:about="https://zatopek73.github.io/PAC2_Ontology#DiagnosticError">
+        <rdf:type rdf:resource="https://zatopek73.github.io/PAC2_Ontology#RiskCategory"/>
+        <rdfs:comment>Risk category referring to errors in diagnostics by the device</rdfs:comment>
+        <rdfs:label>Diagnostic Error</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#FSCA_001 -->
+
+    <owl:NamedIndividual rdf:about="https://zatopek73.github.io/PAC2_Ontology#FSCA_001">
+        <rdf:type rdf:resource="https://zatopek73.github.io/PAC2_Ontology#CorrectiveActions"/>
+        <hasCorrectiveActionStatus rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Open"/>
+        <isResponseTo rdf:resource="https://zatopek73.github.io/PAC2_Ontology#INC_001"/>
+        <hasActionCountriesAffected>EU-wide</hasActionCountriesAffected>
+        <hasActionDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-02-01T00:00:00</hasActionDate>
+        <hasActionDescription>Safety alert issued to all implanting centres regarding anticoagulation protocol update for HeartMate 3 to reduce device thrombosis risk. INR target range revised to 2.0–3.0.</hasActionDescription>
+        <hasActionDevicesAffected rdf:datatype="http://www.w3.org/2001/XMLSchema#int">850</hasActionDevicesAffected>
+        <hasActionEudamedFscaRef>EU-FSCA-2024-000001</hasActionEudamedFscaRef>
+        <hasActionFscaId>FSCA-001</hasActionFscaId>
+        <hasActionType>SafetyAlert</hasActionType>
+        <rdfs:comment>The FSCA 001 corrective action.</rdfs:comment>
+        <rdfs:label>FSCA 001</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#Female -->
+
+    <owl:NamedIndividual rdf:about="https://zatopek73.github.io/PAC2_Ontology#Female">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://zatopek73.github.io/PAC2_Ontology#IncidentPatientSex"/>
+        <rdfs:comment>Sex indicate Female</rdfs:comment>
+        <rdfs:label>Female</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#High -->
+
+    <owl:NamedIndividual rdf:about="https://zatopek73.github.io/PAC2_Ontology#High">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://zatopek73.github.io/PAC2_Ontology#RiskProbability"/>
+        <rdfs:comment>Risk probability level High</rdfs:comment>
+        <rdfs:label>High</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#INC_001 -->
+
+    <owl:NamedIndividual rdf:about="https://zatopek73.github.io/PAC2_Ontology#INC_001">
+        <rdf:type rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Incident"/>
+        <hasIncidentPatientSex rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Male"/>
+        <hasIncidentType rdf:resource="https://zatopek73.github.io/PAC2_Ontology#SeriousIncident"/>
+        <isAboutDevice rdf:resource="https://zatopek73.github.io/PAC2_Ontology#DEV_001"/>
+        <isReportedIn rdf:resource="https://dbpedia.org/resource/Germany"/>
+        <hasCorrectiveActionTaken rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hasCorrectiveActionTaken>
+        <hasIncidentDescription>Patient implanted with HeartMate 3 LVAD developed ischemic stroke 6 months post-implant. Device thrombus confirmed by echocardiography.</hasIncidentDescription>
+        <hasIncidentDetectionDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-01-10T00:00:00</hasIncidentDetectionDate>
+        <hasIncidentEudamedNum>EU-INC-2024-000001</hasIncidentEudamedNum>
+        <hasIncidentId>INC-001</hasIncidentId>
+        <hasIncidentOutcome>Serious patient injury - embolic stroke</hasIncidentOutcome>
+        <hasIncidentPatientAge rdf:datatype="http://www.w3.org/2001/XMLSchema#int">58</hasIncidentPatientAge>
+        <hasIncidentReportDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-01-15T00:00:00</hasIncidentReportDate>
+        <rdfs:comment>The INC 001 incident</rdfs:comment>
+        <rdfs:label>INC 001</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#INC_006 -->
+
+    <owl:NamedIndividual rdf:about="https://zatopek73.github.io/PAC2_Ontology#INC_006">
+        <rdf:type rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Incident"/>
+        <hasIncidentPatientSex rdf:resource="https://zatopek73.github.io/PAC2_Ontology#N/A"/>
+        <hasIncidentType rdf:resource="https://zatopek73.github.io/PAC2_Ontology#SeriousIncident"/>
+        <isAboutDevice rdf:resource="https://zatopek73.github.io/PAC2_Ontology#DEV_007"/>
+        <isReportedIn rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Belgium"/>
+        <hasCorrectiveActionTaken rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</hasCorrectiveActionTaken>
+        <hasIncidentDescription>ACUSON Sequoia ultrasound system froze mid-examination. Emergency shutdown required; patient examination incomplete.</hasIncidentDescription>
+        <hasIncidentDetectionDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-01-04T00:00:00</hasIncidentDetectionDate>
+        <hasIncidentEudamedNum>EU-INC-2024-000006</hasIncidentEudamedNum>
+        <hasIncidentId>INC-006</hasIncidentId>
+        <hasIncidentOutcome>Device malfunction - complete system failure</hasIncidentOutcome>
+        <hasIncidentPatientAge rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</hasIncidentPatientAge>
+        <hasIncidentReportDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-02-04T00:00:00</hasIncidentReportDate>
+        <rdfs:comment>The INC 006 Incident</rdfs:comment>
+        <rdfs:label>INC 006</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#IVDR -->
+
+    <owl:NamedIndividual rdf:about="https://zatopek73.github.io/PAC2_Ontology#IVDR">
+        <rdf:type rdf:resource="https://zatopek73.github.io/PAC2_Ontology#RegulatoryFramework"/>
+        <rdfs:comment>The IVDR Regulatory Framework.</rdfs:comment>
+        <rdfs:label>IVDR</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#ImplantableActiveDevice -->
+
+    <owl:NamedIndividual rdf:about="https://zatopek73.github.io/PAC2_Ontology#ImplantableActiveDevice">
+        <rdf:type rdf:resource="https://zatopek73.github.io/PAC2_Ontology#DeviceType"/>
+        <rdfs:comment>The device status is active implantable.</rdfs:comment>
+        <rdfs:label>Implantable active device</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#ImplantableDevice -->
+
+    <owl:NamedIndividual rdf:about="https://zatopek73.github.io/PAC2_Ontology#ImplantableDevice">
+        <rdf:type rdf:resource="https://zatopek73.github.io/PAC2_Ontology#DeviceType"/>
+        <rdfs:comment>The device status is implantable.</rdfs:comment>
+        <rdfs:label>Implantable device</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#InVitroDiagnosticDevice -->
+
+    <owl:NamedIndividual rdf:about="https://zatopek73.github.io/PAC2_Ontology#InVitroDiagnosticDevice">
+        <rdf:type rdf:resource="https://zatopek73.github.io/PAC2_Ontology#DeviceType"/>
+        <rdfs:comment>The device status is invitro diagnostic.</rdfs:comment>
+        <rdfs:label>Invitro diagnostic device</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#Infection -->
+
+    <owl:NamedIndividual rdf:about="https://zatopek73.github.io/PAC2_Ontology#Infection">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://zatopek73.github.io/PAC2_Ontology#RiskType"/>
+        <rdfs:comment>Infection risk type.</rdfs:comment>
+        <rdfs:label>Inection</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#Injury -->
+
+    <owl:NamedIndividual rdf:about="https://zatopek73.github.io/PAC2_Ontology#Injury">
+        <rdf:type rdf:resource="https://zatopek73.github.io/PAC2_Ontology#RiskType"/>
+        <rdfs:comment>Injury risk type.</rdfs:comment>
+        <rdfs:label>Injury</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#Low -->
+
+    <owl:NamedIndividual rdf:about="https://zatopek73.github.io/PAC2_Ontology#Low">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://zatopek73.github.io/PAC2_Ontology#RiskProbability"/>
+        <rdfs:comment>Risk probability level Low.</rdfs:comment>
+        <rdfs:label>Low</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#MAN_001 -->
+
+    <owl:NamedIndividual rdf:about="https://zatopek73.github.io/PAC2_Ontology#MAN_001">
+        <rdf:type rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Manufacturer"/>
+        <isBasedIn rdf:resource="https://dbpedia.org/resource/Ireland"/>
+        <hasManufacturerAuthNumber>IE/2017/001234</hasManufacturerAuthNumber>
+        <hasManufacturerCompetentAutority>Health Products Regulatory Authority (HPRA)</hasManufacturerCompetentAutority>
+        <hasManufacturerEmail>regulatory@medtronic.com</hasManufacturerEmail>
+        <hasManufacturerEudamedSn>SRN-IE-MED-0001</hasManufacturerEudamedSn>
+        <hasManufacturerId>MAN-001</hasManufacturerId>
+        <hasManufacturerName>Medtronic plc</hasManufacturerName>
+        <rdfs:comment>The MAN 001 Manufacturer.</rdfs:comment>
+        <rdfs:label>MAN 001</rdfs:label>
+        <rdfs:seeAlso>https://dbpedia.org/resource/Medtronic</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#MAN_003 -->
+
+    <owl:NamedIndividual rdf:about="https://zatopek73.github.io/PAC2_Ontology#MAN_003">
+        <rdf:type rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Manufacturer"/>
+        <isBasedIn rdf:resource="https://dbpedia.org/resource/Germany"/>
+        <hasManufacturerAuthNumber>DE/2017/009012</hasManufacturerAuthNumber>
+        <hasManufacturerCompetentAutority>Health Products Regulatory Authority (HPRA)</hasManufacturerCompetentAutority>
+        <hasManufacturerEmail>regulatory@siemens-healthineers.com</hasManufacturerEmail>
+        <hasManufacturerEudamedSn>SRN-DE-MED-0003</hasManufacturerEudamedSn>
+        <hasManufacturerId>MAN-003</hasManufacturerId>
+        <hasManufacturerName>Siemens Healthineers AG</hasManufacturerName>
+        <rdfs:comment>The MAN 003 Manufacturer</rdfs:comment>
+        <rdfs:label>Man 003</rdfs:label>
+        <rdfs:seeAlso>http://dbpedia.org/resource/Siemens_Healthineers</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#MDR -->
+
+    <owl:NamedIndividual rdf:about="https://zatopek73.github.io/PAC2_Ontology#MDR">
+        <rdf:type rdf:resource="https://zatopek73.github.io/PAC2_Ontology#RegulatoryFramework"/>
+        <rdfs:comment>The MDR Regulatory framework.</rdfs:comment>
+        <rdfs:label>MDR</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#Male -->
+
+    <owl:NamedIndividual rdf:about="https://zatopek73.github.io/PAC2_Ontology#Male">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://zatopek73.github.io/PAC2_Ontology#IncidentPatientSex"/>
+        <rdfs:comment>Sex indicate Male</rdfs:comment>
+        <rdfs:label>Male</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#Malfuction -->
+
+    <owl:NamedIndividual rdf:about="https://zatopek73.github.io/PAC2_Ontology#Malfuction">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://zatopek73.github.io/PAC2_Ontology#RiskType"/>
+        <rdfs:comment>Malfuction risk type.</rdfs:comment>
+        <rdfs:label>Malfuction</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#Material -->
+
+    <owl:NamedIndividual rdf:about="https://zatopek73.github.io/PAC2_Ontology#Material">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://zatopek73.github.io/PAC2_Ontology#RiskType"/>
+        <rdfs:comment>Material risk type.</rdfs:comment>
+        <rdfs:label>Material</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#Medium -->
+
+    <owl:NamedIndividual rdf:about="https://zatopek73.github.io/PAC2_Ontology#Medium">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://zatopek73.github.io/PAC2_Ontology#RiskProbability"/>
+        <rdfs:comment>Risk probability level Medium.</rdfs:comment>
+        <rdfs:label>Medium</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#Moderate -->
+
+    <owl:NamedIndividual rdf:about="https://zatopek73.github.io/PAC2_Ontology#Moderate">
+        <rdf:type rdf:resource="https://zatopek73.github.io/PAC2_Ontology#RiskSeverity"/>
+        <rdfs:comment>Risk severity level moderate.</rdfs:comment>
+        <rdfs:label>Moderate</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#NearMissIncident -->
+
+    <owl:NamedIndividual rdf:about="https://zatopek73.github.io/PAC2_Ontology#NearMissIncident">
+        <rdf:type rdf:resource="https://zatopek73.github.io/PAC2_Ontology#IncidentType"/>
+        <rdfs:comment>Incident type representing a near miss event.</rdfs:comment>
+        <rdfs:label>Near Miss Incident</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#Open -->
+
+    <owl:NamedIndividual rdf:about="https://zatopek73.github.io/PAC2_Ontology#Open">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://zatopek73.github.io/PAC2_Ontology#CorrectiveActionStatus"/>
+        <rdfs:comment>Corrective action open</rdfs:comment>
+        <rdfs:label>Open</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#PatientHarm -->
+
+    <owl:NamedIndividual rdf:about="https://zatopek73.github.io/PAC2_Ontology#PatientHarm">
+        <rdf:type rdf:resource="https://zatopek73.github.io/PAC2_Ontology#RiskCategory"/>
+        <rdfs:comment>Risk category referring to any patient harm produced</rdfs:comment>
+        <rdfs:label>Patient Harm</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#ProductQuality -->
+
+    <owl:NamedIndividual rdf:about="https://zatopek73.github.io/PAC2_Ontology#ProductQuality">
+        <rdf:type rdf:resource="https://zatopek73.github.io/PAC2_Ontology#RiskCategory"/>
+        <rdfs:comment>Risk category referring to any product quality defect.</rdfs:comment>
+        <rdfs:label>Product Quality</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#RISK_001 -->
+
+    <owl:NamedIndividual rdf:about="https://zatopek73.github.io/PAC2_Ontology#RISK_001">
+        <rdf:type rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Risk"/>
+        <affectsDeviceType rdf:resource="https://zatopek73.github.io/PAC2_Ontology#ActiveDevice"/>
+        <hasRiskCategory rdf:resource="https://zatopek73.github.io/PAC2_Ontology#DeviceFailure"/>
+        <hasRiskProbability rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Low"/>
+        <hasRiskSeverity rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Critical"/>
+        <hasRiskType rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Malfuction"/>
+        <hasRiskDescription>Complete loss of electrical function leading to device shutdown</hasRiskDescription>
+        <hasRiskId>RSK-001</hasRiskId>
+        <hasRiskImdrfCode>A0101</hasRiskImdrfCode>
+        <hasRiskName>Device failure - electrical</hasRiskName>
+        <rdfs:comment>The RSK 003 Risk</rdfs:comment>
+        <rdfs:label>RSK 001</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#RSK_003 -->
+
+    <owl:NamedIndividual rdf:about="https://zatopek73.github.io/PAC2_Ontology#RSK_003">
+        <rdf:type rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Risk"/>
+        <affectsDeviceType rdf:resource="https://zatopek73.github.io/PAC2_Ontology#ImplantableActiveDevice"/>
+        <hasRiskCategory rdf:resource="https://zatopek73.github.io/PAC2_Ontology#PatientHarm"/>
+        <hasRiskProbability rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Low"/>
+        <hasRiskSeverity rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Critical"/>
+        <hasRiskType rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Injury"/>
+        <hasRiskDescription>Thrombus formation on device surface causing embolic events</hasRiskDescription>
+        <hasRiskId>RSK-003</hasRiskId>
+        <hasRiskImdrfCode>A0201</hasRiskImdrfCode>
+        <hasRiskName>Thrombosis - device-related</hasRiskName>
+        <rdfs:comment>The RSK 003 risk.</rdfs:comment>
+        <rdfs:label>RSK 003</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#Radiation -->
+
+    <owl:NamedIndividual rdf:about="https://zatopek73.github.io/PAC2_Ontology#Radiation">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://zatopek73.github.io/PAC2_Ontology#RiskType"/>
+        <rdfs:comment>Radiation risk type.</rdfs:comment>
+        <rdfs:label>Radiation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#SeriousIncident -->
+
+    <owl:NamedIndividual rdf:about="https://zatopek73.github.io/PAC2_Ontology#SeriousIncident">
+        <rdf:type rdf:resource="https://zatopek73.github.io/PAC2_Ontology#IncidentType"/>
+        <rdfs:comment>Incident type representing a serious reportable incident.</rdfs:comment>
+        <rdfs:label>Serious Incident</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#Seroious -->
+
+    <owl:NamedIndividual rdf:about="https://zatopek73.github.io/PAC2_Ontology#Seroious">
+        <rdf:type rdf:resource="https://zatopek73.github.io/PAC2_Ontology#RiskSeverity"/>
+        <rdfs:comment>Risk severity level Serious.</rdfs:comment>
+        <rdfs:label>Serious</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#Software -->
+
+    <owl:NamedIndividual rdf:about="https://zatopek73.github.io/PAC2_Ontology#Software">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://zatopek73.github.io/PAC2_Ontology#RiskType"/>
+        <rdfs:comment>Software risk type.</rdfs:comment>
+        <rdfs:label>Software</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://zatopek73.github.io/PAC2_Ontology#N/A -->
+
+    <owl:NamedIndividual rdf:about="https://zatopek73.github.io/PAC2_Ontology#N/A">
+        <rdf:type rdf:resource="https://zatopek73.github.io/PAC2_Ontology#IncidentPatientSex"/>
+        <rdfs:comment>Not indicate sex</rdfs:comment>
+        <rdfs:label>N/A</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://zatopek73.github.io/PAC2_Ontology#CorrectiveActionStatus"/>
+            <rdf:Description rdf:about="https://zatopek73.github.io/PAC2_Ontology#CorrectiveActions"/>
+            <rdf:Description rdf:about="https://zatopek73.github.io/PAC2_Ontology#Country"/>
+            <rdf:Description rdf:about="https://zatopek73.github.io/PAC2_Ontology#Device"/>
+            <rdf:Description rdf:about="https://zatopek73.github.io/PAC2_Ontology#DeviceRiskClass"/>
+            <rdf:Description rdf:about="https://zatopek73.github.io/PAC2_Ontology#DeviceType"/>
+            <rdf:Description rdf:about="https://zatopek73.github.io/PAC2_Ontology#Incident"/>
+            <rdf:Description rdf:about="https://zatopek73.github.io/PAC2_Ontology#IncidentPatientSex"/>
+            <rdf:Description rdf:about="https://zatopek73.github.io/PAC2_Ontology#IncidentType"/>
+            <rdf:Description rdf:about="https://zatopek73.github.io/PAC2_Ontology#Manufacturer"/>
+            <rdf:Description rdf:about="https://zatopek73.github.io/PAC2_Ontology#Risk"/>
+            <rdf:Description rdf:about="https://zatopek73.github.io/PAC2_Ontology#RiskCategory"/>
+        </owl:members>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="https://zatopek73.github.io/PAC2_Ontology#/r">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://zatopek73.github.io/PAC2_Ontology#/dt">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://zatopek73.github.io/PAC2_Ontology#/d">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://zatopek73.github.io/PAC2_Ontology#i">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://zatopek73.github.io/PAC2_Ontology#d">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://zatopek73.github.io/PAC2_Ontology#t">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://zatopek73.github.io/PAC2_Ontology#r">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://zatopek73.github.io/PAC2_Ontology#/i">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://zatopek73.github.io/PAC2_Ontology#/m">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Infers the risks associated with a device based on its device type.</rdfs:comment>
+        <rdfs:label>S4</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Risk"/>
+                        <swrl:argument1 rdf:resource="https://zatopek73.github.io/PAC2_Ontology#/r"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://zatopek73.github.io/PAC2_Ontology#affectsDeviceType"/>
+                                <swrl:argument1 rdf:resource="https://zatopek73.github.io/PAC2_Ontology#/r"/>
+                                <swrl:argument2 rdf:resource="https://zatopek73.github.io/PAC2_Ontology#/dt"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Device"/>
+                                        <swrl:argument1 rdf:resource="https://zatopek73.github.io/PAC2_Ontology#/d"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="https://zatopek73.github.io/PAC2_Ontology#hasDeviceType"/>
+                                                <swrl:argument1 rdf:resource="https://zatopek73.github.io/PAC2_Ontology#/d"/>
+                                                <swrl:argument2 rdf:resource="https://zatopek73.github.io/PAC2_Ontology#/dt"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://zatopek73.github.io/PAC2_Ontology#hasAssociatedRisk"/>
+                        <swrl:argument1 rdf:resource="https://zatopek73.github.io/PAC2_Ontology#/d"/>
+                        <swrl:argument2 rdf:resource="https://zatopek73.github.io/PAC2_Ontology#/r"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Infers the risk associated with an incident from the type of the involved device</rdfs:comment>
+        <rdfs:label>S3</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Incident"/>
+                        <swrl:argument1 rdf:resource="https://zatopek73.github.io/PAC2_Ontology#i"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://zatopek73.github.io/PAC2_Ontology#isAboutDevice"/>
+                                <swrl:argument1 rdf:resource="https://zatopek73.github.io/PAC2_Ontology#i"/>
+                                <swrl:argument2 rdf:resource="https://zatopek73.github.io/PAC2_Ontology#d"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="https://zatopek73.github.io/PAC2_Ontology#hasDeviceType"/>
+                                        <swrl:argument1 rdf:resource="https://zatopek73.github.io/PAC2_Ontology#d"/>
+                                        <swrl:argument2 rdf:resource="https://zatopek73.github.io/PAC2_Ontology#t"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="https://zatopek73.github.io/PAC2_Ontology#affectsDeviceType"/>
+                                                <swrl:argument1 rdf:resource="https://zatopek73.github.io/PAC2_Ontology#r"/>
+                                                <swrl:argument2 rdf:resource="https://zatopek73.github.io/PAC2_Ontology#t"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://zatopek73.github.io/PAC2_Ontology#isAboutRisk"/>
+                        <swrl:argument1 rdf:resource="https://zatopek73.github.io/PAC2_Ontology#i"/>
+                        <swrl:argument2 rdf:resource="https://zatopek73.github.io/PAC2_Ontology#r"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Infers the risk associated with an incident based on the risks of the involved device.</rdfs:comment>
+        <rdfs:label>S1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Incident"/>
+                        <swrl:argument1 rdf:resource="https://zatopek73.github.io/PAC2_Ontology#/i"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://zatopek73.github.io/PAC2_Ontology#isAboutDevice"/>
+                                <swrl:argument1 rdf:resource="https://zatopek73.github.io/PAC2_Ontology#/i"/>
+                                <swrl:argument2 rdf:resource="https://zatopek73.github.io/PAC2_Ontology#/d"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="https://zatopek73.github.io/PAC2_Ontology#hasAssociatedRisk"/>
+                                        <swrl:argument1 rdf:resource="https://zatopek73.github.io/PAC2_Ontology#/d"/>
+                                        <swrl:argument2 rdf:resource="https://zatopek73.github.io/PAC2_Ontology#/r"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://zatopek73.github.io/PAC2_Ontology#isAboutRisk"/>
+                        <swrl:argument1 rdf:resource="https://zatopek73.github.io/PAC2_Ontology#/i"/>
+                        <swrl:argument2 rdf:resource="https://zatopek73.github.io/PAC2_Ontology#/r"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Infers the reporting manufacturer of an incident based on the device manufacturer.</rdfs:comment>
+        <rdfs:label>S2</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://zatopek73.github.io/PAC2_Ontology#Incident"/>
+                        <swrl:argument1 rdf:resource="https://zatopek73.github.io/PAC2_Ontology#/i"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://zatopek73.github.io/PAC2_Ontology#isAboutDevice"/>
+                                <swrl:argument1 rdf:resource="https://zatopek73.github.io/PAC2_Ontology#/i"/>
+                                <swrl:argument2 rdf:resource="https://zatopek73.github.io/PAC2_Ontology#/d"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="https://zatopek73.github.io/PAC2_Ontology#hasManufacturedBy"/>
+                                        <swrl:argument1 rdf:resource="https://zatopek73.github.io/PAC2_Ontology#/d"/>
+                                        <swrl:argument2 rdf:resource="https://zatopek73.github.io/PAC2_Ontology#/m"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://zatopek73.github.io/PAC2_Ontology#isReportedBy"/>
+                        <swrl:argument1 rdf:resource="https://zatopek73.github.io/PAC2_Ontology#/i"/>
+                        <swrl:argument2 rdf:resource="https://zatopek73.github.io/PAC2_Ontology#/m"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
