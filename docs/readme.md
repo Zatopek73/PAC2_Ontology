@@ -15,11 +15,11 @@ One thing that became clear while working on it is that these parts can’t real
 ## Structure (more or less)
 
 There isn’t a strict module system, but you can think of it like this:
-### Devices / Risk
+Devices / Risk
 Covers classification and risk levels based on EU rules. I kept this relatively simple on purpose.
-### Manufacturers
+Manufacturers
 Includes basic information about the entities involved in design and compliance. This part could definitely be expanded.
-### Vigilance
+Vigilance
 Probably the most interesting part. It models incidents and corrective actions (including FSCAs), and connects them back to devices.
 ## Technical details
 Namespace: https://zatopek73.github.io/PAC2_Ontology
