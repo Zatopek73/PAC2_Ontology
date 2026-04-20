@@ -1,34 +1,60 @@
-About Widoco output
-===================
-The purpose of Widoco is to reuse and integrate existing tools for documentation, plus the set of features listed below:
-* Separation of the sections of your html page so you can write them independently and replace only those needed.
-* Automatic annotation in RDF-a of the html produced.
-* Association of a provenance page which includes the history of your vocabulary (W3C PROV-O compliant).
-* Metadata extraction from the ontology plus the means to complete it on the fly when generating your ontology.
-* Guidelines on the main sections that your document should have and how to complete them.
+# European Medical Device Ontology (MDR-IVDR)
 
-Widoco will create 3 different folders:
-|
-|-provenance (a folder including an html and RDF serialization of how the documentation page was created)
-|-resources (folder with the different resources)
-|-sections (folder with the different sections of the documentation, separated for easy editing. Just edit one and the main page will be updated)
+This ontology is part of a PAC2 assignment and focuses on modelling high-risk medical devices (MD) and in vitro diagnostic devices (IVD) under the MDR (EU 2017/745) and IVDR (EU 2017/746) frameworks.
 
-Completing ontology metadata.
-===================
-Widoco uses the ontology metadata to update a configuration file. If you complete that configuration file (ended up widoco.conf), the tool will enhance your html with additional details, such as how to cite the document, previous revisions, icons with the licence, etc.
+I built it with a fairly practical goal in mind: to take the kind of data that appears in EUDAMED and make it easier to navigate, connect and query. It’s not a full reproduction of the regulation, just a structured approximation of how the domain behaves.
 
-Browser issues
-==========
-The result of executing Widoco is an html file. We have tested it in Mozilla, IE and Chrome, and when the page is stored in a server all the browsers work correctly. If you view the file locally, we recommend you to use Mozilla Firefox (or Internet Explorer, if you must). Google Chrome will not show the contents correctly, as it doesn't allow  XMLHttpRequest without HTTP. If you want to view the page locally with Google Chrome you have two possibilities:
+## What I actually tried to model
 
-a) Place the file in a server and access it via its URL (for example, put it in dropbox and access through its public url).
+Instead of overcomplicating things, I focused on the lifecycle of a device and how different pieces of information relate to each other.
 
-b) Execute Chrome with the following commands :
+So, in simple terms, the ontology links:
 
-(WIN) chrome.exe --allow-file-access-from-files,
+devices and their risk classification
+the manufacturers responsible for them
+post-market events like incidents and corrective actions
 
-(OSX) open /Applications/Google\ Chrome.app/ --args --allow-file-access-from-files
+One thing that became clear while working on it is that these parts can’t really be separated cleanly. For example, incidents don’t make sense without devices, and devices are always tied to some manufacturer. Because of that, I avoided a strictly modular design.
 
-(UNX) /usr/bin/google-chrome --allow-file-access-from-files
+## Structure (more or less)
 
-Do you have a problem? open an issue at https://github.com/dgarijo/Widoco
+There isn’t a strict module system, but you can think of it like this:
+
+### Devices / Risk
+Covers classification and risk levels based on EU rules. I kept this relatively simple on purpose.
+### Manufacturers
+Includes basic information about the entities involved in design and compliance. This part could definitely be expanded.
+### Vigilance
+Probably the most interesting part. It models incidents and corrective actions (including FSCAs), and connects them back to devices.
+## Technical details
+Namespace: https://zatopek73.github.io/PAC2_Ontology
+Format: OWL (RDF/XML)
+Vocabularies: SKOS (for concepts) and VANN (for metadata)
+
+I also added a few SWRL rules. They’re not very complex, but they help avoid manually asserting relationships, especially between incidents and devices.
+
+## Validation (what I checked and why)
+
+I ran a couple of tools mainly to avoid obvious mistakes:
+
+OOPS! → helped catch modelling issues (some domain/range problems showed up early on)
+FOOPS! → just to see how well it aligns with FAIR principles
+Reasoners: Pellet and HermiT
+
+Both reasoners were useful to check consistency. Pellet is also helpful if you want to see how the SWRL rules behave.
+
+## How to open it
+Download PAC2_Parrado_Ontology.owl
+Open it in Protégé (I used version 5.6.0)
+Run a reasoner
+
+After that, inferred relationships should appear (depending on the reasoner you use).
+
+## Final notes
+
+This isn’t meant to be a complete or production-ready ontology. Some areas are intentionally simplified, and others could be extended quite a bit.
+
+Still, the model is consistent, works with standard tools, and reflects the main relationships in the domain reasonably well.
+
+Author: Pablo Parrado Gamito
+Context: UOC, Knowledge Representation PAC2 – 2026
